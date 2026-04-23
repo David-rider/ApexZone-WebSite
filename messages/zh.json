@@ -57,44 +57,68 @@
       "label": "核心服务",
       "title": "核心服务",
       "subtitle": "端到端的数字解决方案，助力您的业务增长",
-      "webDesign":    { "title": "网站设计与开发",   "desc": "品牌官网、电商独立站、多语言网站——以转化为目标。" },
-      "appDev":       { "title": "应用与小程序开发", "desc": "微信小程序、H5页面、iOS/Android原生应用。" },
-      "brandDesign":  { "title": "品牌视觉设计",     "desc": "Logo、VI体系、画册、包装——构建完整品牌形象。" },
-      "seoMarketing": { "title": "SEO与数字营销",    "desc": "谷歌SEO、本地SEO、GEO/AI搜索优化，自然增长。" }
+      "webDesign": {
+        "title": "网站设计与开发",
+        "desc": "品牌官网、电商独立站、多语言网站——以转化为目标。"
+      },
+      "appDev": {
+        "title": "应用与小程序开发",
+        "desc": "微信小程序、H5页面、iOS/Android原生应用。"
+      },
+      "brandDesign": {
+        "title": "品牌视觉设计",
+        "desc": "Logo、VI体系、画册、包装——构建完整品牌形象。"
+      },
+      "seoMarketing": {
+        "title": "SEO与数字营销",
+        "desc": "谷歌SEO、本地SEO、GEO/AI搜索优化，自然增长。"
+      }
     },
     "portfolio": {
-      "label":    "近期作品",
-      "title":    "近期作品",
+      "label": "近期作品",
+      "title": "近期作品",
       "subtitle": "真实项目，真实成果",
-      "viewAll":  "查看所有作品",
+      "viewAll": "查看所有作品",
       "ctaTitle": "下一个就是您的项目",
-      "ctaDesc":  "每个企业都是独特的，让我们为您量身打造。",
-      "ctaBtn":   "开始项目"
+      "ctaDesc": "每个企业都是独特的，让我们为您量身打造。",
+      "ctaBtn": "开始项目"
     },
     "process": {
       "label": "工作流程",
       "title": "我们的工作方式",
       "subtitle": "从第一次通话到网站上线——清晰可预期的流程",
-      "step1": { "title": "需求挖掘", "desc": "深入分析您的市场、竞品和增长目标。" },
-      "step2": { "title": "设计方案", "desc": "线框图、视觉稿，对齐品牌设计呈现。" },
-      "step3": { "title": "开发上线", "desc": "简洁代码、高性能、移动优先实现。" },
-      "step4": { "title": "持续优化", "desc": "上线后持续监控、迭代，保持竞争力。" }
+      "step1": {
+        "title": "需求挖掘",
+        "desc": "深入分析您的市场、竞品和增长目标。"
+      },
+      "step2": {
+        "title": "设计方案",
+        "desc": "线框图、视觉稿，对齐品牌设计呈现。"
+      },
+      "step3": {
+        "title": "开发上线",
+        "desc": "简洁代码、高性能、移动优先实现。"
+      },
+      "step4": {
+        "title": "持续优化",
+        "desc": "上线后持续监控、迭代，保持竞争力。"
+      }
     },
     "cta": {
-      "label":    "免费咨询",
-      "title":    "准备好打造出色网站了吗？",
+      "label": "免费咨询",
+      "title": "准备好打造出色网站了吗？",
       "subtitle": "预约免费30分钟咨询，无需承诺，只需沟通。",
-      "button":   "预约免费通话",
-      "phone":    "或直接致电我们"
+      "button": "预约免费通话",
+      "phone": "或直接致电我们"
     }
   },
   "services": {
-    "label":    "我们的服务",
-    "title":    "服务项目",
+    "label": "我们的服务",
+    "title": "服务项目",
     "subtitle": "六大核心服务支柱，选择最适合您业务的方案",
     "webDesign": {
       "title": "网站设计与开发",
-      "desc":  "从企业官网到电商独立站，打造高转化率的专业网站。",
+      "desc": "从企业官网到电商独立站，打造高转化率的专业网站。",
       "items": [
         "企业品牌网站设计与开发",
         "电商独立站建设",
@@ -108,7 +132,7 @@
     },
     "appDev": {
       "title": "应用与小程序开发",
-      "desc":  "面向现代用户的移动数字体验。",
+      "desc": "面向现代用户的移动数字体验。",
       "items": [
         "微信小程序开发",
         "H5移动网页制作",
@@ -120,7 +144,7 @@
     },
     "brandDesign": {
       "title": "品牌视觉设计",
-      "desc":  "从概念到交付，完整的品牌视觉体系。",
+      "desc": "从概念到交付，完整的品牌视觉体系。",
       "items": [
         "Logo与品牌标识设计",
         "VI视觉识别系统",
@@ -132,7 +156,7 @@
     },
     "seoMarketing": {
       "title": "SEO与数字营销",
-      "desc":  "提升排名，触达更多客户，实现自然增长。",
+      "desc": "提升排名，触达更多客户，实现自然增长。",
       "items": [
         "Google搜索SEO优化",
         "本地SEO与谷歌地图排名",
@@ -141,224 +165,6 @@
         "社交媒体营销",
         "内容营销策略"
       ]
-    }
-  },
-  "portfolio": {
-    "label":    "我们的作品",
-    "title":    "作品集",
-    "subtitle": "每个项目都以转化为核心——跨行业、跨平台",
-    "filters": {
-      "all":         "全部案例",
-      "brandSite":   "品牌官网设计",
-      "platform":    "系统及平台开发",
-      "app":         "移动应用开发",
-      "brandDesign": "品牌视觉设计",
-      "ecommerce":   "电商独立站",
-      "miniProgram": "小程序开发"
-    },
-    "industries": {
-      "all":         "全部行业",
-      "finance":     "金融法律",
-      "tech":        "科技人工智能",
-      "retail":      "零售时尚",
-      "healthcare":  "医疗健康",
-      "realEstate":  "地产建筑",
-      "education":   "教育培训"
-    },
-    "challenge":   "项目挑战",
-    "solution":    "我们的解决方案",
-    "results":     "项目成果",
-    "techStack":   "技术栈",
-    "viewProject": "查看项目",
-    "visitSite":   "访问网站",
-    "backToList":  "返回作品集",
-    "nextProject": "下一个项目",
-    "prevProject": "上一个项目",
-    "clientLabel": "客户名称",
-    "yearLabel":   "项目年份",
-    "industryLabel":"所属行业",
-    "serviceType": "服务类型",
-    "searchPlaceholder": "搜索案例或客户...",
-    "noCasesFound": "未找到相关案例",
-    "noCasesDesc": "尝试调整过滤条件或搜索词",
-    "resetAll": "重置全部",
-    "prev": "上一页",
-    "next": "下一页",
-    "heroSlides": {
-      "featuredLabel": "案例展播",
-      "spring-shore": {
-        "title": "悦海长滩 CIM 实景仿真系统",
-        "subtitle": "中国交建 · 海南万宁"
-      },
-      "jinjiang-glory": {
-        "title": "锦江大院 CIM 数字化营销系统",
-        "subtitle": "中茂地产 · 成都锦江"
-      },
-      "meijiang-heyue": {
-        "title": "梅江和悦高端住宅 CIM 系统",
-        "subtitle": "联汇地产 · 天津梅江"
-      },
-      "jinmao-smart-city": {
-        "title": "金茂智慧科学城 CIM 规划系统",
-        "subtitle": "中国金茂 · 城市运营商"
-      }
-    }
-  },
-  "aiWizard": {
-    "label":    "AI预判分析",
-    "title":    "网站AI规划",
-    "subtitle": "回答几个问题，60秒获取您的定制网站蓝图",
-    "stepOf":   "第 {current} 步，共 {total} 步",
-    "back":     "上一步",
-    "next":     "下一步",
-    "submit":   "生成我的蓝图",
-    "steps": {
-      "industry": {
-        "title": "您的企业属于哪个行业？",
-        "hint":  "不同行业有不同的最优数字化策略",
-        "options": {
-          "restaurant":    "餐饮与美食",
-          "retail":        "零售与时尚",
-          "tech":          "科技与SaaS",
-          "healthcare":    "医疗与健康",
-          "finance":       "金融与法律",
-          "education":     "教育与培训",
-          "realEstate":    "房地产",
-          "manufacturing": "制造与工业",
-          "beauty":        "美容与生活方式",
-          "other":         "其他"
-        }
-      },
-      "projectType": {
-        "title": "您需要什么类型的项目？",
-        "hint":  "选择您需要的数字产品类型",
-        "options": {
-          "corporate":   "企业官网",
-          "ecommerce":   "电商独立站",
-          "portfolio":   "作品集/展示站",
-          "blog":        "博客/媒体网站",
-          "booking":     "预约系统",
-          "miniProgram": "微信小程序",
-          "landing":     "落地页",
-          "platform":    "平台/SaaS"
-        }
-      },
-      "goal": {
-        "title": "您的主要目标是什么？",
-        "hint":  "帮我们理解您的成功标准",
-        "options": {
-          "leads":       "获取更多线索",
-          "sales":       "提升在线销售",
-          "credibility": "建立品牌可信度",
-          "showcase":    "展示作品/案例",
-          "automate":    "自动化业务流程",
-          "launch":      "线上开业"
-        }
-      },
-      "audience": {
-        "title": "您的目标受众是谁？",
-        "hint":  "选择主要的语言策略",
-        "options": {
-          "usEnglish": "仅英语 (Global)",
-          "chinese":   "仅中文 (China)",
-          "multilingual":"多语言 (全球 / 7种语言)"
-        }
-      },
-      "designStyle": {
-        "title": "您偏好什么设计风格？",
-        "hint":  "选择最符合您品牌气质的视觉方向",
-        "options": {
-          "clean":   "简洁专业",
-          "bold":    "大胆现代",
-          "minimal": "极简优雅",
-          "warm":    "温暖亲切",
-          "tech":    "科技未来感",
-          "luxe":    "豪华高端"
-        }
-      },
-      "features": {
-        "title": "您需要哪些关键功能？",
-        "hint":  "可多选",
-        "options": {
-          "contactForm":  "联系表单",
-          "booking":      "在线预约",
-          "ecommerce":    "电商/购物车",
-          "blog":         "博客/新闻",
-          "multilingual": "多语言支持",
-          "aiChat":       "AI对话/助手",
-          "memberLogin":  "会员登录区",
-          "video":        "视频集成",
-          "map":          "地图/位置",
-          "seo":          "SEO优化包"
-        }
-      },
-      "content": {
-        "title": "您的内容准备情况？",
-        "hint":  "帮我们精准规划项目周期",
-        "options": {
-          "ready":   "内容已全部准备好",
-          "half":    "约50%已准备好",
-          "ideas":   "有想法，需要帮助撰写",
-          "scratch": "从零开始"
-        }
-      },
-      "timeline": {
-        "title": "您期望的交付周期？",
-        "hint":  "您希望项目何时完成？",
-        "options": {
-          "asap":     "越快越好（约2周）",
-          "month":    "1个月内",
-          "quarter":  "2-3个月",
-          "flexible": "时间灵活"
-        }
-      },
-      "budget": {
-        "title": "您的预算范围？",
-        "hint":  "帮助我们为您匹配合适的方案",
-        "options": {
-          "under1k":  "$1,000以下",
-          "1kTo3k":   "$1,000 – $3,000",
-          "3kTo8k":   "$3,000 – $8,000",
-          "8kTo20k":  "$8,000 – $20,000",
-          "above20k": "$20,000以上",
-          "discuss":  "另行协商"
-        }
-      },
-      "contact": {
-        "title": "如何联系您？",
-        "hint":  "我们将在1个工作日内发送蓝图并跟进",
-        "name":        "姓名",
-        "email":       "电子邮箱",
-        "phone":       "电话（选填）",
-        "company":     "公司名称（选填）",
-        "namePlaceholder":    "您的姓名",
-        "emailPlaceholder":   "your@email.com",
-        "phonePlaceholder":   "+1 (xxx) xxx-xxxx",
-        "companyPlaceholder": "您的公司",
-        "required": "姓名和邮箱为必填项"
-      }
-    },
-    "blueprint": {
-      "title":      "您的定制网站蓝图",
-      "subtitle":   "根据您的回答，以下是我们的专业建议",
-      "generating": "正在生成您的蓝图…",
-      "sections": {
-        "projectSummary":  "项目概述",
-        "pageStructure":   "推荐页面架构",
-        "featureModules":  "建议功能模块",
-        "designDirection": "设计方向",
-        "techStack":       "技术栈",
-        "seoKeywords":     "SEO关键词建议",
-        "timeline":        "预估交付周期",
-        "investment":      "预估投入范围"
-      },
-      "cta": {
-        "title":     "准备好将蓝图变为现实了吗？",
-        "subtitle":  "我们的团队将审阅您的蓝图并在1个工作日内联系您。",
-        "primary":   "预约免费通话",
-        "secondary": "下载PDF蓝图",
-        "restart":   "重新开始"
-      }
     }
   },
   "portfolio": {
@@ -386,20 +192,176 @@
       "other": "其他行业"
     }
   },
+  "aiWizard": {
+    "label": "AI预判分析",
+    "title": "网站AI规划",
+    "subtitle": "回答几个问题，60秒获取您的定制网站蓝图",
+    "stepOf": "第 {current} 步，共 {total} 步",
+    "back": "上一步",
+    "next": "下一步",
+    "submit": "生成我的蓝图",
+    "steps": {
+      "industry": {
+        "title": "您的企业属于哪个行业？",
+        "hint": "不同行业有不同的最优数字化策略",
+        "options": {
+          "restaurant": "餐饮与美食",
+          "retail": "零售与时尚",
+          "tech": "科技与SaaS",
+          "healthcare": "医疗与健康",
+          "finance": "金融与法律",
+          "education": "教育与培训",
+          "realEstate": "房地产",
+          "manufacturing": "制造与工业",
+          "beauty": "美容与生活方式",
+          "other": "其他"
+        }
+      },
+      "projectType": {
+        "title": "您需要什么类型的项目？",
+        "hint": "选择您需要的数字产品类型",
+        "options": {
+          "corporate": "企业官网",
+          "ecommerce": "电商独立站",
+          "portfolio": "作品集/展示站",
+          "blog": "博客/媒体网站",
+          "booking": "预约系统",
+          "miniProgram": "微信小程序",
+          "landing": "落地页",
+          "platform": "平台/SaaS"
+        }
+      },
+      "goal": {
+        "title": "您的主要目标是什么？",
+        "hint": "帮我们理解您的成功标准",
+        "options": {
+          "leads": "获取更多线索",
+          "sales": "提升在线销售",
+          "credibility": "建立品牌可信度",
+          "showcase": "展示作品/案例",
+          "automate": "自动化业务流程",
+          "launch": "线上开业"
+        }
+      },
+      "audience": {
+        "title": "您的目标受众是谁？",
+        "hint": "选择主要的语言策略",
+        "options": {
+          "usEnglish": "仅英语 (Global)",
+          "chinese": "仅中文 (China)",
+          "multilingual": "多语言 (全球 / 7种语言)"
+        }
+      },
+      "designStyle": {
+        "title": "您偏好什么设计风格？",
+        "hint": "选择最符合您品牌气质的视觉方向",
+        "options": {
+          "clean": "简洁专业",
+          "bold": "大胆现代",
+          "minimal": "极简优雅",
+          "warm": "温暖亲切",
+          "tech": "科技未来感",
+          "luxe": "豪华高端"
+        }
+      },
+      "features": {
+        "title": "您需要哪些关键功能？",
+        "hint": "可多选",
+        "options": {
+          "contactForm": "联系表单",
+          "booking": "在线预约",
+          "ecommerce": "电商/购物车",
+          "blog": "博客/新闻",
+          "aiChat": "AI对话/助手",
+          "memberLogin": "会员登录区",
+          "video": "视频集成",
+          "map": "地图/位置",
+          "seo": "SEO优化包"
+        }
+      },
+      "content": {
+        "title": "您的内容准备情况？",
+        "hint": "帮我们精准规划项目周期",
+        "options": {
+          "ready": "内容已全部准备好",
+          "half": "约50%已准备好",
+          "ideas": "有想法，需要帮助撰写",
+          "scratch": "从零开始"
+        }
+      },
+      "timeline": {
+        "title": "您期望的交付周期？",
+        "hint": "您希望项目何时完成？",
+        "options": {
+          "asap": "越快越好（约2周）",
+          "month": "1个月内",
+          "quarter": "2-3个月",
+          "flexible": "时间灵活"
+        }
+      },
+      "budget": {
+        "title": "您的预算范围？",
+        "hint": "帮助我们为您匹配合适的方案",
+        "options": {
+          "under1k": "$1,000以下",
+          "1kTo3k": "$1,000 – $3,000",
+          "3kTo8k": "$3,000 – $8,000",
+          "8kTo20k": "$8,000 – $20,000",
+          "above20k": "$20,000以上",
+          "discuss": "另行协商"
+        }
+      },
+      "contact": {
+        "title": "如何联系您？",
+        "hint": "我们将在1个工作日内发送蓝图并跟进",
+        "name": "姓名",
+        "email": "电子邮箱",
+        "phone": "电话（选填）",
+        "company": "公司名称（选填）",
+        "namePlaceholder": "您的姓名",
+        "emailPlaceholder": "your@email.com",
+        "phonePlaceholder": "+1 (xxx) xxx-xxxx",
+        "companyPlaceholder": "您的公司",
+        "required": "姓名和邮箱为必填项"
+      }
+    },
+    "blueprint": {
+      "title": "您的定制网站蓝图",
+      "subtitle": "根据您的回答，以下是我们的专业建议",
+      "generating": "正在生成您的蓝图…",
+      "sections": {
+        "projectSummary": "项目概述",
+        "pageStructure": "推荐页面架构",
+        "featureModules": "建议功能模块",
+        "designDirection": "设计方向",
+        "techStack": "技术栈",
+        "seoKeywords": "SEO关键词建议",
+        "timeline": "预估交付周期",
+        "investment": "预估投入范围"
+      },
+      "cta": {
+        "title": "准备好将蓝图变为现实了吗？",
+        "subtitle": "我们的团队将审阅您的蓝图并在1个工作日内联系您。",
+        "primary": "预约免费通话",
+        "secondary": "下载PDF蓝图",
+        "restart": "重新开始"
+      }
+    }
+  },
   "blog": {
-    "label":    "行业洞察",
-    "title":    "行业洞察与资讯",
+    "label": "行业洞察",
+    "title": "行业洞察与资讯",
     "subtitle": "实战营销策略、设计趋势和行业见解",
     "readMore": "阅读文章",
-    "minRead":  "分钟阅读",
-    "by":       "作者",
+    "minRead": "分钟阅读",
+    "by": "作者",
     "published": "发布于",
     "categories": {
-      "all":       "全部",
+      "all": "全部",
       "webDesign": "网站设计",
-      "seo":       "SEO指南",
+      "seo": "SEO指南",
       "marketing": "数字营销",
-      "tech":      "技术趋势",
+      "tech": "技术趋势",
       "caseStudy": "案例解析"
     }
   },
@@ -413,25 +375,37 @@
     "vision": "成为品牌在全球技术与本地市场文化交汇处航行的领先桥梁。",
     "values": {
       "title": "核心价值观",
-      "quality":     { "title": "匠心品质", "desc": "我们尊重每一个像素，致力于打造符合品牌身份的高端质感。" },
-      "results":     { "title": "结果导向", "desc": "没有转化的设计只是艺术。我们为增长而建。" },
-      "partnership": { "title": "深度伙伴", "desc": "我们不仅是服务商，更是您的长期战略合作伙伴。" },
-      "innovation":  { "title": "技术前瞻", "desc": "从 Next.js 到数字孪生，我们利用未来的技术解决当下的问题。" }
+      "quality": {
+        "title": "匠心品质",
+        "desc": "我们尊重每一个像素，致力于打造符合品牌身份的高端质感。"
+      },
+      "results": {
+        "title": "结果导向",
+        "desc": "没有转化的设计只是艺术。我们为增长而建。"
+      },
+      "partnership": {
+        "title": "深度伙伴",
+        "desc": "我们不仅是服务商，更是您的长期战略合作伙伴。"
+      },
+      "innovation": {
+        "title": "技术前瞻",
+        "desc": "从 Next.js 到数字孪生，我们利用未来的技术解决当下的问题。"
+      }
     },
     "team": {
-      "title":    "专家团队",
+      "title": "专家团队",
       "subtitle": "设计师、开发人员和战略家同步协作，将您的愿景变为现实。"
     },
     "stats": {
       "title": "里程碑",
-      "clients":      "服务伙伴",
-      "projects":     "上线项目",
+      "clients": "服务伙伴",
+      "projects": "上线项目",
       "satisfaction": "客户留存率",
-      "years":        "深耕纽约"
+      "years": "深耕纽约"
     },
     "cta": {
-      "title":   "准备好开启数字化增长了吗？",
-      "button":  "立即咨询"
+      "title": "准备好开启数字化增长了吗？",
+      "button": "立即咨询"
     },
     "why": {
       "label": "核心优势",
@@ -448,57 +422,57 @@
     }
   },
   "contact": {
-    "label":    "联系我们",
-    "title":    "共建您的数字未来",
+    "label": "联系我们",
+    "title": "共建您的数字未来",
     "subtitle": "预约 30 分钟免费策略通话，讨论您的目标并获取定制路线图。",
     "form": {
-      "name":           "您的姓名",
-      "email":          "企业邮箱",
-      "phone":          "联系电话",
-      "company":        "公司名称/网址",
-      "service":        "意向服务",
-      "message":        "项目详情",
-      "namePlaceholder":    "我们该如何称呼您？",
-      "emailPlaceholder":   "hello@company.com",
-      "phonePlaceholder":   "+1 (xxx) xxx-xxxx",
+      "name": "您的姓名",
+      "email": "企业邮箱",
+      "phone": "联系电话",
+      "company": "公司名称/网址",
+      "service": "意向服务",
+      "message": "项目详情",
+      "namePlaceholder": "我们该如何称呼您？",
+      "emailPlaceholder": "hello@company.com",
+      "phonePlaceholder": "+1 (xxx) xxx-xxxx",
       "companyPlaceholder": "您的公司或网址",
       "messagePlaceholder": "请描述您的目标、时间表及目前面临的挑战…",
       "serviceOptions": {
-        "webDesign":    "网站设计与开发",
-        "appDev":       "APP 与小程序开发",
-        "brandDesign":  "品牌视觉设计",
+        "webDesign": "网站设计与开发",
+        "appDev": "APP 与小程序开发",
+        "brandDesign": "品牌视觉设计",
         "seoMarketing": "本地 SEO 与数字营销",
         "consultation": "战略咨询",
-        "other":        "其他"
+        "other": "其他"
       },
-      "required":  "此字段为必填项",
-      "submit":    "预约咨询",
-      "sending":   "发送中…",
-      "success":   "收到您的消息！我们的团队将在 24 小时内与您联系。",
-      "error":     "发送失败。请重试或直接通过邮件联系我们。"
+      "required": "此字段为必填项",
+      "submit": "预约咨询",
+      "sending": "发送中…",
+      "success": "收到您的消息！我们的团队将在 24 小时内与您联系。",
+      "error": "发送失败。请重试或直接通过邮件联系我们。"
     },
     "info": {
-      "address":    "纽约办公室",
+      "address": "纽约办公室",
       "addressVal": "New York, NY",
-      "phone":      "拨打电话",
-      "email":      "发送邮件",
-      "hours":      "办公时间",
-      "hoursVal":   "周一至周五  9:00 AM – 6:00 PM EST"
+      "phone": "拨打电话",
+      "email": "发送邮件",
+      "hours": "办公时间",
+      "hoursVal": "周一至周五  9:00 AM – 6:00 PM EST"
     },
     "freeConsult": {
-      "title":  "免费策略会议",
-      "desc":   "获取对您当前数字化现状的专业分析，以及明确的提升计划。",
+      "title": "免费策略会议",
+      "desc": "获取对您当前数字化现状的专业分析，以及明确的提升计划。",
       "button": "预约免费通话"
     }
   },
   "footer": {
-    "tagline":      "打造真正驱动业务增长的数字形象。",
-    "quickLinks":   "快速链接",
+    "tagline": "打造真正驱动业务增长的数字形象。",
+    "quickLinks": "快速链接",
     "coreServices": "核心服务",
-    "contact":      "联系方式",
-    "rights":       "版权所有。",
-    "privacy":      "隐私政策",
-    "terms":        "服务条款"
+    "contact": "联系方式",
+    "rights": "版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   },
   "privacy": {
     "title": "隐私政策",

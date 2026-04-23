@@ -57,10 +57,22 @@
       "label": "Servicios principales",
       "title": "Nuestros servicios principales",
       "subtitle": "Soluciones digitales integrales adaptadas a su crecimiento",
-      "webDesign":    { "title": "Diseño y Desarrollo Web", "desc": "Sitios de marca, e-commerce, sitios bilingües — creados para convertir." },
-      "appDev":       { "title": "Apps y Mini-Programas",   "desc": "Mini-programas de WeChat, páginas H5, aplicaciones móviles nativas." },
-      "brandDesign":  { "title": "Diseño Visual de Marca",      "desc": "Logo, sistema VI, folletos, empaques — identidad de marca cohesiva." },
-      "seoMarketing": { "title": "SEO y Marketing Digital",  "desc": "Google SEO, SEO local, optimización de búsqueda GEO/IA." }
+      "webDesign": {
+        "title": "Diseño y Desarrollo Web",
+        "desc": "Sitios de marca, e-commerce, sitios bilingües — creados para convertir."
+      },
+      "appDev": {
+        "title": "Apps y Mini-Programas",
+        "desc": "Mini-programas de WeChat, páginas H5, aplicaciones móviles nativas."
+      },
+      "brandDesign": {
+        "title": "Diseño Visual de Marca",
+        "desc": "Logo, sistema VI, folletos, empaques — identidad de marca cohesiva."
+      },
+      "seoMarketing": {
+        "title": "SEO y Marketing Digital",
+        "desc": "Google SEO, SEO local, optimización de búsqueda GEO/IA."
+      }
     },
     "portfolio": {
       "label": "Trabajo reciente",
@@ -68,33 +80,45 @@
       "subtitle": "Proyectos reales. Resultados reales.",
       "viewAll": "Ver todos los proyectos",
       "ctaTitle": "Su proyecto podría ser el siguiente",
-      "ctaDesc":  "Cada negocio es único. Construyamos algo a su medida.",
-      "ctaBtn":   "Iniciar un proyecto"
+      "ctaDesc": "Cada negocio es único. Construyamos algo a su medida.",
+      "ctaBtn": "Iniciar un proyecto"
     },
     "process": {
       "label": "Nuestro proceso",
       "title": "Cómo trabajamos",
       "subtitle": "Desde la primera llamada hasta el lanzamiento — un proceso claro y probado",
-      "step1": { "title": "Descubrimiento",    "desc": "Analizamos su mercado, competidores y objetivos." },
-      "step2": { "title": "Diseño",       "desc": "Wireframes, maquetas y visuales alineados con la marca." },
-      "step3": { "title": "Desarrollo",      "desc": "Código limpio, alto rendimiento, primero el móvil." },
-      "step4": { "title": "Lanzamiento y Crecimiento","desc": "Despliegue, monitoreo y optimización continua." }
+      "step1": {
+        "title": "Descubrimiento",
+        "desc": "Analizamos su mercado, competidores y objetivos."
+      },
+      "step2": {
+        "title": "Diseño",
+        "desc": "Wireframes, maquetas y visuales alineados con la marca."
+      },
+      "step3": {
+        "title": "Desarrollo",
+        "desc": "Código limpio, alto rendimiento, primero el móvil."
+      },
+      "step4": {
+        "title": "Lanzamiento y Crecimiento",
+        "desc": "Despliegue, monitoreo y optimización continua."
+      }
     },
     "cta": {
-      "label":    "Consulta gratuita",
-      "title":    "¿Listo para construir algo grande?",
+      "label": "Consulta gratuita",
+      "title": "¿Listo para construir algo grande?",
       "subtitle": "Reserve una consulta gratuita de 30 minutos. Sin compromiso.",
-      "button":   "Programar llamada",
-      "phone":    "O llámenos directamente"
+      "button": "Programar llamada",
+      "phone": "O llámenos directamente"
     }
   },
   "services": {
-    "label":    "Lo que hacemos",
-    "title":    "Nuestros servicios",
+    "label": "Lo que hacemos",
+    "title": "Nuestros servicios",
     "subtitle": "Seis pilares de excelencia digital — elija lo que su negocio necesita",
     "webDesign": {
       "title": "Diseño y Desarrollo Web",
-      "desc":  "Desde sitios corporativos hasta e-commerce, creamos sitios web profesionales de alta conversión.",
+      "desc": "Desde sitios corporativos hasta e-commerce, creamos sitios web profesionales de alta conversión.",
       "items": [
         "Diseño de sitios web de marca corporativa",
         "E-commerce y tiendas independientes",
@@ -108,7 +132,7 @@
     },
     "appDev": {
       "title": "Apps y Mini-Programas",
-      "desc":  "Experiencias digitales móviles para usuarios modernos.",
+      "desc": "Experiencias digitales móviles para usuarios modernos.",
       "items": [
         "Desarrollo de mini-programas de WeChat",
         "Páginas web móviles H5",
@@ -120,7 +144,7 @@
     },
     "brandDesign": {
       "title": "Diseño Visual de Marca",
-      "desc":  "Identidad de marca cohesiva desde el concepto hasta la entrega.",
+      "desc": "Identidad de marca cohesiva desde el concepto hasta la entrega.",
       "items": [
         "Diseño de logo y marca",
         "Sistema VI (Identidad Visual)",
@@ -132,7 +156,7 @@
     },
     "seoMarketing": {
       "title": "SEO y Marketing Digital",
-      "desc":  "Posicione mejor, llegue más lejos — crezca orgánicamente.",
+      "desc": "Posicione mejor, llegue más lejos — crezca orgánicamente.",
       "items": [
         "SEO en buscadores de Google",
         "SEO local y ranking en Google Maps",
@@ -164,7 +188,8 @@
       "retail": "Venta al por menor",
       "healthcare": "Salud",
       "realEstate": "Bienes raíces",
-      "education": "Educación"
+      "education": "Educación",
+      "other": "Otros sectores"
     },
     "challenge": "El Desafío",
     "solution": "Nuestra Solución",
@@ -186,14 +211,51 @@
     "mission": "Empoderar a empresas ambiciosas con soluciones digitales que no solo sean hermosas, sino también medibles y escalables.",
     "values": {
       "title": "Nuestros valores principales",
-      "quality":     { "title": "Calidad de precisión",  "desc": "Tratamos cada píxel con el respeto que su marca merece." },
-      "results":     { "title": "Obsesionados con los resultados", "desc": "El diseño sin conversión es solo arte. Construimos para el crecimiento." },
-      "partnership": { "title": "Transparencia radical", "desc": "Trabajamos como su socio a largo plazo, no solo como un proveedor ocasional." },
-      "innovation":  { "title": "Tecnología avanzada",       "desc": "Desde Next.js hasta Gemelo Digital, aprovechamos lo mejor del mañana." }
+      "quality": {
+        "title": "Calidad de precisión",
+        "desc": "Tratamos cada píxel con el respeto que su marca merece."
+      },
+      "results": {
+        "title": "Obsesionados con los resultados",
+        "desc": "El diseño sin conversión es solo arte. Construimos para el crecimiento."
+      },
+      "partnership": {
+        "title": "Transparencia radical",
+        "desc": "Trabajamos como su socio a largo plazo, no solo como un proveedor ocasional."
+      },
+      "innovation": {
+        "title": "Tecnología avanzada",
+        "desc": "Desde Next.js hasta Gemelo Digital, aprovechamos lo mejor del mañana."
+      }
     },
     "cta": {
       "title": "¿Listo para alcanzar su ápice empresarial?",
       "button": "Conectemos"
+    },
+    "vision": "Ser el puente líder para marcas que navegan la intersección del tech global y la cultura de mercado local.",
+    "team": {
+      "title": "Conozca a nuestros expertos",
+      "subtitle": "Diseñadores, desarrolladores y estrategas trabajando en sincronía."
+    },
+    "stats": {
+      "title": "Hitos de la agencia",
+      "clients": "Socios atendidos",
+      "projects": "Proyectos lanzados",
+      "satisfaction": "Tasa de retención",
+      "years": "Años en NYC"
+    },
+    "why": {
+      "label": "La ventaja Apex",
+      "title": "Por qué las marcas globales nos eligen",
+      "visualSubtitle": "Nueva York · Bilingüe · Orientado a resultados",
+      "items": [
+        "Equipo bilingüe nativo",
+        "Experiencia en SEO local NYC",
+        "Excelencia en rendimiento",
+        "Flujos de trabajo con IA",
+        "Capacidad Full-Stack",
+        "Soporte personalizado"
+      ]
     }
   },
   "contact": {
@@ -210,13 +272,34 @@
       "submit": "Solicitar consulta",
       "sending": "Enviando...",
       "success": "¡Mensaje recibido! Nuestro equipo se pondrá en contacto en 24 horas.",
-      "error": "Error al enviar. Por favor intente de nuevo."
+      "error": "Error al enviar. Por favor intente de nuevo.",
+      "namePlaceholder": "¿Cómo debemos llamarle?",
+      "emailPlaceholder": "hola@empresa.com",
+      "phonePlaceholder": "+1 (xxx) xxx-xxxx",
+      "companyPlaceholder": "Su sitio web o empresa",
+      "messagePlaceholder": "Cuéntenos sobre sus objetivos, plazos y desafíos actuales…",
+      "serviceOptions": {
+        "webDesign": "Diseño y Desarrollo Web",
+        "appDev": "Desarrollo de Apps",
+        "brandDesign": "Identidad Visual de Marca",
+        "seoMarketing": "SEO Local y Marketing Digital",
+        "consultation": "Consultoría Estratégica",
+        "other": "Otro"
+      },
+      "required": "Este campo es obligatorio"
     },
     "info": {
       "address": "Oficina en NYC",
       "phone": "Llámenos",
       "email": "Escríbanos",
-      "hours": "Horario"
+      "hours": "Horario",
+      "addressVal": "New York, NY",
+      "hoursVal": "Lun–Vie 9:00 AM – 6:00 PM EST"
+    },
+    "freeConsult": {
+      "title": "Sesión de Estrategia Gratuita",
+      "desc": "Obtenga un análisis profesional de su presencia digital actual.",
+      "button": "Reservar mi llamada gratuita"
     }
   },
   "footer": {
@@ -308,7 +391,6 @@
           "booking": "Reservas en Línea",
           "ecommerce": "Comercio Electrónico / Carrito",
           "blog": "Blog / Noticias",
-          "multilingual": "Soporte Multilingüe",
           "aiChat": "Chat de IA / Asistente",
           "memberLogin": "Área de Inicio de Sesión de Miembros",
           "video": "Integración de Video",
@@ -384,5 +466,68 @@
         "restart": "Empezar de Nuevo"
       }
     }
+  },
+  "blog": {
+    "label": "Perspectivas",
+    "title": "Perspectivas y Recursos",
+    "subtitle": "Estrategias de marketing, tendencias de diseño e insights del sector",
+    "readMore": "Leer artículo",
+    "minRead": "min lectura",
+    "by": "Por",
+    "published": "Publicado",
+    "categories": {
+      "all": "Todo",
+      "webDesign": "Diseño Web",
+      "seo": "Guía SEO",
+      "marketing": "Marketing",
+      "tech": "Tendencias Tech",
+      "caseStudy": "Caso de Éxito"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Mayo 2025",
+    "intro": "En Apex Zone, nos tomamos en serio la privacidad de sus datos.",
+    "sections": [
+      {
+        "title": "1. Recopilación de datos",
+        "content": "Recopilamos información proporcionada voluntariamente a través de nuestros formularios de contacto."
+      },
+      {
+        "title": "2. Propósito del procesamiento",
+        "content": "Sus datos se utilizan principalmente para ofrecer soluciones digitales personalizadas."
+      },
+      {
+        "title": "3. Seguridad y cumplimiento",
+        "content": "Implementamos medidas de seguridad administrativas y técnicas robustas."
+      },
+      {
+        "title": "4. Transferencias internacionales",
+        "content": "Como agencia global con sede en Nueva York, sus datos pueden procesarse en EE.UU."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: Mayo 2025",
+    "intro": "Al utilizar el sitio web o los servicios de Apex Zone, acepta estos términos.",
+    "sections": [
+      {
+        "title": "1. Alcance de los servicios",
+        "content": "Apex Zone ofrece diseño web premium, desarrollo full-stack y servicios de marketing SEO."
+      },
+      {
+        "title": "2. Propiedad intelectual",
+        "content": "Todos los trabajos creativos y diseños permanecen como propiedad de la agencia hasta el pago completo."
+      },
+      {
+        "title": "3. Responsabilidad profesional",
+        "content": "Apex Zone no es responsable de pérdidas indirectas o cambios en plataformas de terceros."
+      },
+      {
+        "title": "4. Jurisdicción",
+        "content": "Estos términos se rigen por las leyes del Estado de Nueva York."
+      }
+    ]
   }
 }

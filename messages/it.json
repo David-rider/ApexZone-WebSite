@@ -57,10 +57,22 @@
       "label": "Servizi principali",
       "title": "I nostri servizi principali",
       "subtitle": "Soluzioni digitali complete su misura per la tua crescita",
-      "webDesign":    { "title": "Design e Sviluppo Web", "desc": "Siti di brand, e-commerce, siti bilingue — costruiti per convertire." },
-      "appDev":       { "title": "App e Mini-Programmi",   "desc": "Mini-programmi WeChat, pagine H5, app mobili native." },
-      "brandDesign":  { "title": "Design Visuale del Brand",      "desc": "Logo, sistema VI, brochure, packaging — identità di brand coesa." },
-      "seoMarketing": { "title": "SEO e Marketing Digitale",  "desc": "Google SEO, SEO locale, ottimizzazione ricerca GEO/AI." }
+      "webDesign": {
+        "title": "Design e Sviluppo Web",
+        "desc": "Siti di brand, e-commerce, siti bilingue — costruiti per convertire."
+      },
+      "appDev": {
+        "title": "App e Mini-Programmi",
+        "desc": "Mini-programmi WeChat, pagine H5, app mobili native."
+      },
+      "brandDesign": {
+        "title": "Design Visuale del Brand",
+        "desc": "Logo, sistema VI, brochure, packaging — identità di brand coesa."
+      },
+      "seoMarketing": {
+        "title": "SEO e Marketing Digitale",
+        "desc": "Google SEO, SEO locale, ottimizzazione ricerca GEO/AI."
+      }
     },
     "portfolio": {
       "label": "Lavori recenti",
@@ -68,33 +80,45 @@
       "subtitle": "Progetti reali. Risultati reali.",
       "viewAll": "Vedi tutti i progetti",
       "ctaTitle": "Il tuo progetto potrebbe essere il prossimo",
-      "ctaDesc":  "Ogni business è unico. Costruiamo qualcosa su misura per te.",
-      "ctaBtn":   "Inizia un progetto"
+      "ctaDesc": "Ogni business è unico. Costruiamo qualcosa su misura per te.",
+      "ctaBtn": "Inizia un progetto"
     },
     "process": {
       "label": "Il nostro processo",
       "title": "Come lavoriamo",
       "subtitle": "Dalla prima chiamata al lancio — un processo chiaro e collaudato",
-      "step1": { "title": "Scoperta",    "desc": "Analizziamo il tuo mercato, i competitor e gli obiettivi." },
-      "step2": { "title": "Design",       "desc": "Wireframe, mockup e visual allineati al brand." },
-      "step3": { "title": "Sviluppo",      "desc": "Codice pulito, alte prestazioni, mobile-first." },
-      "step4": { "title": "Lancio e Crescita","desc": "Distribuzione, monitoraggio e ottimizzazione continua." }
+      "step1": {
+        "title": "Scoperta",
+        "desc": "Analizziamo il tuo mercato, i competitor e gli obiettivi."
+      },
+      "step2": {
+        "title": "Design",
+        "desc": "Wireframe, mockup e visual allineati al brand."
+      },
+      "step3": {
+        "title": "Sviluppo",
+        "desc": "Codice pulito, alte prestazioni, mobile-first."
+      },
+      "step4": {
+        "title": "Lancio e Crescita",
+        "desc": "Distribuzione, monitoraggio e ottimizzazione continua."
+      }
     },
     "cta": {
-      "label":    "Consulenza gratuita",
-      "title":    "Pronto a costruire qualcosa di grande?",
+      "label": "Consulenza gratuita",
+      "title": "Pronto a costruire qualcosa di grande?",
       "subtitle": "Prenota una consulenza gratuita di 30 minuti. Senza impegno.",
-      "button":   "Prenota una chiamata",
-      "phone":    "O chiamaci direttamente"
+      "button": "Prenota una chiamata",
+      "phone": "O chiamaci direttamente"
     }
   },
   "services": {
-    "label":    "Cosa facciamo",
-    "title":    "I nostri servizi",
+    "label": "Cosa facciamo",
+    "title": "I nostri servizi",
     "subtitle": "Sei pilastri di eccellenza digitale — scegli ciò di cui il tuo business ha bisogno",
     "webDesign": {
       "title": "Design e Sviluppo Web",
-      "desc":  "Dai siti aziendali all'e-commerce, creiamo siti web professionali ad alta conversione.",
+      "desc": "Dai siti aziendali all'e-commerce, creiamo siti web professionali ad alta conversione.",
       "items": [
         "Design siti web aziendali",
         "E-commerce e store indipendenti",
@@ -108,7 +132,7 @@
     },
     "appDev": {
       "title": "App e Mini-Programmi",
-      "desc":  "Esperienze digitali mobili per utenti moderni.",
+      "desc": "Esperienze digitali mobili per utenti moderni.",
       "items": [
         "Sviluppo mini-programmi WeChat",
         "Pagine web mobili H5",
@@ -120,7 +144,7 @@
     },
     "brandDesign": {
       "title": "Design Visuale del Brand",
-      "desc":  "Identità di brand coesa dal concept alla consegna.",
+      "desc": "Identità di brand coesa dal concept alla consegna.",
       "items": [
         "Design logo e brand mark",
         "Sistema VI (Visual Identity)",
@@ -132,7 +156,7 @@
     },
     "seoMarketing": {
       "title": "SEO e Marketing Digitale",
-      "desc":  "Posizionati più in alto, raggiungi di più — cresci organicamente.",
+      "desc": "Posizionati più in alto, raggiungi di più — cresci organicamente.",
       "items": [
         "SEO per Ricerca Google",
         "SEO Locale e ranking Google Maps",
@@ -164,7 +188,8 @@
       "retail": "Retail e Moda",
       "healthcare": "Sanità",
       "realEstate": "Immobiliare",
-      "education": "Istruzione"
+      "education": "Istruzione",
+      "other": "Altri settori"
     },
     "challenge": "La Sfida",
     "solution": "La Soluzione",
@@ -186,14 +211,51 @@
     "mission": "Potenziare le aziende ambiziose con soluzioni digitali belle, misurabili e scalabili.",
     "values": {
       "title": "I nostri valori",
-      "quality":     { "title": "Qualità di precisione",  "desc": "Trattiamo ogni pixel con il rispetto che il tuo brand merita." },
-      "results":     { "title": "Focalizzati sui risultati", "desc": "Il design senza conversione è solo arte. Costruiamo per la crescita." },
-      "partnership": { "title": "Trasparenza radicale", "desc": "Lavoriamo come partner a lungo termine, non solo come fornitori." },
-      "innovation":  { "title": "All'avanguardia",       "desc": "Da Next.js a Digital Twin, sfruttiamo il meglio del domani." }
+      "quality": {
+        "title": "Qualità di precisione",
+        "desc": "Trattiamo ogni pixel con il rispetto che il tuo brand merita."
+      },
+      "results": {
+        "title": "Focalizzati sui risultati",
+        "desc": "Il design senza conversione è solo arte. Costruiamo per la crescita."
+      },
+      "partnership": {
+        "title": "Trasparenza radicale",
+        "desc": "Lavoriamo come partner a lungo termine, non solo come fornitori."
+      },
+      "innovation": {
+        "title": "All'avanguardia",
+        "desc": "Da Next.js a Digital Twin, sfruttiamo il meglio del domani."
+      }
     },
     "cta": {
       "title": "Pronto a raggiungere l'apice del tuo business?",
       "button": "Contattaci"
+    },
+    "vision": "Essere il ponte leader per i brand che navigano l'intersezione tra tecnologia globale e cultura di mercato locale.",
+    "team": {
+      "title": "Incontra i nostri esperti",
+      "subtitle": "Designer, sviluppatori e strateghi che lavorano in sincronia."
+    },
+    "stats": {
+      "title": "Traguardi dell'agenzia",
+      "clients": "Partner serviti",
+      "projects": "Progetti lanciati",
+      "satisfaction": "Tasso di fidelizzazione",
+      "years": "Anni a NYC"
+    },
+    "why": {
+      "label": "Il vantaggio Apex",
+      "title": "Perché i brand globali ci scelgono",
+      "visualSubtitle": "New York · Bilingue · Orientato ai risultati",
+      "items": [
+        "Team bilingue nativo",
+        "Esperienza SEO locale NYC",
+        "Eccellenza nelle prestazioni",
+        "Workflow con IA",
+        "Capacità Full-Stack",
+        "Supporto personalizzato"
+      ]
     }
   },
   "contact": {
@@ -210,13 +272,34 @@
       "submit": "Richiedi consulenza",
       "sending": "Invio in corso...",
       "success": "Messaggio ricevuto! Ti ricontatteremo entro 24 ore.",
-      "error": "Errore nell'invio. Riprova o scrivici direttamente via email."
+      "error": "Errore nell'invio. Riprova o scrivici direttamente via email.",
+      "namePlaceholder": "Come ti chiami?",
+      "emailPlaceholder": "ciao@azienda.com",
+      "phonePlaceholder": "+39 (xxx) xxx-xxxx",
+      "companyPlaceholder": "Il tuo sito web o azienda",
+      "messagePlaceholder": "Parlaci dei tuoi obiettivi, tempistiche e sfide attuali…",
+      "serviceOptions": {
+        "webDesign": "Design e Sviluppo Web",
+        "appDev": "Sviluppo App",
+        "brandDesign": "Identità Visiva del Brand",
+        "seoMarketing": "SEO Locale e Marketing Digitale",
+        "consultation": "Consulenza Strategica",
+        "other": "Altro"
+      },
+      "required": "Questo campo è obbligatorio"
     },
     "info": {
       "address": "Ufficio NYC",
       "phone": "Chiamaci",
       "email": "Scrivici",
-      "hours": "Orari ufficio"
+      "hours": "Orari ufficio",
+      "addressVal": "New York, NY",
+      "hoursVal": "Lun–Ven 9:00 – 18:00 EST"
+    },
+    "freeConsult": {
+      "title": "Sessione Strategica Gratuita",
+      "desc": "Ottieni un'analisi professionale della tua presenza digitale attuale.",
+      "button": "Prenota la mia chiamata gratuita"
     }
   },
   "footer": {
@@ -308,7 +391,6 @@
           "booking": "Prenotazione Online",
           "ecommerce": "E-commerce / Carrello",
           "blog": "Blog / News",
-          "multilingual": "Supporto Multilingua",
           "aiChat": "Chat AI / Assistente",
           "memberLogin": "Area Accesso Membri",
           "video": "Integrazione Video",
@@ -384,5 +466,68 @@
         "restart": "Ricomincia"
       }
     }
+  },
+  "blog": {
+    "label": "Approfondimenti",
+    "title": "Approfondimenti e Risorse",
+    "subtitle": "Strategie di marketing, tendenze di design e approfondimenti di settore",
+    "readMore": "Leggi articolo",
+    "minRead": "min lettura",
+    "by": "Di",
+    "published": "Pubblicato",
+    "categories": {
+      "all": "Tutto",
+      "webDesign": "Web Design",
+      "seo": "Guida SEO",
+      "marketing": "Marketing",
+      "tech": "Tendenze Tech",
+      "caseStudy": "Caso Studio"
+    }
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: Maggio 2025",
+    "intro": "In Apex Zone, prendiamo sul serio la privacy dei tuoi dati.",
+    "sections": [
+      {
+        "title": "1. Raccolta dati",
+        "content": "Raccogliamo informazioni fornite volontariamente attraverso i nostri moduli di contatto."
+      },
+      {
+        "title": "2. Finalità del trattamento",
+        "content": "I tuoi dati sono utilizzati principalmente per fornire soluzioni digitali personalizzate."
+      },
+      {
+        "title": "3. Sicurezza e conformità",
+        "content": "Implementiamo misure di sicurezza amministrative e tecniche robuste."
+      },
+      {
+        "title": "4. Trasferimenti internazionali",
+        "content": "Come agenzia globale con sede a New York, i tuoi dati potrebbero essere elaborati negli USA."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Termini di Servizio",
+    "lastUpdated": "Ultimo aggiornamento: Maggio 2025",
+    "intro": "Utilizzando il sito web o i servizi di Apex Zone, accetti questi termini.",
+    "sections": [
+      {
+        "title": "1. Ambito dei servizi",
+        "content": "Apex Zone offre design web premium, sviluppo full-stack e servizi di marketing SEO."
+      },
+      {
+        "title": "2. Proprietà intellettuale",
+        "content": "Tutti i lavori creativi e i design rimangono proprietà dell'agenzia fino al pagamento completo."
+      },
+      {
+        "title": "3. Responsabilità professionale",
+        "content": "Apex Zone non è responsabile per perdite indirette o modifiche di piattaforme terze."
+      },
+      {
+        "title": "4. Giurisdizione",
+        "content": "Questi termini sono regolati dalle leggi dello Stato di New York."
+      }
+    ]
   }
 }
