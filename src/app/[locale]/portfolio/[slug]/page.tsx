@@ -103,7 +103,7 @@ export default async function CaseStudyPage({ params }: Props) {
             {/* Main */}
             <div className={styles.main}>
               <div className={styles.tags}>
-                {tags.map(tag => <span key={tag} className="badge badge-sage">{tag}</span>)}
+                {tags.map((tag: string) => <span key={tag} className="badge badge-sage">{tag}</span>)}
               </div>
               <h1 className="md-display-small">{title}</h1>
               <p className="md-body-large">{description}</p>
@@ -123,7 +123,7 @@ export default async function CaseStudyPage({ params }: Props) {
               <div className={styles.results}>
                 <h2 className="md-headline-small">{labels.results}</h2>
                 <div className={styles.resultsGrid}>
-                  {results.map((r, i) => (
+                  {results.map((r: string, i: number) => (
                     <div key={i} className={styles.resultCard}>
                       <span className={styles.resultIcon}>✅</span>
                       <span className="md-body-medium">{r}</span>

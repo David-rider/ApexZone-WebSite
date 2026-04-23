@@ -69,11 +69,11 @@ export default async function LocaleLayout({
           <link
             key={l}
             rel="alternate"
-            hreflang={l === 'zh' ? 'zh-Hans' : l}
+            hrefLang={l === 'zh' ? 'zh-Hans' : l}
             href={`${baseUrl}/${l}`}
           />
         ))}
-        <link rel="alternate" hreflang="x-default" href={`${baseUrl}/en`} />
+        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en`} />
         
         <script
           type="application/ld+json"
