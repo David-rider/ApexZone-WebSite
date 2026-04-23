@@ -9,7 +9,6 @@ const OPTIONS = [
   { key: 'booking',      icon: '📅' },
   { key: 'ecommerce',    icon: '🛒' },
   { key: 'blog',         icon: '📰' },
-  { key: 'multilingual', icon: '🌐' },
   { key: 'aiChat',       icon: '🤖' },
   { key: 'memberLogin',  icon: '🔐' },
   { key: 'video',        icon: '🎥' },

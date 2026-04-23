@@ -117,7 +117,7 @@ export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): 
 
   // Tech stack
   const tech = TECH_STACKS[projectType] ?? TECH_STACKS.corporate;
-  if (features.includes('multilingual')) tech.push('next-intl');
+  if (audience.includes('multilingual')) tech.push('next-intl');
   if (features.includes('aiChat')) tech.push('Google Gemini API');
   if (features.includes('ecommerce')) tech.push('Stripe');
 

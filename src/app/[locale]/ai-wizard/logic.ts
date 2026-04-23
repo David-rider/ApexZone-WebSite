@@ -16,9 +16,9 @@ export const INDUSTRY_RECOMMENDATIONS: Record<string, Recommendation> = {
     reasonZh: "零售核心：通过电商模块与 AI 助手实现 24/7 销售。",
   },
   tech: {
-    features: ['aiChat', 'multilingual', 'seo'],
+    features: ['aiChat', 'seo'],
     reasonEn: "Global readiness and scalable automated support.",
-    reasonZh: "出海与科技标配：多语言支持与 AI 客服是规模化关键。",
+    reasonZh: "出海与科技标配：通过 AI 客服与 SEO 策略实现规模化增长。",
   },
   healthcare: {
     features: ['booking', 'map', 'contactForm'],
