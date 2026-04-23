@@ -1,0 +1,122 @@
+.footer {
+  background: var(--ink-deep);
+  color: rgba(255,255,255,0.75);
+  padding-top: 72px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Brand col */
+.brand {}
+.tagline {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.55);
+  max-width: 280px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  transition: all var(--transition);
+}
+
+.social:hover {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: white;
+}
+
+/* Columns */
+.col {}
+.colTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 16px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  transition: color var(--transition);
+}
+
+.link:hover { color: var(--sage-light); }
+
+/* Contact */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.87rem;
+  line-height: 1.4;
+}
+
+.contactIcon {
+  color: var(--sage-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Bottom */
+.bottom {
+  padding: 20px 0;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.35);
+}
+
+.bottomLinks { display: flex; gap: 24px; }
+.bottomLink { color: rgba(255,255,255,0.35); transition: color var(--transition); }
+.bottomLink:hover { color: rgba(255,255,255,0.65); }
+
+@media (max-width: 1024px) {
+  .inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 640px) {
+  .inner { grid-template-columns: 1fr; gap: 32px; padding-bottom: 36px; }
+  .bottomInner { flex-direction: column; gap: 12px; text-align: center; }
+}

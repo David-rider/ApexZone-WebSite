@@ -1,0 +1,488 @@
+/* ================================================================
+   AI WIZARD PAGE — Apex Zone
+   ================================================================ */
+
+/* Page wrapper */
+.page {
+  min-height: 100vh;
+  background: var(--md-sys-color-surface);
+}
+
+/* ─── Header section ──────────────────────────────────────────── */
+.header {
+  position: relative;
+  padding: 80px 0 60px;
+  background: linear-gradient(
+    160deg,
+    var(--md-sys-color-surface) 0%,
+    var(--md-sys-color-primary-container) 55%,
+    var(--md-sys-color-secondary-container) 100%
+  );
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.headerDeco {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(58, 125, 92, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 196, 0.10) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headerBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: var(--md-sys-typescale-label-medium-size);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.headerSubtitle {
+  color: var(--md-sys-color-on-surface-variant);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ─── Wizard card ─────────────────────────────────────────────── */
+.wizardCard {
+  max-width: 760px;
+  margin: -24px auto 60px;
+  background: var(--md-sys-color-surface-container-lowest);
+  border-radius: var(--md-sys-shape-corner-extra-large);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  overflow: hidden;
+  min-height: 560px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ─── Wizard body ─────────────────────────────────────────────── */
+.wizardBody {
+  padding: 40px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 640px) {
+  .wizardBody { padding: 24px 20px; }
+  .header { padding: 60px 0 50px; }
+}
+
+/* ─── Progress ────────────────────────────────────────────────── */
+.progress {
+  margin-bottom: 32px;
+}
+
+.progressTrack {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.progressDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  transition: all var(--transition);
+  line-height: 1;
+}
+
+.progressDotActive {
+  border-color: var(--md-sys-color-primary);
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  box-shadow: 0 0 0 4px rgba(58, 125, 92, 0.15);
+  transform: scale(1.15);
+}
+
+.progressDotDone {
+  border-color: var(--md-sys-color-primary);
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-primary);
+  cursor: pointer;
+}
+
+.progressDotDone:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.progressBar {
+  height: 3px;
+  background: var(--md-sys-color-surface-container-high);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--md-sys-color-primary), var(--sky));
+  border-radius: 2px;
+  transition: width 0.5s var(--md-motion-easing-emphasized-decel);
+}
+
+/* ─── Step header ─────────────────────────────────────────────── */
+.stepMeta {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.stepTitle {
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--md-sys-color-on-surface);
+}
+
+.stepHint {
+  text-align: center;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: var(--md-sys-typescale-body-medium-size);
+  margin-bottom: 28px;
+}
+
+/* ─── Step content ────────────────────────────────────────────── */
+.stepContent {
+  flex: 1;
+}
+
+/* ─── Option grids ────────────────────────────────────────────── */
+.optionGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.optionGrid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.optionGrid2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .optionGrid  { grid-template-columns: repeat(2, 1fr); }
+  .optionGrid3 { grid-template-columns: repeat(2, 1fr); }
+  .optionGrid2 { grid-template-columns: 1fr; }
+}
+
+/* ─── Recommendations ────────────────────────────────────────── */
+.recBanner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border-radius: var(--md-sys-shape-corner-medium);
+  margin-bottom: 24px;
+  font-size: var(--md-sys-typescale-body-medium-size);
+  border: 1px solid var(--md-sys-color-primary);
+  animation: slideDownFade 0.4s var(--md-motion-easing-emphasized-decel);
+}
+
+.recCard {
+  border-color: var(--md-sys-color-primary) !important;
+  background: var(--md-sys-color-surface-container-high) !important;
+}
+
+.recBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  padding: 2px 8px;
+  border-radius: var(--md-sys-shape-corner-full);
+  font-size: 0.65rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@keyframes slideDownFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Selection card overrides */
+.selectionCardLg {
+  padding: 24px 20px;
+  gap: 14px;
+}
+
+.optionSubLabel {
+  font-size: 0.75rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font-weight: 400;
+}
+
+/* Check mark overlay for multi-select */
+.checkMark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--md-sys-color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content progress bar */
+.contentBar {
+  width: 100%;
+  height: 4px;
+  background: var(--md-sys-color-surface-container-high);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.contentBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--md-sys-color-primary), var(--sky));
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* Contact form */
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contactForm > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.required { color: var(--md-sys-color-error); }
+
+@media (max-width: 560px) {
+  .contactForm { grid-template-columns: 1fr; }
+}
+
+/* ─── Navigation footer ───────────────────────────────────────── */
+.wizardNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* ─── Blueprint result ────────────────────────────────────────── */
+.blueprintHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.blueprintLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px 0;
+  min-height: 400px;
+  position: relative;
+}
+
+.aiPulse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--md-sys-color-primary-container) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulseScale 2s ease-in-out infinite;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.blueprintSpinner {
+  width: 64px;
+  height: 64px;
+  border: 4px solid var(--md-sys-color-primary-container);
+  border-top-color: var(--md-sys-color-primary);
+  border-radius: 50%;
+  animation: rotateSlow 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes pulseScale {
+  0%, 100% { transform: scale(0.8); opacity: 0.3; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.blueprint {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s var(--md-motion-easing-emphasized-decel),
+              transform 0.5s var(--md-motion-easing-emphasized-decel);
+}
+
+.blueprintVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blueprintSummary {
+  text-align: center;
+  padding: 24px;
+  background: var(--md-sys-color-primary-container);
+  border-radius: var(--md-sys-shape-corner-large);
+  margin-bottom: 24px;
+}
+
+.blueprintSummary p {
+  color: var(--md-sys-color-on-primary-container);
+  margin-top: 8px;
+  line-height: 1.65;
+}
+
+.blueprintCheckmark {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.blueprintTech {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--md-sys-color-surface-container-low);
+  border-radius: var(--md-sys-shape-corner-medium);
+  margin-bottom: 20px;
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.techChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.blueprintGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 560px) {
+  .blueprintGrid { grid-template-columns: 1fr; }
+}
+
+.blueprintCard {
+  padding: 18px 20px;
+  border-radius: var(--md-sys-shape-corner-medium);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container-low);
+}
+
+.blueprintCard_sage    { border-left: 3px solid var(--md-sys-color-primary); }
+.blueprintCard_sky     { border-left: 3px solid var(--sky); }
+.blueprintCard_blossom { border-left: 3px solid var(--blossom); }
+.blueprintCard_teal    { border-left: 3px solid var(--teal); }
+.blueprintCard_amber   { border-left: 3px solid var(--amber); }
+
+.blueprintCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--md-sys-color-primary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.blueprintList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blueprintList li {
+  color: var(--md-sys-color-on-surface);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.blueprintList li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--md-sys-color-primary);
+  font-weight: 700;
+}
+
+/* Blueprint CTA */
+.blueprintCta {
+  text-align: center;
+  padding: 32px;
+  background: var(--md-sys-color-inverse-surface);
+  border-radius: var(--md-sys-shape-corner-large);
+  color: var(--md-sys-color-inverse-on-surface);
+}
+
+.blueprintCta h3 { color: var(--md-sys-color-inverse-on-surface); margin-bottom: 8px; }
+.blueprintCta p  { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+
+.blueprintCtaActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,552 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "aiWizard": "Website AI Planning",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "freeConsult": "Free Consult",
+    "servicesDropdown": {
+      "webDesign": "Web Design & Development",
+      "appDev": "App & Mini-Program Dev",
+      "brandDesign": "Brand Visual Design",
+      "seoMarketing": "SEO & Digital Marketing"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "getQuote": "Get a Quote",
+    "startProject": "Start a Project",
+    "freeConsult": "Free Consultation",
+    "contactUs": "Contact Us",
+    "backToTop": "Back to Top",
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "readMore": "Read More",
+    "visitSite": "Visit Site",
+    "viewProject": "View Project",
+    "ourProcess": "Our Process",
+    "trustLabel": "Trusted by 50+ businesses"
+  },
+  "home": {
+    "hero": {
+      "badge": "Trusted by 50+ Businesses",
+      "title": "Websites That Drive Real Business Growth",
+      "subtitle": "From brand websites to AI-powered platforms, Apex Zone builds digital experiences that convert visitors into customers.",
+      "cta1": "View Our Work",
+      "cta2": "Free Consultation",
+      "liveOptimized": "Live & Optimized",
+      "organicTraffic": "Organic Traffic",
+      "lighthouseScore": "Lighthouse Score"
+    },
+    "stats": {
+      "clients": "Clients Served",
+      "years": "Years Experience",
+      "satisfaction": "Satisfaction Rate",
+      "industries": "Industries Covered"
+    },
+    "services": {
+      "label": "Core Services",
+      "title": "Our Core Services",
+      "subtitle": "End-to-end digital solutions tailored for your growth",
+      "webDesign":    { "title": "Web Design & Development", "desc": "Brand websites, e-commerce, multilingual sites — built to convert." },
+      "appDev":       { "title": "App & Mini-Program Dev",   "desc": "WeChat mini-programs, H5 pages, native mobile apps." },
+      "brandDesign":  { "title": "Brand Visual Design",      "desc": "Logo, VI system, brochures, packaging — cohesive brand identity." },
+      "seoMarketing": { "title": "SEO & Digital Marketing",  "desc": "Google SEO, Local SEO, GEO/AI search optimization." }
+    },
+    "portfolio": {
+      "label": "Recent Work",
+      "title": "Recent Work",
+      "subtitle": "Real projects. Real results.",
+      "viewAll": "View All Projects",
+      "ctaTitle": "Your Project Could Be Next",
+      "ctaDesc":  "Every business is unique. Let's build something tailored to yours.",
+      "ctaBtn":   "Start a Project"
+    },
+    "process": {
+      "label": "Our Process",
+      "title": "How We Work",
+      "subtitle": "From first call to launch — a clear, proven process",
+      "step1": { "title": "Discovery",    "desc": "We analyze your market, competitors, and goals." },
+      "step2": { "title": "Design",       "desc": "Wireframes, mockups, and brand-aligned visuals." },
+      "step3": { "title": "Develop",      "desc": "Clean code, fast performance, mobile-first." },
+      "step4": { "title": "Launch & Grow","desc": "Deploy, monitor, and optimize continuously." }
+    },
+    "cta": {
+      "label":    "Free Consultation",
+      "title":    "Ready to Build Something Great?",
+      "subtitle": "Book a free 30-minute consultation. No commitment required.",
+      "button":   "Schedule Free Call",
+      "phone":    "Or call us directly"
+    }
+  },
+  "services": {
+    "label":    "What We Do",
+    "title":    "Our Services",
+    "subtitle": "Six pillars of digital excellence — choose what your business needs",
+    "webDesign": {
+      "title": "Web Design & Development",
+      "desc":  "From corporate sites to e-commerce, we create high-converting professional websites.",
+      "items": [
+        "Corporate brand website design",
+        "E-commerce & independent store",
+        "Bilingual (English/Chinese) websites",
+        "Responsive & mobile-first design",
+        "Restaurant ordering websites",
+        "Online booking systems",
+        "WordPress & custom development",
+        "Site redesign & performance upgrade"
+      ]
+    },
+    "appDev": {
+      "title": "App & Mini-Program Development",
+      "desc":  "Mobile-first digital experiences for modern users.",
+      "items": [
+        "WeChat Mini-Program development",
+        "H5 mobile web pages",
+        "Native iOS & Android apps",
+        "E-commerce platform development",
+        "Industry portal websites",
+        "WeChat Official Account dev"
+      ]
+    },
+    "brandDesign": {
+      "title": "Brand Visual Design",
+      "desc":  "Cohesive brand identity from concept to delivery.",
+      "items": [
+        "Logo & brand mark design",
+        "VI system (Visual Identity)",
+        "Brochure & catalogue design",
+        "Packaging design",
+        "Advertising creative design",
+        "Brand guideline booklet"
+      ]
+    },
+    "seoMarketing": {
+      "title": "SEO & Digital Marketing",
+      "desc":  "Rank higher, reach more — grow organically.",
+      "items": [
+        "Google Search SEO",
+        "Local SEO & Google Maps ranking",
+        "GEO / AI Search Optimization",
+        "Google Ads management",
+        "Social media marketing",
+        "Content marketing strategy"
+      ]
+    }
+  },
+  "portfolio": {
+    "label":    "Our Work",
+    "title":    "Portfolio",
+    "subtitle": "Every project is built to convert — across industries and platforms",
+    "filters": {
+      "all":         "All Projects",
+      "brandSite":   "Brand Websites",
+      "platform":    "Enterprise Systems",
+      "app":         "Mobile Apps",
+      "brandDesign": "Visual Design",
+      "ecommerce":   "E-Commerce",
+      "miniProgram": "Mini Programs"
+    },
+    "industries": {
+      "all":         "All Industries",
+      "finance":     "Finance & Legal",
+      "tech":        "Tech & AI",
+      "retail":      "Retail & Fashion",
+      "healthcare":  "Healthcare",
+      "realEstate":  "Real Estate",
+      "education":   "Education"
+    },
+    "challenge":   "The Challenge",
+    "solution":    "Our Solution",
+    "results":     "Results",
+    "techStack":   "Tech Stack",
+    "viewProject": "View Project",
+    "visitSite":   "Visit Site",
+    "backToList":  "Back to Portfolio",
+    "nextProject": "Next Project",
+    "prevProject": "Previous Project",
+    "clientLabel": "Client",
+    "yearLabel":   "Year",
+    "industryLabel":"Industry",
+    "serviceType": "Service Type",
+    "searchPlaceholder": "Search cases or clients...",
+    "noCasesFound": "No cases found",
+    "noCasesDesc": "Try adjusting your filters or search terms",
+    "resetAll": "Reset All",
+    "prev": "Prev",
+    "next": "Next",
+    "heroSlides": {
+      "featuredLabel": "Featured Showcase",
+      "spring-shore": {
+        "title": "The Spring Shore CIM System",
+        "subtitle": "CCCC Group · Hainan Wanning"
+      },
+      "jinjiang-glory": {
+        "title": "JinJiangGlory CIM System",
+        "subtitle": "Zhongmao Real Estate · Chengdu"
+      },
+      "meijiang-heyue": {
+        "title": "Meijiang Heyue Residential CIM",
+        "subtitle": "Lianhui Real Estate · Tianjin"
+      },
+      "jinmao-smart-city": {
+        "title": "Jinmao Smart Science City CIM",
+        "subtitle": "China Jinmao · Smart City"
+      }
+    }
+  },
+  "aiWizard": {
+    "label":    "AI Analysis",
+    "title":    "Website AI Planning",
+    "subtitle": "Answer a few questions — get your custom website blueprint in 60 seconds",
+    "stepOf":   "Step {current} of {total}",
+    "back":     "Back",
+    "next":     "Next",
+    "submit":   "Generate My Blueprint",
+    "steps": {
+      "industry": {
+        "title": "What's your industry?",
+        "hint":  "Different industries have different optimal digital strategies",
+        "options": {
+          "restaurant":    "Restaurant & Food",
+          "retail":        "Retail & Fashion",
+          "tech":          "Technology & SaaS",
+          "healthcare":    "Healthcare & Wellness",
+          "finance":       "Finance & Legal",
+          "education":     "Education & Training",
+          "realEstate":    "Real Estate",
+          "manufacturing": "Manufacturing & Industry",
+          "beauty":        "Beauty & Lifestyle",
+          "other":         "Other"
+        }
+      },
+      "projectType": {
+        "title": "What type of project do you need?",
+        "hint":  "Select the type of digital product you need",
+        "options": {
+          "corporate":   "Corporate Website",
+          "ecommerce":   "E-Commerce Store",
+          "portfolio":   "Portfolio / Showcase",
+          "blog":        "Blog / Media",
+          "booking":     "Booking System",
+          "miniProgram": "Mini-Program",
+          "landing":     "Landing Page",
+          "platform":    "Platform / SaaS"
+        }
+      },
+      "goal": {
+        "title": "What is your primary goal?",
+        "hint":  "Help us understand what success looks like for you",
+        "options": {
+          "leads":       "Generate More Leads",
+          "sales":       "Increase Online Sales",
+          "credibility": "Build Brand Credibility",
+          "showcase":    "Showcase My Work",
+          "automate":    "Automate a Process",
+          "launch":      "Launch My Business Online"
+        }
+      },
+      "audience": {
+        "title": "Who is your target audience?",
+        "hint":  "Select all that apply",
+        "options": {
+          "usEnglish":  "US English Speakers",
+          "chinese":    "Chinese-Speaking",
+          "bilingual":  "Bilingual (Both)",
+          "b2b":        "B2B Enterprise",
+          "b2c":        "B2C Consumer",
+          "local":      "Local / Nearby Customers"
+        }
+      },
+      "designStyle": {
+        "title": "What design style do you prefer?",
+        "hint":  "Choose the visual direction that fits your brand",
+        "options": {
+          "clean":      "Clean & Professional",
+          "bold":       "Bold & Modern",
+          "minimal":    "Minimal & Elegant",
+          "warm":       "Warm & Friendly",
+          "tech":       "Tech & Futuristic",
+          "luxe":       "Luxury & Premium"
+        }
+      },
+      "features": {
+        "title": "Which features do you need?",
+        "hint":  "Select all that apply (multiple choice)",
+        "options": {
+          "contactForm":  "Contact Form",
+          "booking":      "Online Booking",
+          "ecommerce":    "E-Commerce / Cart",
+          "blog":         "Blog / News",
+          "multilingual": "Multilingual Support",
+          "aiChat":       "AI Chat / Assistant",
+          "memberLogin":  "Member Login Area",
+          "video":        "Video Integration",
+          "map":          "Location / Map",
+          "seo":          "SEO Package"
+        }
+      },
+      "content": {
+        "title": "How ready is your content?",
+        "hint":  "This helps us plan the timeline accurately",
+        "options": {
+          "ready":   "I have everything ready",
+          "half":    "About 50% ready",
+          "ideas":   "Just ideas, need help writing",
+          "scratch": "Starting from scratch"
+        }
+      },
+      "timeline": {
+        "title": "What is your desired timeline?",
+        "hint":  "When do you need the project completed?",
+        "options": {
+          "asap":     "ASAP (2 weeks)",
+          "month":    "Within 1 Month",
+          "quarter":  "2–3 Months",
+          "flexible": "Flexible"
+        }
+      },
+      "budget": {
+        "title": "What is your budget range?",
+        "hint":  "This helps us match you to the right package",
+        "options": {
+          "under1k":  "Under $1,000",
+          "1kTo3k":   "$1,000 – $3,000",
+          "3kTo8k":   "$3,000 – $8,000",
+          "8kTo20k":  "$8,000 – $20,000",
+          "above20k": "$20,000+",
+          "discuss":  "Let's Discuss"
+        }
+      },
+      "contact": {
+        "title": "How can we reach you?",
+        "hint":  "We'll send your blueprint and follow up within 1 business day",
+        "name":        "Full Name",
+        "email":       "Email Address",
+        "phone":       "Phone (optional)",
+        "company":     "Company Name (optional)",
+        "namePlaceholder":    "Your name",
+        "emailPlaceholder":   "your@email.com",
+        "phonePlaceholder":   "+1 (xxx) xxx-xxxx",
+        "companyPlaceholder": "Your company",
+        "required": "Name and email are required"
+      }
+    },
+    "blueprint": {
+      "title":       "Your Custom Website Blueprint",
+      "subtitle":    "Based on your responses, here's what we recommend",
+      "generating":  "Generating your blueprint…",
+      "sections": {
+        "projectSummary": "Project Summary",
+        "pageStructure":  "Recommended Page Structure",
+        "featureModules": "Suggested Feature Modules",
+        "designDirection":"Design Direction",
+        "techStack":      "Technology Stack",
+        "seoKeywords":    "SEO Keyword Suggestions",
+        "timeline":       "Estimated Timeline",
+        "investment":     "Estimated Investment"
+      },
+      "cta": {
+        "title":   "Ready to bring this blueprint to life?",
+        "subtitle":"Our team will review your blueprint and contact you within 1 business day.",
+        "primary": "Schedule a Free Call",
+        "secondary":"Download PDF Blueprint",
+        "restart":  "Start Over"
+      }
+    }
+  },
+  "portfolio": {
+    "label": "Case Studies",
+    "title": "Selected Works",
+    "subtitle": "High-impact digital solutions we've built for ambitious brands.",
+    "viewProject": "View Case",
+    "filters": {
+      "all": "All Work",
+      "brandSite": "Web Design",
+      "platform": "Platforms",
+      "app": "Mobile Apps",
+      "brandDesign": "Branding",
+      "ecommerce": "E-commerce",
+      "miniProgram": "Mini Programs"
+    },
+    "industries": {
+      "all": "All Industries",
+      "tech": "Technology & AI",
+      "finance": "Finance & Fintech",
+      "retail": "Retail & Consumer",
+      "healthcare": "Healthcare & Med",
+      "realEstate": "Real Estate & CIM",
+      "education": "Education & EdTech",
+      "other": "Other Sectors"
+    }
+  },
+  "blog": {
+    "label":    "Insights",
+    "title":    "Insights & Resources",
+    "subtitle": "Practical marketing strategies, design trends, and industry insights",
+    "readMore": "Read Article",
+    "minRead":  "min read",
+    "by":       "By",
+    "published": "Published",
+    "categories": {
+      "all":       "All",
+      "webDesign": "Web Design",
+      "seo":       "SEO Guide",
+      "marketing": "Marketing",
+      "tech":      "Tech Trends",
+      "caseStudy": "Case Study"
+    }
+  },
+  "about": {
+    "label": "Who We Are",
+    "title": "Your New York Partner for Digital Growth",
+    "subtitle": "Bridging the gap between creative design, cutting-edge tech, and business strategy.",
+    "story": "Based in the heart of NYC, Apex Zone is a premium digital agency specializing in high-performance web solutions. We don't just build websites; we create digital ecosystems that empower brands to dominate their markets both locally and globally.",
+    "missionLabel": "Our Mission",
+    "mission": "To empower ambitious businesses with digital solutions that are not only beautiful but measurable and scalable.",
+    "vision": "To be the leading bridge for brands navigating the complex intersection of global tech and local market culture.",
+    "values": {
+      "title": "Our Core Values",
+      "quality":     { "title": "Precision Quality",  "desc": "We treat every pixel with the respect your brand deserves." },
+      "results":     { "title": "Obsessed with Results", "desc": "Design without conversion is just art. We build for growth." },
+      "partnership": { "title": "Radical Transparency", "desc": "We work as your long-term partner, not just a one-off vendor." },
+      "innovation":  { "title": "Tech Forward",       "desc": "From Next.js to Digital Twin, we leverage the best of tomorrow." }
+    },
+    "team": {
+      "title":    "Meet Our Experts",
+      "subtitle": "Designers, developers, and strategists working in sync to bring your vision to life."
+    },
+    "stats": {
+      "title": "Agency Milestones",
+      "clients":      "Partners Served",
+      "projects":     "Projects Launched",
+      "satisfaction": "Retention Rate",
+      "years":        "Years in NYC"
+    },
+    "cta": {
+      "title":   "Ready to reach your business apex?",
+      "button":  "Let's Connect"
+    },
+    "why": {
+      "label": "The Apex Edge",
+      "title": "Why Global Brands Choose Us",
+      "visualSubtitle": "New York · Bilingual · Results-driven",
+      "items": [
+        "Native Bilingual Team — Seamless English & Chinese communication",
+        "Deep NYC Local SEO & GEO-Targeting expertise",
+        "Performance Excellence: All sites built for speed and accessibility",
+        "AI-Integrated Workflows for smarter business operations",
+        "Full-Stack capability from UI/UX to complex Cloud backend",
+        "Bespoke support and maintenance tailored to your scale"
+      ]
+    }
+  },
+  "contact": {
+    "label":    "Get in Touch",
+    "title":    "Let's Build Your Digital Future",
+    "subtitle": "Book a free 30-minute strategy call to discuss your goals and get a custom roadmap.",
+    "form": {
+      "name":           "Your Name",
+      "email":          "Business Email",
+      "phone":          "Phone Number",
+      "company":        "Company Website/Name",
+      "service":        "Primary Interest",
+      "message":        "Project Details",
+      "namePlaceholder":    "How should we call you?",
+      "emailPlaceholder":   "hello@company.com",
+      "phonePlaceholder":   "+1 (xxx) xxx-xxxx",
+      "companyPlaceholder": "Your website or company",
+      "messagePlaceholder": "Tell us about your goals, timeline, and current challenges…",
+      "serviceOptions": {
+        "webDesign":    "Web Design & Development",
+        "appDev":       "App & Mini-Program Development",
+        "brandDesign":  "Brand Visual Identity",
+        "seoMarketing": "Local SEO & Digital Marketing",
+        "consultation": "Strategic Consultation",
+        "other":        "Other"
+      },
+      "required":  "This field is required",
+      "submit":    "Request Consultation",
+      "sending":   "Sending…",
+      "success":   "Message received! Our team will reach out within 24 hours.",
+      "error":     "Message failed. Please try again or email us directly."
+    },
+    "info": {
+      "address":    "NYC Office",
+      "addressVal": "New York, NY",
+      "phone":      "Call Us",
+      "email":      "Email Us",
+      "hours":      "Office Hours",
+      "hoursVal":   "Mon–Fri  9:00 AM – 6:00 PM EST"
+    },
+    "freeConsult": {
+      "title":    "Free Strategy Session",
+      "desc":     "Get a professional analysis of your current digital presence and a clear plan to improve it.",
+      "button":   "Book My Free Call"
+    }
+  },
+  "footer": {
+    "tagline":      "Building digital presence that drives real business growth.",
+    "quickLinks":   "Quick Links",
+    "coreServices": "Core Services",
+    "contact":      "Contact",
+    "rights":       "All rights reserved.",
+    "privacy":      "Privacy Policy",
+    "terms":        "Terms of Service"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: May 2025",
+    "intro": "At Apex Zone, we take your data privacy seriously. This policy outlines our commitment to transparency regarding the collection, use, and protection of your personal information when you interact with our digital platforms.",
+    "sections": [
+      {
+        "title": "1. Data Collection",
+        "content": "We collect information voluntarily provided by you through our contact forms, AI Blueprint Wizard, and strategic consultation requests. This may include your name, business email, phone number, and project-specific requirements."
+      },
+      {
+        "title": "2. Purpose of Processing",
+        "content": "Your data is primarily used to deliver bespoke digital solutions, provide project quotes, and send strategic updates. We utilize analytical tools to improve user experience, but we never sell your data to third-party advertisers."
+      },
+      {
+        "title": "3. Security & Compliance",
+        "content": "Apex Zone implements robust administrative and technical safeguards to prevent unauthorized access. We comply with industry standards for data encryption during transmission and storage."
+      },
+      {
+        "title": "4. International Transfers",
+        "content": "As a global agency based in New York, your data may be processed in the US. By using our services, you consent to this localized processing in accordance with this policy."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: May 2025",
+    "intro": "By engaging with the Apex Zone website or services, you agree to comply with and be bound by the following terms and conditions. Please review them carefully.",
+    "sections": [
+      {
+        "title": "1. Scope of Services",
+        "content": "Apex Zone provides premium web design, full-stack development, and SEO marketing services. Specific project scopes, timelines, and deliverables are governed by individual client agreements signed prior to project commencement."
+      },
+      {
+        "title": "2. Intellectual Property",
+        "content": "All creative works, code architectures, and visual designs produced by Apex Zone remain the intellectual property of the agency until full payment is received, upon which rights are transferred as per the project contract."
+      },
+      {
+        "title": "3. Professional Liability",
+        "content": "While we strive for digital perfection, Apex Zone is not liable for indirect losses or third-party platform changes (e.g., Google algorithm updates) beyond our reasonable control."
+      },
+      {
+        "title": "4. Jurisdiction",
+        "content": "These terms are governed by the laws of the State of New York. Any disputes shall be resolved through arbitration within the jurisdiction of New York County."
+      }
+    ]
+  }
+}

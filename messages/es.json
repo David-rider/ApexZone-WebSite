@@ -1,0 +1,231 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "aiWizard": "Planificación IA",
+    "blog": "Blog",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "freeConsult": "Consulta Gratis",
+    "servicesDropdown": {
+      "webDesign": "Diseño y Desarrollo Web",
+      "appDev": "Apps y Mini-Programas",
+      "brandDesign": "Diseño Visual de Marca",
+      "seoMarketing": "SEO y Marketing Digital"
+    }
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "viewAll": "Ver todo",
+    "getQuote": "Obtener cotización",
+    "startProject": "Empezar proyecto",
+    "freeConsult": "Consulta gratuita",
+    "contactUs": "Contáctenos",
+    "backToTop": "Volver arriba",
+    "loading": "Cargando...",
+    "error": "Algo salió mal. Por favor, intente de nuevo.",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "readMore": "Leer más",
+    "visitSite": "Visitar sitio",
+    "viewProject": "Ver proyecto",
+    "ourProcess": "Nuestro proceso",
+    "trustLabel": "Con la confianza de más de 50 empresas"
+  },
+  "home": {
+    "hero": {
+      "badge": "Con la confianza de más de 50 empresas",
+      "title": "Sitios web que impulsan el crecimiento real",
+      "subtitle": "Desde sitios de marca hasta plataformas con IA, Apex Zone crea experiencias digitales que convierten visitantes en clientes.",
+      "cta1": "Ver nuestro trabajo",
+      "cta2": "Consulta gratuita",
+      "liveOptimized": "En vivo y optimizado",
+      "organicTraffic": "Tráfico orgánico",
+      "lighthouseScore": "Puntuación Lighthouse"
+    },
+    "stats": {
+      "clients": "Clientes atendidos",
+      "years": "Años de experiencia",
+      "satisfaction": "Tasa de satisfacción",
+      "industries": "Industrias cubiertas"
+    },
+    "services": {
+      "label": "Servicios principales",
+      "title": "Nuestros servicios principales",
+      "subtitle": "Soluciones digitales integrales adaptadas a su crecimiento",
+      "webDesign":    { "title": "Diseño y Desarrollo Web", "desc": "Sitios de marca, e-commerce, sitios bilingües — creados para convertir." },
+      "appDev":       { "title": "Apps y Mini-Programas",   "desc": "Mini-programas de WeChat, páginas H5, aplicaciones móviles nativas." },
+      "brandDesign":  { "title": "Diseño Visual de Marca",      "desc": "Logo, sistema VI, folletos, empaques — identidad de marca cohesiva." },
+      "seoMarketing": { "title": "SEO y Marketing Digital",  "desc": "Google SEO, SEO local, optimización de búsqueda GEO/IA." }
+    },
+    "portfolio": {
+      "label": "Trabajo reciente",
+      "title": "Trabajo reciente",
+      "subtitle": "Proyectos reales. Resultados reales.",
+      "viewAll": "Ver todos los proyectos",
+      "ctaTitle": "Su proyecto podría ser el siguiente",
+      "ctaDesc":  "Cada negocio es único. Construyamos algo a su medida.",
+      "ctaBtn":   "Iniciar un proyecto"
+    },
+    "process": {
+      "label": "Nuestro proceso",
+      "title": "Cómo trabajamos",
+      "subtitle": "Desde la primera llamada hasta el lanzamiento — un proceso claro y probado",
+      "step1": { "title": "Descubrimiento",    "desc": "Analizamos su mercado, competidores y objetivos." },
+      "step2": { "title": "Diseño",       "desc": "Wireframes, maquetas y visuales alineados con la marca." },
+      "step3": { "title": "Desarrollo",      "desc": "Código limpio, alto rendimiento, primero el móvil." },
+      "step4": { "title": "Lanzamiento y Crecimiento","desc": "Despliegue, monitoreo y optimización continua." }
+    },
+    "cta": {
+      "label":    "Consulta gratuita",
+      "title":    "¿Listo para construir algo grande?",
+      "subtitle": "Reserve una consulta gratuita de 30 minutos. Sin compromiso.",
+      "button":   "Programar llamada",
+      "phone":    "O llámenos directamente"
+    }
+  },
+  "services": {
+    "label":    "Lo que hacemos",
+    "title":    "Nuestros servicios",
+    "subtitle": "Seis pilares de excelencia digital — elija lo que su negocio necesita",
+    "webDesign": {
+      "title": "Diseño y Desarrollo Web",
+      "desc":  "Desde sitios corporativos hasta e-commerce, creamos sitios web profesionales de alta conversión.",
+      "items": [
+        "Diseño de sitios web de marca corporativa",
+        "E-commerce y tiendas independientes",
+        "Sitios web bilingües (Inglés/Chino)",
+        "Diseño responsivo y primero el móvil",
+        "Sitios web de pedidos para restaurantes",
+        "Sistemas de reserva en línea",
+        "WordPress y desarrollo a medida",
+        "Rediseño de sitios y mejora de rendimiento"
+      ]
+    },
+    "appDev": {
+      "title": "Apps y Mini-Programas",
+      "desc":  "Experiencias digitales móviles para usuarios modernos.",
+      "items": [
+        "Desarrollo de mini-programas de WeChat",
+        "Páginas web móviles H5",
+        "Apps nativas iOS y Android",
+        "Desarrollo de plataformas e-commerce",
+        "Sitios web de portales industriales",
+        "Desarrollo de cuentas oficiales de WeChat"
+      ]
+    },
+    "brandDesign": {
+      "title": "Diseño Visual de Marca",
+      "desc":  "Identidad de marca cohesiva desde el concepto hasta la entrega.",
+      "items": [
+        "Diseño de logo y marca",
+        "Sistema VI (Identidad Visual)",
+        "Diseño de folletos y catálogos",
+        "Diseño de empaques",
+        "Diseño creativo publicitario",
+        "Manual de identidad de marca"
+      ]
+    },
+    "seoMarketing": {
+      "title": "SEO y Marketing Digital",
+      "desc":  "Posicione mejor, llegue más lejos — crezca orgánicamente.",
+      "items": [
+        "SEO en buscadores de Google",
+        "SEO local y ranking en Google Maps",
+        "Optimización de búsqueda GEO / IA",
+        "Gestión de Google Ads",
+        "Marketing en redes sociales",
+        "Estrategia de marketing de contenidos"
+      ]
+    }
+  },
+  "portfolio": {
+    "label": "Casos de éxito",
+    "title": "Trabajos seleccionados",
+    "subtitle": "Soluciones digitales de alto impacto para marcas ambiciosas.",
+    "viewProject": "Ver caso",
+    "filters": {
+      "all": "Todo",
+      "brandSite": "Sitios web",
+      "platform": "Sistemas",
+      "app": "Apps móviles",
+      "brandDesign": "Branding",
+      "ecommerce": "E-commerce",
+      "miniProgram": "Mini-programas"
+    },
+    "industries": {
+      "all": "Todas las industrias",
+      "tech": "Tecnología e IA",
+      "finance": "Finanzas y Legal",
+      "retail": "Venta al por menor",
+      "healthcare": "Salud",
+      "realEstate": "Bienes raíces",
+      "education": "Educación"
+    },
+    "challenge": "El Desafío",
+    "solution": "Nuestra Solución",
+    "results": "Resultados",
+    "techStack": "Tecnologías",
+    "visitSite": "Visitar sitio",
+    "backToList": "Volver al portafolio",
+    "clientLabel": "Cliente",
+    "yearLabel": "Año",
+    "industryLabel": "Industria",
+    "location": "Ubicación"
+  },
+  "about": {
+    "label": "Quiénes somos",
+    "title": "Su socio en Nueva York para el crecimiento digital",
+    "subtitle": "Cerrando la brecha entre el diseño creativo, la tecnología de punta y la estrategia de negocios.",
+    "story": "Con sede en el corazón de NYC, Apex Zone es una agencia digital premium especializada en soluciones web de alto rendimiento. No solo construimos sitios web; creamos ecosistemas digitales que permiten a las marcas dominar sus mercados tanto local como globalmente.",
+    "missionLabel": "Nuestra Misión",
+    "mission": "Empoderar a empresas ambiciosas con soluciones digitales que no solo sean hermosas, sino también medibles y escalables.",
+    "values": {
+      "title": "Nuestros valores principales",
+      "quality":     { "title": "Calidad de precisión",  "desc": "Tratamos cada píxel con el respeto que su marca merece." },
+      "results":     { "title": "Obsesionados con los resultados", "desc": "El diseño sin conversión es solo arte. Construimos para el crecimiento." },
+      "partnership": { "title": "Transparencia radical", "desc": "Trabajamos como su socio a largo plazo, no solo como un proveedor ocasional." },
+      "innovation":  { "title": "Tecnología avanzada",       "desc": "Desde Next.js hasta Gemelo Digital, aprovechamos lo mejor del mañana." }
+    },
+    "cta": {
+      "title": "¿Listo para alcanzar su ápice empresarial?",
+      "button": "Conectemos"
+    }
+  },
+  "contact": {
+    "label": "Ponerse en contacto",
+    "title": "Construyamos su futuro digital",
+    "subtitle": "Reserve una llamada de estrategia gratuita de 30 minutos para discutir sus objetivos.",
+    "form": {
+      "name": "Su nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "company": "Empresa / Sitio web",
+      "service": "Interés principal",
+      "message": "Detalles del proyecto",
+      "submit": "Solicitar consulta",
+      "sending": "Enviando...",
+      "success": "¡Mensaje recibido! Nuestro equipo se pondrá en contacto en 24 horas.",
+      "error": "Error al enviar. Por favor intente de nuevo."
+    },
+    "info": {
+      "address": "Oficina en NYC",
+      "phone": "Llámenos",
+      "email": "Escríbanos",
+      "hours": "Horario"
+    }
+  },
+  "footer": {
+    "tagline": "Construyendo presencia digital que impulsa el crecimiento real.",
+    "quickLinks": "Enlaces rápidos",
+    "coreServices": "Servicios principales",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  }
+}

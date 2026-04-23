@@ -1,0 +1,170 @@
+.page { min-height: 100vh; background: var(--md-sys-color-surface); }
+
+.pageHeader {
+  padding: 80px 0 56px;
+  text-align: center;
+  background: linear-gradient(160deg, var(--md-sys-color-surface) 0%, var(--md-sys-color-secondary-container) 100%);
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+.pageHeader h1 { margin: 12px 0 16px; }
+.pageHeader p  { color: var(--md-sys-color-on-surface-variant); max-width: 520px; margin: 0 auto; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Form */
+.formWrap {
+  background: var(--md-sys-color-surface-container-lowest);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-extra-large);
+  padding: 40px;
+  box-shadow: var(--md-sys-elevation-level1);
+}
+
+.form { display: flex; flex-direction: column; gap: 20px; }
+
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.req { color: var(--md-sys-color-error); }
+
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23717971' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.successMsg {
+  text-align: center;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.successIcon { font-size: 3rem; }
+
+.errorMsg { color: var(--md-sys-color-error); font-size: 0.875rem; text-align: center; }
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 96px;
+}
+
+.consultCard {
+  background: var(--md-sys-color-primary);
+  color: white;
+  border-radius: var(--md-sys-shape-corner-large);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.consultCard h3 { color: white; }
+.consultCard p  { color: rgba(255,255,255,0.8); }
+.consultIcon { font-size: 2rem; }
+
+.infoCard {
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-large);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.infoIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--md-sys-shape-corner-small);
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: var(--md-sys-typescale-label-small-size);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--md-sys-color-on-surface-variant);
+  margin-bottom: 2px;
+}
+
+/* Send tip */
+.sendTip {
+  font-size: 0.8rem;
+  color: var(--md-sys-color-on-surface-variant);
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-small);
+  padding: 10px 14px;
+  line-height: 1.6;
+}
+
+/* White button inside green card */
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: white;
+  color: var(--md-sys-color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.btn-white:hover {
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* WeChat card */
+.wechatCard {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 20px;
+  background: var(--md-sys-color-surface-container-low);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-corner-large);
+}
+
+.wechatIcon { font-size: 1.8rem; flex-shrink: 0; }
+
+@media (max-width: 1024px) {
+
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; order: -1; }
+}
+
+@media (max-width: 640px) {
+  .formWrap { padding: 24px; }
+  .formRow  { grid-template-columns: 1fr; }
+  .pageHeader { padding: 60px 0 40px; }
+}

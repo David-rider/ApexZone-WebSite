@@ -1,0 +1,231 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "portfolio": "Portfolio",
+    "aiWizard": "Pianificazione AI",
+    "blog": "Blog",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "freeConsult": "Consulenza Gratis",
+    "servicesDropdown": {
+      "webDesign": "Design e Sviluppo Web",
+      "appDev": "App e Mini-Programmi",
+      "brandDesign": "Design Visuale del Brand",
+      "seoMarketing": "SEO e Marketing Digitale"
+    }
+  },
+  "common": {
+    "learnMore": "Scopri di più",
+    "viewAll": "Vedi tutto",
+    "getQuote": "Ottieni preventivo",
+    "startProject": "Inizia progetto",
+    "freeConsult": "Consulenza gratuita",
+    "contactUs": "Contattaci",
+    "backToTop": "Torna su",
+    "loading": "Caricamento...",
+    "error": "Qualcosa è andato storto. Riprova.",
+    "back": "Indietro",
+    "next": "Avanti",
+    "submit": "Invia",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "readMore": "Leggi di più",
+    "visitSite": "Visita il sito",
+    "viewProject": "Vedi progetto",
+    "ourProcess": "Il nostro processo",
+    "trustLabel": "Scelto da oltre 50 aziende"
+  },
+  "home": {
+    "hero": {
+      "badge": "Scelto da oltre 50 aziende",
+      "title": "Siti web che guidano la crescita reale",
+      "subtitle": "Dai siti di brand alle piattaforme con AI, Apex Zone crea esperienze digitali che convertono i visitatori in clienti.",
+      "cta1": "Vedi i nostri lavori",
+      "cta2": "Consulenza gratuita",
+      "liveOptimized": "Online e ottimizzato",
+      "organicTraffic": "Traffico organico",
+      "lighthouseScore": "Punteggio Lighthouse"
+    },
+    "stats": {
+      "clients": "Clienti serviti",
+      "years": "Anni di esperienza",
+      "satisfaction": "Tasso di soddisfazione",
+      "industries": "Settori coperti"
+    },
+    "services": {
+      "label": "Servizi principali",
+      "title": "I nostri servizi principali",
+      "subtitle": "Soluzioni digitali complete su misura per la tua crescita",
+      "webDesign":    { "title": "Design e Sviluppo Web", "desc": "Siti di brand, e-commerce, siti bilingue — costruiti per convertire." },
+      "appDev":       { "title": "App e Mini-Programmi",   "desc": "Mini-programmi WeChat, pagine H5, app mobili native." },
+      "brandDesign":  { "title": "Design Visuale del Brand",      "desc": "Logo, sistema VI, brochure, packaging — identità di brand coesa." },
+      "seoMarketing": { "title": "SEO e Marketing Digitale",  "desc": "Google SEO, SEO locale, ottimizzazione ricerca GEO/AI." }
+    },
+    "portfolio": {
+      "label": "Lavori recenti",
+      "title": "Lavori recenti",
+      "subtitle": "Progetti reali. Risultati reali.",
+      "viewAll": "Vedi tutti i progetti",
+      "ctaTitle": "Il tuo progetto potrebbe essere il prossimo",
+      "ctaDesc":  "Ogni business è unico. Costruiamo qualcosa su misura per te.",
+      "ctaBtn":   "Inizia un progetto"
+    },
+    "process": {
+      "label": "Il nostro processo",
+      "title": "Come lavoriamo",
+      "subtitle": "Dalla prima chiamata al lancio — un processo chiaro e collaudato",
+      "step1": { "title": "Scoperta",    "desc": "Analizziamo il tuo mercato, i competitor e gli obiettivi." },
+      "step2": { "title": "Design",       "desc": "Wireframe, mockup e visual allineati al brand." },
+      "step3": { "title": "Sviluppo",      "desc": "Codice pulito, alte prestazioni, mobile-first." },
+      "step4": { "title": "Lancio e Crescita","desc": "Distribuzione, monitoraggio e ottimizzazione continua." }
+    },
+    "cta": {
+      "label":    "Consulenza gratuita",
+      "title":    "Pronto a costruire qualcosa di grande?",
+      "subtitle": "Prenota una consulenza gratuita di 30 minuti. Senza impegno.",
+      "button":   "Prenota una chiamata",
+      "phone":    "O chiamaci direttamente"
+    }
+  },
+  "services": {
+    "label":    "Cosa facciamo",
+    "title":    "I nostri servizi",
+    "subtitle": "Sei pilastri di eccellenza digitale — scegli ciò di cui il tuo business ha bisogno",
+    "webDesign": {
+      "title": "Design e Sviluppo Web",
+      "desc":  "Dai siti aziendali all'e-commerce, creiamo siti web professionali ad alta conversione.",
+      "items": [
+        "Design siti web aziendali",
+        "E-commerce e store indipendenti",
+        "Siti bilingue (Inglese/Cinese)",
+        "Design responsive e mobile-first",
+        "Siti per ordini online (Ristoranti)",
+        "Sistemi di prenotazione online",
+        "Sviluppo WordPress e su misura",
+        "Redesign siti e upgrade prestazioni"
+      ]
+    },
+    "appDev": {
+      "title": "App e Mini-Programmi",
+      "desc":  "Esperienze digitali mobili per utenti moderni.",
+      "items": [
+        "Sviluppo mini-programmi WeChat",
+        "Pagine web mobili H5",
+        "App native iOS e Android",
+        "Sviluppo piattaforme e-commerce",
+        "Siti portali di settore",
+        "Sviluppo Account Ufficiali WeChat"
+      ]
+    },
+    "brandDesign": {
+      "title": "Design Visuale del Brand",
+      "desc":  "Identità di brand coesa dal concept alla consegna.",
+      "items": [
+        "Design logo e brand mark",
+        "Sistema VI (Visual Identity)",
+        "Design brochure e cataloghi",
+        "Design packaging",
+        "Design creativo pubblicitario",
+        "Manuale di identità di brand"
+      ]
+    },
+    "seoMarketing": {
+      "title": "SEO e Marketing Digitale",
+      "desc":  "Posizionati più in alto, raggiungi di più — cresci organicamente.",
+      "items": [
+        "SEO per Ricerca Google",
+        "SEO Locale e ranking Google Maps",
+        "Ottimizzazione ricerca GEO / AI",
+        "Gestione Google Ads",
+        "Marketing sui social media",
+        "Strategia di content marketing"
+      ]
+    }
+  },
+  "portfolio": {
+    "label": "Casi di studio",
+    "title": "Lavori selezionati",
+    "subtitle": "Soluzioni digitali ad alto impatto per brand ambiziosi.",
+    "viewProject": "Vedi caso",
+    "filters": {
+      "all": "Tutto",
+      "brandSite": "Siti web",
+      "platform": "Sistemi",
+      "app": "App mobili",
+      "brandDesign": "Branding",
+      "ecommerce": "E-commerce",
+      "miniProgram": "Mini-programmi"
+    },
+    "industries": {
+      "all": "Tutti i settori",
+      "tech": "Tecnologia e AI",
+      "finance": "Finanza e Legale",
+      "retail": "Retail e Moda",
+      "healthcare": "Sanità",
+      "realEstate": "Immobiliare",
+      "education": "Istruzione"
+    },
+    "challenge": "La Sfida",
+    "solution": "La Soluzione",
+    "results": "Risultati",
+    "techStack": "Tecnologie",
+    "visitSite": "Visita sito",
+    "backToList": "Torna al portfolio",
+    "clientLabel": "Cliente",
+    "yearLabel": "Anno",
+    "industryLabel": "Settore",
+    "location": "Sede"
+  },
+  "about": {
+    "label": "Chi siamo",
+    "title": "Il tuo partner a New York per la crescita digitale",
+    "subtitle": "Colmiamo il divario tra design creativo, tecnologia all'avanguardia e strategia di business.",
+    "story": "Con sede nel cuore di NYC, Apex Zone è un'agenzia digitale premium specializzata in soluzioni web ad alte prestazioni. Non costruiamo solo siti; creiamo ecosistemi digitali che permettono ai brand di dominare i mercati.",
+    "missionLabel": "La nostra Mission",
+    "mission": "Potenziare le aziende ambiziose con soluzioni digitali belle, misurabili e scalabili.",
+    "values": {
+      "title": "I nostri valori",
+      "quality":     { "title": "Qualità di precisione",  "desc": "Trattiamo ogni pixel con il rispetto che il tuo brand merita." },
+      "results":     { "title": "Focalizzati sui risultati", "desc": "Il design senza conversione è solo arte. Costruiamo per la crescita." },
+      "partnership": { "title": "Trasparenza radicale", "desc": "Lavoriamo come partner a lungo termine, non solo come fornitori." },
+      "innovation":  { "title": "All'avanguardia",       "desc": "Da Next.js a Digital Twin, sfruttiamo il meglio del domani." }
+    },
+    "cta": {
+      "title": "Pronto a raggiungere l'apice del tuo business?",
+      "button": "Contattaci"
+    }
+  },
+  "contact": {
+    "label": "Contattaci",
+    "title": "Costruiamo il tuo futuro digitale",
+    "subtitle": "Prenota una sessione strategica gratuita di 30 minuti per discutere i tuoi obiettivi.",
+    "form": {
+      "name": "Nome",
+      "email": "Email aziendale",
+      "phone": "Telefono",
+      "company": "Azienda / Sito",
+      "service": "Interesse principale",
+      "message": "Dettagli progetto",
+      "submit": "Richiedi consulenza",
+      "sending": "Invio in corso...",
+      "success": "Messaggio ricevuto! Ti ricontatteremo entro 24 ore.",
+      "error": "Errore nell'invio. Riprova o scrivici direttamente via email."
+    },
+    "info": {
+      "address": "Ufficio NYC",
+      "phone": "Chiamaci",
+      "email": "Scrivici",
+      "hours": "Orari ufficio"
+    }
+  },
+  "footer": {
+    "tagline": "Costruiamo presenza digitale che guida la crescita reale del business.",
+    "quickLinks": "Link rapidi",
+    "coreServices": "Servizi principali",
+    "contact": "Contatto",
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio"
+  }
+}
