@@ -227,5 +227,162 @@
     "rights": "All rights reserved.",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約"
+  },
+  "aiWizard": {
+    "label": "AI分析",
+    "title": "AIウェブサイトプランニング",
+    "subtitle": "いくつかの質問に答えるだけで、60秒でカスタムプランを作成します",
+    "stepOf": "ステップ {current} / {total}",
+    "back": "戻る",
+    "next": "次へ",
+    "submit": "プランを生成する",
+    "steps": {
+      "industry": {
+        "title": "業種を教えてください",
+        "hint": "業種によって最適なデジタル戦略は異なります",
+        "options": {
+          "restaurant": "飲食・フード",
+          "retail": "小売・ファッション",
+          "tech": "テクノロジー・SaaS",
+          "healthcare": "医療・ウェルネス",
+          "finance": "金融・法務",
+          "education": "教育・トレーニング",
+          "realEstate": "不動産",
+          "manufacturing": "製造・工業",
+          "beauty": "美容・ライフスタイル",
+          "other": "その他"
+        }
+      },
+      "projectType": {
+        "title": "どのようなプロジェクトが必要ですか？",
+        "hint": "必要なデジタル製品のタイプを選択してください",
+        "options": {
+          "corporate": "コーポレートサイト",
+          "ecommerce": "ECサイト",
+          "portfolio": "ポートフォリオ / 実績紹介",
+          "blog": "ブログ / メディア",
+          "booking": "予約システム",
+          "miniProgram": "ミニプログラム",
+          "landing": "ランディングページ",
+          "platform": "プラットフォーム / SaaS"
+        }
+      },
+      "goal": {
+        "title": "主な目的は何ですか？",
+        "hint": "お客様にとっての成功を定義するのに役立ちます",
+        "options": {
+          "leads": "リード（見込み客）の獲得",
+          "sales": "オンライン売上の向上",
+          "credibility": "ブランドの信頼性構築",
+          "showcase": "作品・実績の紹介",
+          "automate": "業務プロセスの自動化",
+          "launch": "オンラインビジネスの立ち上げ"
+        }
+      },
+      "audience": {
+        "title": "ターゲット層は誰ですか？",
+        "hint": "主要な言語戦略を選択してください",
+        "options": {
+          "usEnglish": "英語のみ",
+          "chinese": "中国語のみ",
+          "multilingual": "多言語 (グローバル / 7言語)"
+        }
+      },
+      "designStyle": {
+        "title": "好みのデザインスタイルはありますか？",
+        "hint": "ブランドに合ったビジュアルの方向性を選択してください",
+        "options": {
+          "clean": "クリーン＆プロフェッショナル",
+          "bold": "大胆＆モダン",
+          "minimal": "ミニマル＆エレガント",
+          "warm": "ウォーム＆フレンドリー",
+          "tech": "テック＆フューチャリスティック",
+          "luxe": "ラグジュアリー＆プレミアム"
+        }
+      },
+      "features": {
+        "title": "必要な機能は何ですか？",
+        "hint": "該当するものをすべて選択してください（複数回答可）",
+        "options": {
+          "contactForm": "お問い合わせフォーム",
+          "booking": "オンライン予約",
+          "ecommerce": "EC / カート機能",
+          "blog": "ブログ / ニュース",
+          "multilingual": "多言語サポート",
+          "aiChat": "AIチャット / アシスタント",
+          "memberLogin": "会員ログインエリア",
+          "video": "動画統合",
+          "map": "地図 / ロケーション",
+          "seo": "SEOパッケージ"
+        }
+      },
+      "content": {
+        "title": "コンテンツの準備状況はどうですか？",
+        "hint": "正確なタイムラインの策定に役立ちます",
+        "options": {
+          "ready": "すべて準備できている",
+          "half": "50%ほど準備できている",
+          "ideas": "アイデアのみ（執筆サポートが必要）",
+          "scratch": "ゼロからスタート"
+        }
+      },
+      "timeline": {
+        "title": "希望する納期はいつですか？",
+        "hint": "いつまでにプロジェクトを完了させる必要がありますか？",
+        "options": {
+          "asap": "できるだけ早く (2週間)",
+          "month": "1ヶ月以内",
+          "quarter": "2〜3ヶ月",
+          "flexible": "柔軟に対応可能"
+        }
+      },
+      "budget": {
+        "title": "予算の範囲を教えてください",
+        "hint": "最適なパッケージをご提案するのに役立ちます",
+        "options": {
+          "under1k": "$1,000未満",
+          "1kTo3k": "$1,000 – $3,000",
+          "3kTo8k": "$3,000 – $8,000",
+          "8kTo20k": "$8,000 – $20,000",
+          "above20k": "$20,000以上",
+          "discuss": "相談して決めたい"
+        }
+      },
+      "contact": {
+        "title": "連絡先を教えてください",
+        "hint": "生成されたプランを送信し、1営業日以内にご連絡いたします",
+        "name": "氏名",
+        "email": "メールアドレス",
+        "phone": "電話番号（任意）",
+        "company": "会社名（任意）",
+        "namePlaceholder": "お名前",
+        "emailPlaceholder": "example@email.com",
+        "phonePlaceholder": "03-xxxx-xxxx",
+        "companyPlaceholder": "貴社名",
+        "required": "お名前とメールアドレスは必須です"
+      }
+    },
+    "blueprint": {
+      "title": "カスタムウェブサイトプラン",
+      "subtitle": "回答に基づいた推奨プランは以下の通りです",
+      "generating": "プランを生成中...",
+      "sections": {
+        "projectSummary": "プロジェクト概要",
+        "pageStructure": "推奨ページ構成",
+        "featureModules": "推奨機能モジュール",
+        "designDirection": "デザインの方向性",
+        "techStack": "採用テクノロジー",
+        "seoKeywords": "推奨SEOキーワード",
+        "timeline": "推定納期",
+        "investment": "概算投資額"
+      },
+      "cta": {
+        "title": "このプランを実現する準備はできましたか？",
+        "subtitle": "当社のチームがプランを確認し、1営業日以内にご連絡いたします。",
+        "primary": "無料相談を予約する",
+        "secondary": "PDFプランをダウンロード",
+        "restart": "最初からやり直す"
+      }
+    }
   }
 }

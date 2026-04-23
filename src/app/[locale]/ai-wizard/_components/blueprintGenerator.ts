@@ -86,8 +86,8 @@ export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): 
   // Page structure
   const pages = PAGE_STRUCTURES[projectType] ?? PAGE_STRUCTURES.corporate;
   // Add multilingual page if selected
-  if (audience.includes('bilingual') || audience.includes('chinese')) {
-    pages.push('Bilingual Support (/en & /zh)');
+  if (audience.includes('multilingual') || audience.includes('chinese')) {
+    pages.push('Multilingual Support (7 Languages)');
   }
   // Add blog if feature selected
   if (features.includes('blog') && !pages.includes('Blog')) {
@@ -123,8 +123,8 @@ export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): 
 
   // SEO keywords
   const keywords = SEO_KEYWORDS[industry] ?? SEO_KEYWORDS.other;
-  if (audience.includes('chinese') || audience.includes('bilingual')) {
-    keywords.push('Chinese website', '中文网站', 'bilingual business website');
+  if (audience.includes('chinese') || audience.includes('multilingual')) {
+    keywords.push('Chinese website', '中文网站', 'multilingual business website');
   }
   if (audience.includes('local')) {
     keywords.push('near me', 'local business', 'NYC business');
@@ -202,7 +202,7 @@ function designStyleZh(key: string) {
 
 function audienceZh(keys: string[]) {
   const m: Record<string,string> = {
-    usEnglish:'美国英语',chinese:'华人',bilingual:'中英双语',
+    usEnglish:'英语',chinese:'中文',multilingual:'全球多语言',
     b2b:'B2B企业',b2c:'B2C消费者',local:'本地',
   };
   return keys.map(k => m[k] ?? k).join('、');

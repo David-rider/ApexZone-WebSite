@@ -227,5 +227,162 @@
     "rights": "Todos los derechos reservados.",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio"
+  },
+  "aiWizard": {
+    "label": "Análisis de IA",
+    "title": "Planificación de Sitio Web con IA",
+    "subtitle": "Responda algunas preguntas y obtenga su plan personalizado en 60 segundos",
+    "stepOf": "Paso {current} de {total}",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Generar mi Plan",
+    "steps": {
+      "industry": {
+        "title": "¿Cuál es su industria?",
+        "hint": "Diferentes industrias tienen diferentes estrategias digitales óptimas",
+        "options": {
+          "restaurant": "Restaurante y Comida",
+          "retail": "Venta al por Menor",
+          "tech": "Tecnología y SaaS",
+          "healthcare": "Salud y Bienestar",
+          "finance": "Finanzas y Legal",
+          "education": "Educación y Formación",
+          "realEstate": "Bienes Raíces",
+          "manufacturing": "Fabricación e Industria",
+          "beauty": "Belleza y Estilo de Vida",
+          "other": "Otro"
+        }
+      },
+      "projectType": {
+        "title": "¿Qué tipo de proyecto necesita?",
+        "hint": "Seleccione el tipo de producto digital que necesita",
+        "options": {
+          "corporate": "Sitio Web Corporativo",
+          "ecommerce": "Tienda de Comercio Electrónico",
+          "portfolio": "Portafolio / Exhibición",
+          "blog": "Blog / Medios",
+          "booking": "Sistema de Reservas",
+          "miniProgram": "Mini-Programa",
+          "landing": "Página de Aterrizaje",
+          "platform": "Plataforma / SaaS"
+        }
+      },
+      "goal": {
+        "title": "¿Cuál es su objetivo principal?",
+        "hint": "Ayúdenos a entender qué significa el éxito para usted",
+        "options": {
+          "leads": "Generar más Clientes Potenciales",
+          "sales": "Aumentar Ventas en Línea",
+          "credibility": "Construir Credibilidad de Marca",
+          "showcase": "Mostrar mi Trabajo",
+          "automate": "Automatizar un Proceso",
+          "launch": "Lanzar mi Negocio en Línea"
+        }
+      },
+      "audience": {
+        "title": "¿Quién es su público objetivo?",
+        "hint": "Seleccione la estrategia de idioma principal",
+        "options": {
+          "usEnglish": "Solo Inglés",
+          "chinese": "Solo Chino",
+          "multilingual": "Multilingüe (Global / 7 Idiomas)"
+        }
+      },
+      "designStyle": {
+        "title": "¿Qué estilo de diseño prefiere?",
+        "hint": "Elija la dirección visual que se ajuste a su marca",
+        "options": {
+          "clean": "Limpio y Profesional",
+          "bold": "Atrevido y Moderno",
+          "minimal": "Minimalista y Elegante",
+          "warm": "Cálido y Amigable",
+          "tech": "Tecnológico y Futurista",
+          "luxe": "Lujoso y Premium"
+        }
+      },
+      "features": {
+        "title": "¿Qué funciones necesita?",
+        "hint": "Seleccione todas las que correspondan",
+        "options": {
+          "contactForm": "Formulario de Contacto",
+          "booking": "Reservas en Línea",
+          "ecommerce": "Comercio Electrónico / Carrito",
+          "blog": "Blog / Noticias",
+          "multilingual": "Soporte Multilingüe",
+          "aiChat": "Chat de IA / Asistente",
+          "memberLogin": "Área de Inicio de Sesión de Miembros",
+          "video": "Integración de Video",
+          "map": "Ubicación / Mapa",
+          "seo": "Paquete de SEO"
+        }
+      },
+      "content": {
+        "title": "¿Qué tan listo está su contenido?",
+        "hint": "Esto nos ayuda a planificar el cronograma con precisión",
+        "options": {
+          "ready": "Tengo todo listo",
+          "half": "Aproximadamente 50% listo",
+          "ideas": "Solo ideas, necesito ayuda para escribir",
+          "scratch": "Empezando desde cero"
+        }
+      },
+      "timeline": {
+        "title": "¿Cuál es su cronograma deseado?",
+        "hint": "¿Cuándo necesita que se complete el proyecto?",
+        "options": {
+          "asap": "Lo antes posible (2 semanas)",
+          "month": "Dentro de 1 mes",
+          "quarter": "2–3 meses",
+          "flexible": "Flexible"
+        }
+      },
+      "budget": {
+        "title": "¿Cuál es su rango de presupuesto?",
+        "hint": "Esto nos ayuda a emparejarlo con el paquete adecuado",
+        "options": {
+          "under1k": "Menos de $1,000",
+          "1kTo3k": "$1,000 – $3,000",
+          "3kTo8k": "$3,000 – $8,000",
+          "8kTo20k": "$8,000 – $20,000",
+          "above20k": "$20,000+",
+          "discuss": "Hablemos"
+        }
+      },
+      "contact": {
+        "title": "¿Cómo podemos contactarlo?",
+        "hint": "Enviaremos su plan y le daremos seguimiento en 1 día hábil",
+        "name": "Nombre Completo",
+        "email": "Dirección de Correo Electrónico",
+        "phone": "Teléfono (opcional)",
+        "company": "Nombre de la Empresa (opcional)",
+        "namePlaceholder": "Su nombre",
+        "emailPlaceholder": "su@email.com",
+        "phonePlaceholder": "+1 (xxx) xxx-xxxx",
+        "companyPlaceholder": "Su empresa",
+        "required": "Nombre y correo electrónico son obligatorios"
+      }
+    },
+    "blueprint": {
+      "title": "Su Plan Personalizado del Sitio Web",
+      "subtitle": "Basado en sus respuestas, esto es lo que recomendamos",
+      "generating": "Generando su plan...",
+      "sections": {
+        "projectSummary": "Resumen del Proyecto",
+        "pageStructure": "Estructura de Páginas Recomendada",
+        "featureModules": "Módulos de Funciones Sugeridos",
+        "designDirection": "Dirección de Diseño",
+        "techStack": "Pila Tecnológica",
+        "seoKeywords": "Sugerencias de Palabras Clave de SEO",
+        "timeline": "Cronograma Estimado",
+        "investment": "Inversión Estimada"
+      },
+      "cta": {
+        "title": "¿Listo para hacer realidad este plan?",
+        "subtitle": "Nuestro equipo revisará su plan y lo contactará en 1 día hábil.",
+        "primary": "Programar una Llamada Gratuita",
+        "secondary": "Descargar Plan en PDF",
+        "restart": "Empezar de Nuevo"
+      }
+    }
   }
 }

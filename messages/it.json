@@ -227,5 +227,162 @@
     "rights": "Tutti i diritti riservati.",
     "privacy": "Privacy Policy",
     "terms": "Termini di Servizio"
+  },
+  "aiWizard": {
+    "label": "Analisi AI",
+    "title": "Pianificazione Sito Web con AI",
+    "subtitle": "Rispondi ad alcune domande e ottieni il tuo piano personalizzato in 60 secondi",
+    "stepOf": "Passaggio {current} di {total}",
+    "back": "Indietro",
+    "next": "Avanti",
+    "submit": "Genera il mio Piano",
+    "steps": {
+      "industry": {
+        "title": "Qual è il tuo settore?",
+        "hint": "Settori diversi hanno strategie digitali ottimali diverse",
+        "options": {
+          "restaurant": "Ristorazione e Cibo",
+          "retail": "Vendita al Dettaglio",
+          "tech": "Tecnologia e SaaS",
+          "healthcare": "Salute e Benessere",
+          "finance": "Finanza e Legale",
+          "education": "Istruzione e Formazione",
+          "realEstate": "Immobiliare",
+          "manufacturing": "Produzione e Industria",
+          "beauty": "Bellezza e Lifestyle",
+          "other": "Altro"
+        }
+      },
+      "projectType": {
+        "title": "Di che tipo di progetto hai bisogno?",
+        "hint": "Seleziona il tipo di prodotto digitale di cui hai bisogno",
+        "options": {
+          "corporate": "Sito Web Aziendale",
+          "ecommerce": "Negozio E-commerce",
+          "portfolio": "Portfolio / Vetrina",
+          "blog": "Blog / Media",
+          "booking": "Sistema di Prenotazione",
+          "miniProgram": "Mini-Programma",
+          "landing": "Landing Page",
+          "platform": "Piattaforma / SaaS"
+        }
+      },
+      "goal": {
+        "title": "Qual è il tuo obiettivo principale?",
+        "hint": "Aiutaci a capire cosa significa il successo per te",
+        "options": {
+          "leads": "Generare più Contatti",
+          "sales": "Aumentare le Vendite Online",
+          "credibility": "Costruire Credibilità del Brand",
+          "showcase": "Mostrare il mio Lavoro",
+          "automate": "Automatizzare un Processo",
+          "launch": "Lanciare la mia Attività Online"
+        }
+      },
+      "audience": {
+        "title": "Chi è il tuo pubblico di riferimento?",
+        "hint": "Seleziona la strategia linguistica principale",
+        "options": {
+          "usEnglish": "Solo Inglese",
+          "chinese": "Solo Cinese",
+          "multilingual": "Multilingua (Globale / 7 Lingue)"
+        }
+      },
+      "designStyle": {
+        "title": "Quale stile di design preferisci?",
+        "hint": "Scegli la direzione visiva che si adatta al tuo brand",
+        "options": {
+          "clean": "Pulito e Professionale",
+          "bold": "Audace e Moderno",
+          "minimal": "Minimalista ed Elegante",
+          "warm": "Caldo e Accogliente",
+          "tech": "Tecnologico e Futuristico",
+          "luxe": "Lusso e Premium"
+        }
+      },
+      "features": {
+        "title": "Quali funzionalità ti servono?",
+        "hint": "Seleziona tutte le opzioni applicabili",
+        "options": {
+          "contactForm": "Modulo di Contatto",
+          "booking": "Prenotazione Online",
+          "ecommerce": "E-commerce / Carrello",
+          "blog": "Blog / News",
+          "multilingual": "Supporto Multilingua",
+          "aiChat": "Chat AI / Assistente",
+          "memberLogin": "Area Accesso Membri",
+          "video": "Integrazione Video",
+          "map": "Posizione / Mappa",
+          "seo": "Pacchetto SEO"
+        }
+      },
+      "content": {
+        "title": "Quanto è pronto il tuo contenuto?",
+        "hint": "Questo ci aiuta a pianificare la tempistica con precisione",
+        "options": {
+          "ready": "Ho tutto pronto",
+          "half": "Circa il 50% pronto",
+          "ideas": "Solo idee, ho bisogno di aiuto per scrivere",
+          "scratch": "Parto da zero"
+        }
+      },
+      "timeline": {
+        "title": "Qual è la tempistica desiderata?",
+        "hint": "Entro quando hai bisogno che il progetto sia completato?",
+        "options": {
+          "asap": "Al più presto (2 settimane)",
+          "month": "Entro 1 mese",
+          "quarter": "2–3 mesi",
+          "flexible": "Flessibile"
+        }
+      },
+      "budget": {
+        "title": "Qual è la tua fascia di budget?",
+        "hint": "Questo ci aiuta a abbinarti al pacchetto giusto",
+        "options": {
+          "under1k": "Sotto $1.000",
+          "1kTo3k": "$1.000 – $3.000",
+          "3kTo8k": "$3.000 – $8.000",
+          "8kTo20k": "$8.000 – $20.000",
+          "above20k": "$20.000+",
+          "discuss": "Parliamone"
+        }
+      },
+      "contact": {
+        "title": "Come possiamo contattarti?",
+        "hint": "Invieremo il tuo piano e ti ricontatteremo entro 1 giorno lavorativo",
+        "name": "Nome Completo",
+        "email": "Indirizzo Email",
+        "phone": "Telefono (opzionale)",
+        "company": "Nome Azienda (opzionale)",
+        "namePlaceholder": "Il tuo nome",
+        "emailPlaceholder": "la-tua@email.com",
+        "phonePlaceholder": "+39 (xxx) xxx-xxxx",
+        "companyPlaceholder": "La tua azienda",
+        "required": "Nome ed email sono obbligatori"
+      }
+    },
+    "blueprint": {
+      "title": "Il tuo Piano Personalizzato del Sito Web",
+      "subtitle": "In base alle tue risposte, ecco cosa raccomandiamo",
+      "generating": "Generazione del tuo piano...",
+      "sections": {
+        "projectSummary": "Riepilogo Progetto",
+        "pageStructure": "Struttura Pagine Raccomandata",
+        "featureModules": "Moduli Funzionalità Suggeriti",
+        "designDirection": "Direzione Design",
+        "techStack": "Tecnologie Utilizzate",
+        "seoKeywords": "Suggerimenti Parole Chiave SEO",
+        "timeline": "Tempistica Stimata",
+        "investment": "Investimento Stimato"
+      },
+      "cta": {
+        "title": "Pronto a trasformare questo piano in realtà?",
+        "subtitle": "Il nostro team esaminerà il tuo piano e ti contatterà entro 1 giorno lavorativo.",
+        "primary": "Prenota una Chiamata Gratuita",
+        "secondary": "Scarica Piano in PDF",
+        "restart": "Ricomincia"
+      }
+    }
   }
 }

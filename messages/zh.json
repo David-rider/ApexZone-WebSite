@@ -257,14 +257,11 @@
       },
       "audience": {
         "title": "您的目标受众是谁？",
-        "hint":  "可多选",
+        "hint":  "选择主要的语言策略",
         "options": {
-          "usEnglish": "美国英语用户",
-          "chinese":   "华人/中文用户",
-          "bilingual": "中英双语",
-          "b2b":       "B2B企业客户",
-          "b2c":       "B2C个人消费者",
-          "local":     "本地/附近客户"
+          "usEnglish": "仅英语 (Global)",
+          "chinese":   "仅中文 (China)",
+          "multilingual":"多语言 (全球 / 7种语言)"
         }
       },
       "designStyle": {

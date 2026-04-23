@@ -257,14 +257,11 @@
       },
       "audience": {
         "title": "Who is your target audience?",
-        "hint":  "Select all that apply",
+        "hint":  "Select the primary language strategy",
         "options": {
-          "usEnglish":  "US English Speakers",
-          "chinese":    "Chinese-Speaking",
-          "bilingual":  "Bilingual (Both)",
-          "b2b":        "B2B Enterprise",
-          "b2c":        "B2C Consumer",
-          "local":      "Local / Nearby Customers"
+          "usEnglish":  "English Only",
+          "chinese":    "Chinese Only",
+          "multilingual":"Multilingual (Global / 7 Languages)"
         }
       },
       "designStyle": {

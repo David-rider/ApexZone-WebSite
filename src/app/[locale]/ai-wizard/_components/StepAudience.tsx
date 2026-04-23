@@ -8,10 +8,7 @@ import styles from '../page.module.css';
 const OPTIONS = [
   { key: 'usEnglish', icon: '🇺🇸' },
   { key: 'chinese',   icon: '🇨🇳' },
-  { key: 'bilingual', icon: '🌐' },
-  { key: 'b2b',       icon: '🏢' },
-  { key: 'b2c',       icon: '👤' },
-  { key: 'local',     icon: '📍' },
+  { key: 'multilingual', icon: '🌐' },
 ];
 
 export default function StepAudience() {
