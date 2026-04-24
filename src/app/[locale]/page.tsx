@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {
   Globe, Smartphone, Palette, TrendingUp,
   ArrowRight, CheckCircle2, Star, Sparkles,
-  ChevronRight, Phone
+  ChevronRight, Mail
 } from 'lucide-react';
 import { portfolioItems } from '@/data/portfolio';
 import styles from './page.module.css';
@@ -340,9 +340,9 @@ export default function HomePage() {
                 {t('cta.button')}
                 <ArrowRight size={18} />
               </Link>
-              <a href="tel:+1929XXXXXXX" className={styles.ctaPhone}>
-                <Phone size={16} />
-                {t('cta.phone')}
+              <a href="mailto:hello@apexzone.us" className={styles.ctaPhone}>
+                <Mail size={16} />
+                hello@apexzone.us
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Mail, Clock } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -77,10 +77,6 @@ export default function Footer() {
             <li className={styles.contactItem}>
               <MapPin size={14} className={styles.contactIcon} />
               <span>{t('contact.info.addressVal')}</span>
-            </li>
-            <li className={styles.contactItem}>
-              <Phone size={14} className={styles.contactIcon} />
-              <a href="tel:+1929364xxxx" className={styles.link}>+1 (929) 364-XXXX</a>
             </li>
             <li className={styles.contactItem}>
               <Mail size={14} className={styles.contactIcon} />

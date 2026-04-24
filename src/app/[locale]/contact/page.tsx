@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Phone, Mail, Clock, ArrowRight, SendHorizonal } from 'lucide-react';
+import { MapPin, Mail, Clock, ArrowRight, SendHorizonal } from 'lucide-react';
 import styles from './page.module.css';
 
 const SERVICE_KEYS = ['webDesign', 'appDev', 'brandDesign', 'seoMarketing', 'consultation', 'other'] as const;
@@ -216,7 +216,6 @@ export default function ContactPage() {
               <div className={styles.infoCard}>
                 {([
                   { icon: MapPin, label: t('info.address'), val: t('info.addressVal') },
-                  { icon: Phone,  label: t('info.phone'),   val: '+1 (929) 364-XXXX', href: 'tel:+19293640000' },
                   { icon: Mail,   label: t('info.email'),   val: RECIPIENT,            href: `mailto:${RECIPIENT}` },
                   { icon: Clock,  label: t('info.hours'),   val: t('info.hoursVal') },
                 ] as const).map(({ icon: Icon, label, val, ...rest }) => {
