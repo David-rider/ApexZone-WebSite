@@ -47,7 +47,8 @@ export default function PortfolioHero() {
   // Reliable labels
   const heroLabelMap: Record<string, any> = {
     en: { label: 'Our Work', title: 'Portfolio', subtitle: 'Built to convert', featured: 'Featured Showcase' },
-    zh: { label: '我们的作品', title: '作品集', subtitle: '每个项目都以转化为核心', featured: '案例展播' },
+    'zh-CN': { label: '我们的作品', title: '作品集', subtitle: '每个项目都以转化为核心', featured: '案例展播' },
+    'zh-TW': { label: '我們的作品', title: '作品集', subtitle: '每個項目都以轉化為核心', featured: '案例展播' },
     es: { label: 'Nuestro Trabajo', title: 'Portafolio', subtitle: 'Diseñado para convertir', featured: 'Casos Destacados' },
     ko: { label: '포트폴리오', title: '프로젝트', subtitle: '전환을 위한 디자인', featured: '주요 사례' },
     ja: { label: '実績紹介', title: 'ポートフォリオ', subtitle: '成果を生むデザイン', featured: '注目の事例' },

@@ -42,9 +42,9 @@ export default function Footer() {
           </Link>
           <p className={styles.tagline}>{t('footer.tagline')}</p>
           <div className={styles.socials}>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/company/apex-zone" target="_blank" rel="noopener noreferrer"
                aria-label="LinkedIn" className={styles.social}>in</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer"
                aria-label="X / Twitter" className={styles.social}>𝕏</a>
             <a href="#wechat" aria-label="WeChat" className={styles.social}>💬</a>
           </div>

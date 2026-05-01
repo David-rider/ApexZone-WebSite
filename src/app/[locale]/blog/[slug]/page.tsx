@@ -7,7 +7,7 @@ import { getTranslations } from 'next-intl/server';
 import ShareButtons from './_components/ShareButtons';
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh-CN', 'zh-TW'];
+  const locales = ['en', 'zh-CN', 'zh-TW', 'es', 'ko', 'ja', 'ru', 'it'];
   return blogPosts.flatMap(p =>
     locales.map(locale => ({ locale, slug: p.slug }))
   );

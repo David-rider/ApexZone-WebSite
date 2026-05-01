@@ -27,7 +27,7 @@ const ICONS: Record<string, any> = {
 };
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh-CN', 'zh-TW'];
+  const locales = ['en', 'zh-CN', 'zh-TW', 'es', 'ko', 'ja', 'ru', 'it'];
   const params: { locale: string; slug: string }[] = [];
   
   locales.forEach(locale => {

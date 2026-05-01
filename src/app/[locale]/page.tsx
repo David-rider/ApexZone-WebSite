@@ -23,6 +23,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: 'Apex Zone 为纽约 (New York) 及全美企业打造高转化率的网站、应用和品牌形象。提供中英双语网站设计、本地 SEO 和数字营销服务。',
       keywords: ['纽约网站设计', 'NYC 网页开发', '纽约 SEO', '中英双语网站', '纽约品牌设计', '地产数字营销系统', '数字孪生可视化', '网站SEO/GEO推广', '媒体数字化运营', '美国华人网页设计']
     },
+    'zh-TW': {
+      title: '首頁 | Apex Zone 紐約專業網站設計與數位行銷 (NYC)',
+      description: 'Apex Zone 為紐約 (New York) 及全美企業打造高轉化率的網站、應用和品牌形象。提供中英雙語網站設計、本地 SEO 和數位行銷服務。',
+      keywords: ['紐約網站設計', 'NYC 網頁開發', '紐約 SEO', '中英雙語網站', '紐約品牌設計', '地產數位行銷系統', '數位孿生視覺化', '網站SEO/GEO推廣', '媒體數位化運營', '美國華人網頁設計']
+    },
     es: {
       title: 'Inicio | Apex Zone Diseño Web Profesional y Marketing Digital en Nueva York (NYC)',
       description: 'Apex Zone crea sitios web, aplicaciones e identidades de marca de alta conversión para empresas en la ciudad de Nueva York (NYC). Diseño web, SEO local y marketing digital.',
