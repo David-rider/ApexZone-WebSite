@@ -6,7 +6,7 @@ import styles from './page.module.css';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const isZh = locale === 'zh';
+  const isZh = locale.startsWith('zh');
   
   return {
     title: isZh ? '我们的服务 | 纽约网站设计与全案开发 (NYC)' : 'Our Services | Web Design & Development in New York (NYC)',
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                   <div className={styles.content}>
                     <div className={styles.label}>{s(`${key}.title`)}</div>
                     <h2 className="md-display-small">
-                      {locale === 'zh' ? '开启数字化' : 'Empowering Your'} {s(`${key}.title`)}
+                      {locale.startsWith('zh') ? '开启数字化' : 'Empowering Your'} {s(`${key}.title`)}
                     </h2>
                     <p className={styles.desc}>{s(`${key}.desc`)}</p>
                     

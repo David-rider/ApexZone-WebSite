@@ -6,7 +6,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import '@/app/globals.css';
 
-type Locale = 'en' | 'zh' | 'es' | 'ko' | 'ja' | 'ru' | 'it';
+type Locale = 'en' | 'zh-CN' | 'zh-TW' | 'es' | 'ko' | 'ja' | 'ru' | 'it';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -69,7 +69,7 @@ export default async function LocaleLayout({
           <link
             key={l}
             rel="alternate"
-            hrefLang={l === 'zh' ? 'zh-Hans' : l}
+            hrefLang={l === 'zh-CN' ? 'zh-Hans' : l === 'zh-TW' ? 'zh-Hant' : l}
             href={`${baseUrl}/${l}`}
           />
         ))}

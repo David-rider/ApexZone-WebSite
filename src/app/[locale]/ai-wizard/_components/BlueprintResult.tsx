@@ -11,13 +11,15 @@ import styles from '../page.module.css';
 
 export default function BlueprintResult() {
   const t      = useTranslations('aiWizard.blueprint');
-  const locale = useLocale() as 'en' | 'zh';
+  const locale = useLocale();
   const { answers, reset } = useWizard();
 
   const [blueprint, setBlueprint] = useState<Blueprint | null>(null);
   const [loadingText, setLoadingText] = useState('');
   
-  const loadingMessages = locale === 'zh' 
+  const loadingMessages = locale === 'zh-TW'
+    ? ['分析行業競爭態勢...', '匹配最佳技術架構...', '優化頁面轉化路徑...', '生成個性化解決方案...']
+    : locale === 'zh-CN'
     ? ['分析行业竞争态势...', '匹配最佳技术架构...', '优化页面转化路径...', '生成个性化解决方案...']
     : ['Analyzing industry trends...', 'Matching tech stack...', 'Optimizing conversion paths...', 'Finalizing your roadmap...'];
 

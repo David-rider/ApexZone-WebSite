@@ -21,7 +21,8 @@ export default function Navbar() {
 
   const languages = [
     { code: 'en', label: 'English' },
-    { code: 'zh', label: '中文' },
+    { code: 'zh-CN', label: '简体中文' },
+    { code: 'zh-TW', label: '繁體中文' },
     { code: 'es', label: 'Español' },
     { code: 'ko', label: '한국어' },
     { code: 'ja', label: '日本語' },
@@ -53,7 +54,7 @@ export default function Navbar() {
   }, []);
 
   // Alternate locale path
-  const altLocale = locale === 'en' ? 'zh' : 'en';
+  const altLocale = locale === 'en' ? 'zh-CN' : 'en';
   const altPath   = pathname.replace(`/${locale}`, `/${altLocale}`);
 
   const navLinks = [

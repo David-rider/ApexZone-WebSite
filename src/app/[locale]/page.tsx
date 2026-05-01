@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: 'Apex Zone builds high-converting websites, apps, and brand identities for businesses in New York City (NYC). Bilingual (EN/ZH) web design, Local SEO, and digital marketing services.',
       keywords: ['Web Design New York', 'NYC Website Development', 'Local SEO NYC', 'Bilingual Web Design NYC', 'Real Estate Digital Marketing', 'Digital Twin Solutions', 'SEO/GEO Promotion', 'Media Digital Operations', 'Premium Web Design New York', 'AI-Powered Web Design']
     },
-    zh: {
+    'zh-CN': {
       title: '首页 | Apex Zone 纽约专业网站设计与数字营销 (NYC)',
       description: 'Apex Zone 为纽约 (New York) 及全美企业打造高转化率的网站、应用和品牌形象。提供中英双语网站设计、本地 SEO 和数字营销服务。',
       keywords: ['纽约网站设计', 'NYC 网页开发', '纽约 SEO', '中英双语网站', '纽约品牌设计', '地产数字营销系统', '数字孪生可视化', '网站SEO/GEO推广', '媒体数字化运营', '美国华人网页设计']
@@ -64,7 +64,7 @@ export default function HomePage() {
   const c      = useTranslations('common');
   const pt     = useTranslations('portfolio');
   const locale = useLocale();
-  const isZh   = locale === 'zh';
+  const isZh   = locale === 'zh-CN' || locale === 'zh-TW';
 
   // Get first two items for preview
   const previewItems = portfolioItems.slice(0, 2);

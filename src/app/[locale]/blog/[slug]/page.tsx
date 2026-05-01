@@ -7,7 +7,7 @@ import { getTranslations } from 'next-intl/server';
 import ShareButtons from './_components/ShareButtons';
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh'];
+  const locales = ['en', 'zh-CN', 'zh-TW'];
   return blogPosts.flatMap(p =>
     locales.map(locale => ({ locale, slug: p.slug }))
   );
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) return {};
   
-  const isZh = locale === 'zh';
+  const isZh = locale.startsWith('zh');
   const title = isZh ? post.titleZh : post.title;
   const desc = isZh ? post.excerptZh : post.excerpt;
   
@@ -34,7 +34,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
   if (!post) notFound();
 
   const t      = await getTranslations('blog');
-  const isZh   = locale === 'zh';
+  const isZh   = locale.startsWith('zh');
 
   const title   = isZh ? post.titleZh   : post.title;
   const excerpt = isZh ? post.excerptZh : post.excerpt;
@@ -50,7 +50,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
       <div className="container" style={{ paddingTop: '32px' }}>
         <Link href={`/${locale}/blog`} className={`btn btn-elevated btn-sm ${styles.backBtn}`}>
           <ArrowLeft size={16} />
-          {isZh ? '返回博客' : 'Back to Blog'}
+          {locale === 'zh-TW' ? '返回博客' : locale === 'zh-CN' ? '返回博客' : 'Back to Blog'}
         </Link>
       </div>
 
@@ -79,7 +79,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <span className={styles.metaItem}><Clock size={14} /> {post.readTime} {t('minRead')}</span>
               <span className={styles.metaItem}>
                 <Tag size={14} />
-                {new Date(post.date).toLocaleDateString(isZh ? 'zh-CN' : 'en-US', {
+                {new Date(post.date).toLocaleDateString(locale === 'zh-TW' ? 'zh-TW' : locale === 'zh-CN' ? 'zh-CN' : 'en-US', {
                   year: 'numeric', month: 'long', day: 'numeric',
                 })}
               </span>
@@ -108,25 +108,25 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
                 <div>
                   <div className="md-title-small">{post.author}</div>
                   <div className="md-body-small text-muted">
-                    {isZh ? 'Apex Zone 编辑团队' : 'Apex Zone Editorial'}
+                    {locale === 'zh-TW' ? 'Apex Zone 編輯團隊' : locale === 'zh-CN' ? 'Apex Zone 编辑团队' : 'Apex Zone Editorial'}
                   </div>
                 </div>
               </div>
 
               {/* Share */}
               <div className={styles.shareCard}>
-                <div className="md-label-medium">{isZh ? '分享文章' : 'Share This'}</div>
-                <ShareButtons title={title} url={currentUrl} isZh={isZh} />
+                <div className="md-label-medium">{locale === 'zh-TW' ? '分享文章' : locale === 'zh-CN' ? '分享文章' : 'Share This'}</div>
+                <ShareButtons title={title} url={currentUrl} locale={locale} />
               </div>
 
               {/* CTA */}
               <div className={styles.ctaCard}>
                 <div className={styles.ctaCardIcon}>🚀</div>
                 <h4 className="md-title-medium">
-                  {isZh ? '准备好开始您的项目了吗？' : 'Ready to Start Your Project?'}
+                  {locale === 'zh-TW' ? '準備好開始您的項目了嗎？' : locale === 'zh-CN' ? '准备好开始您的项目了吗？' : 'Ready to Start Your Project?'}
                 </h4>
                 <Link href={`/${locale}/ai-wizard`} className="btn btn-primary btn-sm" style={{ marginTop: '12px' }}>
-                  {isZh ? 'AI规划向导' : 'Try AI Planner'}
+                  {locale === 'zh-TW' ? 'AI規劃精靈' : locale === 'zh-CN' ? 'AI规划向导' : 'Try AI Planner'}
                 </Link>
               </div>
             </aside>
@@ -139,7 +139,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
         <section className="section" style={{ paddingTop: 0 }}>
           <div className="container">
             <h2 className="md-headline-small" style={{ marginBottom: '24px' }}>
-              {isZh ? '相关文章' : 'Related Articles'}
+              {locale === 'zh-TW' ? '相關文章' : locale === 'zh-CN' ? '相关文章' : 'Related Articles'}
             </h2>
             <div className={styles.relatedGrid}>
               {related.map(rp => (

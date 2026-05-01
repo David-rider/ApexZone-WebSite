@@ -27,7 +27,8 @@ export default function NotFound() {
         404
       </div>
       <h1 className="md-headline-medium" style={{ marginBottom: '0.5rem' }}>
-        {locale === 'zh' ? '页面未找到' :
+        {locale === 'zh-CN' ? '页面未找到' :
+         locale === 'zh-TW' ? '頁面未找到' :
          locale === 'es' ? 'Página no encontrada' :
          locale === 'it' ? 'Pagina non trovata' :
          locale === 'ru' ? 'Страница не найдена' :
@@ -36,7 +37,8 @@ export default function NotFound() {
          'Page Not Found'}
       </h1>
       <p className="md-body-large text-muted" style={{ marginBottom: '2rem', maxWidth: '480px' }}>
-        {locale === 'zh' ? '您访问的页面不存在或已被移除。' :
+        {locale === 'zh-CN' ? '您访问的页面不存在或已被移除。' :
+         locale === 'zh-TW' ? '您訪問的頁面不存在或已被移除。' :
          locale === 'es' ? 'La página que buscas no existe o ha sido eliminada.' :
          locale === 'it' ? 'La pagina che stai cercando non esiste o è stata rimossa.' :
          locale === 'ru' ? 'Запрашиваемая страница не существует или была удалена.' :

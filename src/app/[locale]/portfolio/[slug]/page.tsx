@@ -9,7 +9,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh', 'es', 'ko', 'ja', 'ru', 'it'];
+  const locales = ['en', 'zh-CN', 'zh-TW', 'es', 'ko', 'ja', 'ru', 'it'];
   return portfolioItems.flatMap(item =>
     locales.map(locale => ({ locale, slug: item.slug }))
   );
@@ -22,7 +22,8 @@ export async function generateMetadata({ params }: Props) {
   
   const getField = (base: string) => {
     if (locale === 'en') return (item as any)[base];
-    const key = `${base}${locale.charAt(0).toUpperCase() + locale.slice(1)}`;
+    const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
+    const key = `${base}${langSuffix}`;
     return (item as any)[key] || (item as any)[base];
   };
 
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${title} | Portfolio`,
     description: desc,
-    keywords: locale === 'zh'
+    keywords: locale.startsWith('zh')
       ? [...item.tagsZh, item.clientZh, '数字孪生', '纽约网站设计']
       : [...item.tags, item.client, 'Digital Twin NYC', 'Web Design New York'],
   };
@@ -49,7 +50,8 @@ export default async function CaseStudyPage({ params }: Props) {
 
   const getField = (base: string) => {
     if (locale === 'en') return (item as any)[base];
-    const key = `${base}${locale.charAt(0).toUpperCase() + locale.slice(1)}`;
+    const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
+    const key = `${base}${langSuffix}`;
     return (item as any)[key] || (item as any)[base];
   };
 
@@ -65,7 +67,8 @@ export default async function CaseStudyPage({ params }: Props) {
 
   const labelMap: Record<string, any> = {
     en: { back: 'Back to List', challenge: 'Challenge', solution: 'Solution', results: 'Results', client: 'Client', year: 'Year', industry: 'Industry', tech: 'Tech Stack', visit: 'Visit Site', location: 'Location' },
-    zh: { back: '返回作品集', challenge: '项目挑战', solution: '解决方案', results: '项目成果', client: '客户名称', year: '项目年份', industry: '所属行业', tech: '技术栈', visit: '访问网站', location: '项目地点' },
+    'zh-CN': { back: '返回作品集', challenge: '项目挑战', solution: '解决方案', results: '项目成果', client: '客户名称', year: '项目年份', industry: '所属行业', tech: '技术栈', visit: '访问网站', location: '项目地点' },
+    'zh-TW': { back: '返回作品集', challenge: '項目挑戰', solution: '解決方案', results: '項目成果', client: '客戶名稱', year: '項目年份', industry: '所屬行業', tech: '技術棧', visit: '訪問網站', location: '項目地點' },
     es: { back: 'Volver', challenge: 'Desafío', solution: 'Solución', results: 'Resultados', client: 'Cliente', year: 'Año', industry: 'Industria', tech: 'Tecnologías', visit: 'Visitar sitio', location: 'Ubicación' },
     ko: { back: '목록으로', challenge: '과제', solution: '솔루션', results: '결과', client: '클라이언트', year: '연도', industry: '산업분야', tech: '기술 스택', visit: '사이트 방문', location: '위치' },
     ja: { back: '一覧へ戻る', challenge: '課題', solution: '解決策', results: '成果', client: 'クライアント', year: '制作年', industry: '業界', tech: '使用技術', visit: 'サイト訪問', location: '所在地' },

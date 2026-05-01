@@ -77,7 +77,7 @@ const DESIGN_DIRECTION: Record<string, string> = {
 
 // ─── Blueprint Generator ──────────────────────────────────────────────────────
 
-export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): Blueprint {
+export function generateBlueprint(answers: WizardAnswers, locale: string): Blueprint {
   const {
     industry, projectType, goal, audience,
     designStyle, features, content, timeline, budget,
@@ -148,8 +148,8 @@ export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): 
     launch: 'establish your online presence',
   };
 
-  const summary = locale === 'zh'
-    ? `为${industryZh(industry)}行业打造${projectTypeZh(projectType)}，主要目标是${goalZh(goal)}。项目将采用${designStyleZh(designStyle)}设计风格，面向${audienceZh(audience)}用户群体。`
+  const summary = locale.startsWith('zh')
+    ? `为${industryZh(industry, locale)}行业打造${projectTypeZh(projectType, locale)}，主要目标是${goalZh(goal, locale)}。项目将采用${designStyleZh(designStyle, locale)}设计风格，面向${audienceZh(audience, locale)}用户群体。`
     : `A ${projectType.replace(/([A-Z])/g, ' $1').toLowerCase()} for the ${industry} industry, designed to ${goalLabels[goal] ?? goal}. Using a ${designStyle} design direction, targeting ${audience.join(' & ')} audiences.`;
 
   return {
@@ -166,8 +166,12 @@ export function generateBlueprint(answers: WizardAnswers, locale: 'en' | 'zh'): 
 
 // ─── Chinese helpers ──────────────────────────────────────────────────────────
 
-function industryZh(key: string) {
-  const m: Record<string,string> = {
+function industryZh(key: string, locale: string) {
+  const m: Record<string,string> = locale === 'zh-TW' ? {
+    restaurant:'餐飲',retail:'零售',tech:'科技',healthcare:'醫療',
+    finance:'金融',education:'教育',realEstate:'房地產',
+    manufacturing:'製造',beauty:'美容',other:'綜合',
+  } : {
     restaurant:'餐饮',retail:'零售',tech:'科技',healthcare:'医疗',
     finance:'金融',education:'教育',realEstate:'房地产',
     manufacturing:'制造',beauty:'美容',other:'综合',
@@ -175,8 +179,12 @@ function industryZh(key: string) {
   return m[key] ?? key;
 }
 
-function projectTypeZh(key: string) {
-  const m: Record<string,string> = {
+function projectTypeZh(key: string, locale: string) {
+  const m: Record<string,string> = locale === 'zh-TW' ? {
+    corporate:'企業官網',ecommerce:'電商獨立站',portfolio:'作品展示站',
+    blog:'博客媒體網站',booking:'預約系統',miniProgram:'微信小程序',
+    landing:'落地頁',platform:'平台/SaaS',
+  } : {
     corporate:'企业官网',ecommerce:'电商独立站',portfolio:'作品展示站',
     blog:'博客媒体网站',booking:'预约系统',miniProgram:'微信小程序',
     landing:'落地页',platform:'平台/SaaS',
@@ -184,24 +192,33 @@ function projectTypeZh(key: string) {
   return m[key] ?? key;
 }
 
-function goalZh(key: string) {
-  const m: Record<string,string> = {
+function goalZh(key: string, locale: string) {
+  const m: Record<string,string> = locale === 'zh-TW' ? {
+    leads:'獲取更多線索',sales:'提升在線銷售',credibility:'建立品牌可信度',
+    showcase:'展示作品案例',automate:'自動化業務流程',launch:'線上開業',
+  } : {
     leads:'获取更多线索',sales:'提升在线销售',credibility:'建立品牌可信度',
     showcase:'展示作品案例',automate:'自动化业务流程',launch:'线上开业',
   };
   return m[key] ?? key;
 }
 
-function designStyleZh(key: string) {
-  const m: Record<string,string> = {
+function designStyleZh(key: string, locale: string) {
+  const m: Record<string,string> = locale === 'zh-TW' ? {
+    clean:'簡洁專業',bold:'大膽現代',minimal:'極簡優雅',
+    warm:'溫暖親切',tech:'科技未來感',luxe:'豪華高端',
+  } : {
     clean:'简洁专业',bold:'大胆现代',minimal:'极简优雅',
     warm:'温暖亲切',tech:'科技未来感',luxe:'豪华高端',
   };
   return m[key] ?? key;
 }
 
-function audienceZh(keys: string[]) {
-  const m: Record<string,string> = {
+function audienceZh(keys: string[], locale: string) {
+  const m: Record<string,string> = locale === 'zh-TW' ? {
+    usEnglish:'英語',chinese:'中文',multilingual:'全球多語言',
+    b2b:'B2B企業',b2c:'B2C消費者',local:'本地',
+  } : {
     usEnglish:'英语',chinese:'中文',multilingual:'全球多语言',
     b2b:'B2B企业',b2c:'B2C消费者',local:'本地',
   };

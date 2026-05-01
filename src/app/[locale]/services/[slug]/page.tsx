@@ -27,7 +27,7 @@ const ICONS: Record<string, any> = {
 };
 
 export async function generateStaticParams() {
-  const locales = ['en', 'zh'];
+  const locales = ['en', 'zh-CN', 'zh-TW'];
   const params: { locale: string; slug: string }[] = [];
   
   locales.forEach(locale => {
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = servicesData.find(s => s.slug === slug);
   if (!service) return {};
 
-  const isZh = locale === 'zh';
+  const isZh = locale.startsWith('zh');
   const title = isZh ? service.titleZh : service.title;
   const desc = isZh ? service.descZh : service.desc;
 
@@ -68,13 +68,15 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const getField = (obj: any, base: string) => {
     if (locale === 'en') return obj[base];
-    const key = `${base}${locale.charAt(0).toUpperCase() + locale.slice(1)}`;
+    const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
+    const key = `${base}${langSuffix}`;
     return obj[key] || obj[base];
   };
 
   const labels: Record<string, any> = {
     en: { back: 'Back to Services', getStarted: 'Get Started', capabilities: 'Core Capabilities', process: 'Our Process', processDesc: 'From strategy to delivery, we ensure excellence.', faqs: 'FAQs', ready: 'Ready to start your project?', contact: 'Book a free strategy session', contactBtn: 'Contact Us Today' },
-    zh: { back: '返回服务列表', getStarted: '立即咨询', capabilities: '核心优势', process: '服务流程', processDesc: '从策略到交付，我们确保每一步都追求卓越。', faqs: '常见问题', ready: '准备好开启您的项目了吗？', contact: '预约免费策略会议，获取定制化方案建议。', contactBtn: '预约咨询' },
+    'zh-CN': { back: '返回服务列表', getStarted: '立即咨询', capabilities: '核心优势', process: '服务流程', processDesc: '从策略到交付，我们确保每一步都追求卓越。', faqs: '常见问题', ready: '准备好开启您的项目了吗？', contact: '预约免费策略会议，获取定制化方案建议。', contactBtn: '预约咨询' },
+    'zh-TW': { back: '返回服務列表', getStarted: '立即諮詢', capabilities: '核心優勢', process: '服務流程', processDesc: '從策略到交付，我們確保每一步都追求卓越。', faqs: '常見問題', ready: '準備好開啟您的項目了嗎？', contact: '預約免費策略會議，獲取定制化方案建議。', contactBtn: '預約諮詢' },
     es: { back: 'Volver a Servicios', getStarted: 'Empezar', capabilities: 'Capacidades Principales', process: 'Nuestro Proceso', processDesc: 'Desde la estrategia hasta la entrega, aseguramos la excelencia.', faqs: 'Preguntas Frecuentes', ready: '¿Listo para empezar?', contact: 'Reserva una sesión estratégica gratuita', contactBtn: 'Contáctanos Hoy' },
     ko: { back: '서비스로 돌아가기', getStarted: '시작하기', capabilities: '핵심 역량', process: '진행 프로세스', processDesc: '전략부터 납품까지 탁월함을 보장합니다.', faqs: '자주 묻는 질문', ready: '프로젝트를 시작할 준비가 되셨나요?', contact: '무료 전략 세션을 예약하세요', contactBtn: '지금 문의하기' },
     ja: { back: 'サービス一覧へ', getStarted: '開始する', capabilities: '主な機能', process: '制作プロセス', processDesc: '戦略から納品まで、卓越性を追求します。', faqs: 'よくある質問', ready: 'プロジェクトを開始する準備はできましたか？', contact: '無料の戦略セッションを予約する', contactBtn: '今すぐお問い合わせ' },

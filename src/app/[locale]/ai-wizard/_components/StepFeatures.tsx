@@ -40,7 +40,7 @@ export default function StepFeatures() {
       {indRec && (
         <div className={styles.recBanner}>
           <Sparkles size={16} />
-          <span>{locale === 'zh' ? indRec.reasonZh : indRec.reasonEn}</span>
+          <span>{locale.startsWith('zh') ? indRec.reasonZh : indRec.reasonEn}</span>
         </div>
       )}
 
@@ -58,7 +58,7 @@ export default function StepFeatures() {
             >
               {isRec && (
                 <div className={styles.recBadge}>
-                  {locale === 'zh' ? '专家推荐' : 'Recommended'}
+                  {locale.startsWith('zh') ? '专家推荐' : 'Recommended'}
                 </div>
               )}
               {on && (

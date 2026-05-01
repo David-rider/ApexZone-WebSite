@@ -19,7 +19,7 @@ const INDUSTRIES: IndustryFilter[] = ['all', 'tech', 'finance', 'retail', 'healt
 export default function PortfolioClient() {
   const t = useTranslations();
   const locale = useLocale();
-  const isZh = locale === 'zh';
+  const isZh = locale.startsWith('zh');
   
   const ITEMS_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,7 +34,8 @@ export default function PortfolioClient() {
       
       const getField = (obj: any, base: string) => {
         if (locale === 'en') return obj[base];
-        const key = `${base}${locale.charAt(0).toUpperCase() + locale.slice(1)}`;
+        const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
+        const key = `${base}${langSuffix}`;
         return obj[key] || obj[base];
       };
 
@@ -60,7 +61,8 @@ export default function PortfolioClient() {
 
   const labelMap: Record<string, any> = {
     en: { search: 'Search cases...', serviceType: 'Service Type', industry: 'Industry', noFound: 'No cases found', noDesc: 'Try adjusting filters', reset: 'Reset All', view: 'View Project', prev: 'Prev', next: 'Next' },
-    zh: { search: '搜索案例...', serviceType: '服务类型', industry: '所属行业', noFound: '未找到案例', noDesc: '请调整筛选条件', reset: '重置全部', view: '查看项目', prev: '上一页', next: '下一页' },
+    'zh-CN': { search: '搜索案例...', serviceType: '服务类型', industry: '所属行业', noFound: '未找到案例', noDesc: '请调整筛选条件', reset: '重置全部', view: '查看项目', prev: '上一页', next: '下一页' },
+    'zh-TW': { search: '搜尋案例...', serviceType: '服務類型', industry: '所屬行業', noFound: '未找到案例', noDesc: '請調整篩選條件', reset: '重置全部', view: '查看項目', prev: '上一頁', next: '下一頁' },
     es: { search: 'Buscar casos...', serviceType: 'Tipo de servicio', industry: 'Industria', noFound: 'No se encontraron casos', noDesc: 'Ajuste los filtros', reset: 'Restablecer', view: 'Ver proyecto', prev: 'Ant.', next: 'Sig.' },
     ko: { search: '사례 검색...', serviceType: '서비스 유형', industry: '산업분야', noFound: '결과 없음', noDesc: '필터를 조정해 보세요', reset: '초기화', view: '프로젝트 보기', prev: '이전', next: '다음' },
     ja: { search: '事例検索...', serviceType: 'サービス種別', industry: '業界', noFound: '見つかりません', noDesc: '条件を変更してください', reset: 'リセット', view: '詳細を見る', prev: '前へ', next: '次へ' },
@@ -146,7 +148,8 @@ export default function PortfolioClient() {
                 {paginatedItems.map(item => {
                   const getField = (obj: any, base: string) => {
                     if (locale === 'en') return obj[base];
-                    const key = `${base}${locale.charAt(0).toUpperCase() + locale.slice(1)}`;
+                    const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
+                    const key = `${base}${langSuffix}`;
                     return obj[key] || obj[base];
                   };
                   const title = getField(item, 'title');

@@ -5,13 +5,14 @@ import styles from '../page.module.css';
 interface ShareButtonsProps {
   title: string;
   url: string;
-  isZh: boolean;
+  locale: string;
 }
 
-export default function ShareButtons({ title, url, isZh }: ShareButtonsProps) {
+export default function ShareButtons({ title, url, locale }: ShareButtonsProps) {
   const handleCopy = () => {
     navigator.clipboard?.writeText(url);
-    alert(isZh ? '链接已复制！' : 'Link copied to clipboard!');
+    const msg = locale === 'zh-TW' ? '連結已複製！' : locale === 'zh-CN' ? '链接已复制！' : 'Link copied to clipboard!';
+    alert(msg);
   };
 
   return (

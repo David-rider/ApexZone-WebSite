@@ -1,0 +1,523 @@
+{
+  "nav": {
+    "home": "首頁",
+    "services": "服務",
+    "portfolio": "作品集",
+    "aiWizard": "網站AI規劃",
+    "blog": "部落格",
+    "about": "關於我們",
+    "contact": "聯繫我們",
+    "freeConsult": "免費諮詢",
+    "servicesDropdown": {
+      "webDesign": "網站設計與開發",
+      "appDev": "應用與小程式開發",
+      "brandDesign": "品牌視覺設計",
+      "seoMarketing": "SEO與數位行銷"
+    }
+  },
+  "common": {
+    "learnMore": "了解詳情",
+    "viewAll": "查看全部",
+    "getQuote": "獲取報價",
+    "startProject": "開始項目",
+    "freeConsult": "免費諮詢",
+    "contactUs": "聯繫我們",
+    "backToTop": "返回頂部",
+    "loading": "加載中…",
+    "error": "出錯了，請重試。",
+    "back": "上一步",
+    "next": "下一步",
+    "submit": "提交",
+    "cancel": "取消",
+    "close": "關閉",
+    "readMore": "閱讀更多",
+    "visitSite": "訪問網站",
+    "viewProject": "查看項目",
+    "ourProcess": "工作流程",
+    "trustLabel": "已服務 50+ 家企業"
+  },
+  "home": {
+    "hero": {
+      "badge": "已服務 50+ 家企業",
+      "title": "驅動業務增長的專業網站",
+      "subtitle": "從品牌官網到AI應用平台，Apex Zone 打造真正能將訪客轉化為客戶的數位體驗。",
+      "cta1": "查看我們的作品",
+      "cta2": "免費諮詢",
+      "liveOptimized": "已上線並優化",
+      "organicTraffic": "自然流量增長",
+      "lighthouseScore": "Lighthouse得分"
+    },
+    "stats": {
+      "clients": "服務客戶",
+      "years": "年行業經驗",
+      "satisfaction": "客戶滿意度",
+      "industries": "覆蓋行業"
+    },
+    "services": {
+      "label": "核心服務",
+      "title": "核心服務",
+      "subtitle": "端到端的數位解決方案，助力您的業務增長",
+      "webDesign": {
+        "title": "網站設計與開發",
+        "desc": "品牌官網、電商獨立站、多語言網站——以轉化為目標。"
+      },
+      "appDev": {
+        "title": "應用與小程式開發",
+        "desc": "微信小程式、H5頁面、iOS/Android原生應用。"
+      },
+      "brandDesign": {
+        "title": "品牌視覺設計",
+        "desc": "Logo、VI體系、畫冊、包裝——構建完整品牌形象。"
+      },
+      "seoMarketing": {
+        "title": "SEO與數位行銷",
+        "desc": "谷歌SEO、本地SEO、GEO/AI搜尋優化，自然增長。"
+      }
+    },
+    "portfolio": {
+      "label": "近期作品",
+      "title": "近期作品",
+      "subtitle": "真實項目，真實成果",
+      "viewAll": "查看所有作品",
+      "ctaTitle": "下一個就是您的項目",
+      "ctaDesc": "每個企業都是獨特的，讓我們為您量身打造。",
+      "ctaBtn": "開始項目"
+    },
+    "process": {
+      "label": "工作流程",
+      "title": "我們的工作方式",
+      "subtitle": "從第一次通話到網站上線——清晰可預期的流程",
+      "step1": {
+        "title": "需求挖掘",
+        "desc": "深入分析您的市場、競品和增長目標。"
+      },
+      "step2": {
+        "title": "設計方案",
+        "desc": "線框圖、視覺稿，對齊品牌設計呈現。"
+      },
+      "step3": {
+        "title": "開發上線",
+        "desc": "簡潔代碼、高性能、移動優先實現。"
+      },
+      "step4": {
+        "title": "持續優化",
+        "desc": "上線後持續監控、迭代，保持競爭力。"
+      }
+    },
+    "cta": {
+      "label": "免費諮詢",
+      "title": "準備好打造出色網站了嗎？",
+      "subtitle": "預約免費30分鐘諮詢，無需承諾，只需溝通。",
+      "button": "預約免費通話",
+      "phone": "或直接致電我們"
+    }
+  },
+  "services": {
+    "label": "我們的服務",
+    "title": "服務項目",
+    "subtitle": "六大核心服務支柱，選擇最適合您業務的方案",
+    "webDesign": {
+      "title": "網站設計與開發",
+      "desc": "從企業官網到電商獨立站，打造高轉化率的專業網站。",
+      "items": [
+        "企業品牌網站設計與開發",
+        "電商獨立站建設",
+        "中英雙語多語言網站",
+        "響應式移動優先設計",
+        "餐廳點餐網站",
+        "在線預約系統",
+        "WordPress及定制化開發",
+        "網站改版與性能升級"
+      ]
+    },
+    "appDev": {
+      "title": "應用與小程式開發",
+      "desc": "面向現代用戶的移動數位體驗。",
+      "items": [
+        "微信小程式開發",
+        "H5移動網頁製作",
+        "iOS/Android原生應用",
+        "電商平台開發",
+        "行業門戶網站",
+        "微信公眾號開發"
+      ]
+    },
+    "brandDesign": {
+      "title": "品牌視覺設計",
+      "desc": "從概念到交付，完整的品牌視覺體系。",
+      "items": [
+        "Logo與品牌標識設計",
+        "VI視覺識別系統",
+        "畫冊與宣傳冊設計",
+        "產品包裝設計",
+        "廣告創意設計",
+        "品牌規範手冊"
+      ]
+    },
+    "seoMarketing": {
+      "title": "SEO與數位行銷",
+      "desc": "提升排名，觸達更多客戶，實現自然增長。",
+      "items": [
+        "Google搜尋SEO優化",
+        "本地SEO與谷歌地圖排名",
+        "GEO/AI搜尋引擎優化",
+        "Google Ads廣告代運營",
+        "社交媒體行銷",
+        "內容行銷策略"
+      ]
+    }
+  },
+  "portfolio": {
+    "label": "經典案例",
+    "title": "精選作品集",
+    "subtitle": "我們為雄心勃勃的品牌打造的高影響力數位化解決方案。",
+    "viewProject": "查看詳情",
+    "filters": {
+      "all": "全部作品",
+      "brandSite": "品牌官網",
+      "platform": "數位化平台",
+      "app": "移動應用",
+      "brandDesign": "品牌視覺設計",
+      "ecommerce": "電商獨立站",
+      "miniProgram": "小程式"
+    },
+    "industries": {
+      "all": "全部行業",
+      "tech": "科技與AI",
+      "finance": "金融科技",
+      "retail": "零售與消費",
+      "healthcare": "醫療健康",
+      "realEstate": "地產與CIM",
+      "education": "教育科技",
+      "other": "其他行業"
+    }
+  },
+  "aiWizard": {
+    "label": "AI預判分析",
+    "title": "網站AI規劃",
+    "subtitle": "回答幾個問題，60秒獲取您的定制網站藍圖",
+    "stepOf": "第 {current} 步，共 {total} 步",
+    "back": "上一步",
+    "next": "下一步",
+    "submit": "生成我的藍圖",
+    "steps": {
+      "industry": {
+        "title": "您的企業屬於哪個行業？",
+        "hint": "不同行業有不同的最優數位化策略",
+        "options": {
+          "restaurant": "餐飲與美食",
+          "retail": "零售與時尚",
+          "tech": "科技與SaaS",
+          "healthcare": "醫療與健康",
+          "finance": "金融與法律",
+          "education": "教育與培訓",
+          "realEstate": "房地產",
+          "manufacturing": "製造與工業",
+          "beauty": "美容與生活方式",
+          "other": "其他"
+        }
+      },
+      "projectType": {
+        "title": "您需要什麼類型的項目？",
+        "hint": "選擇您需要的數位產品類型",
+        "options": {
+          "corporate": "企業官網",
+          "ecommerce": "電商獨立站",
+          "portfolio": "作品集/展示站",
+          "blog": "部落格/媒體網站",
+          "booking": "預約系統",
+          "miniProgram": "微信小程式",
+          "landing": "落地頁",
+          "platform": "平台/SaaS"
+        }
+      },
+      "goal": {
+        "title": "您的主要目標是什麼？",
+        "hint": "幫我們理解您的成功標準",
+        "options": {
+          "leads": "獲取更多線索",
+          "sales": "提升在線銷售",
+          "credibility": "建立品牌可信度",
+          "showcase": "展示作品/案例",
+          "automate": "自動化業務流程",
+          "launch": "線上開業"
+        }
+      },
+      "audience": {
+        "title": "您的目標受眾是誰？",
+        "hint": "選擇主要的語言策略",
+        "options": {
+          "usEnglish": "僅英語 (Global)",
+          "chinese": "僅中文 (China)",
+          "multilingual": "多語言 (全球 / 7種語言)"
+        }
+      },
+      "designStyle": {
+        "title": "您偏好什麼設計風格？",
+        "hint": "選擇最符合您品牌氣質的視覺方向",
+        "options": {
+          "clean": "簡潔專業",
+          "bold": "大膽現代",
+          "minimal": "極簡優雅",
+          "warm": "溫暖親切",
+          "tech": "科技未來感",
+          "luxe": "豪華高端"
+        }
+      },
+      "features": {
+        "title": "您需要哪些關鍵功能？",
+        "hint": "可多選",
+        "options": {
+          "contactForm": "聯繫表單",
+          "booking": "在線預約",
+          "ecommerce": "電商/購物車",
+          "blog": "部落格/新聞",
+          "aiChat": "AI對話/助手",
+          "memberLogin": "會員登錄區",
+          "video": "視頻集成",
+          "map": "地圖/位置",
+          "seo": "SEO優化包"
+        }
+      },
+      "content": {
+        "title": "您的內容準備情況？",
+        "hint": "幫我們精準規劃項目週期",
+        "options": {
+          "ready": "內容已全部準備好",
+          "half": "約50%已準備好",
+          "ideas": "有想法，需要幫助撰寫",
+          "scratch": "從零開始"
+        }
+      },
+      "timeline": {
+        "title": "您期望的交付週期？",
+        "hint": "您希望項目何時完成？",
+        "options": {
+          "asap": "越快越好（約2周）",
+          "month": "1個月內",
+          "quarter": "2-3個月",
+          "flexible": "時間靈活"
+        }
+      },
+      "budget": {
+        "title": "您的預算範圍？",
+        "hint": "幫助我們為您匹配合適的方案",
+        "options": {
+          "under1k": "$1,000以下",
+          "1kTo3k": "$1,000 – $3,000",
+          "3kTo8k": "$3,000 – $8,000",
+          "8kTo20k": "$8,000 – $20,000",
+          "above20k": "$20,000以上",
+          "discuss": "另行協商"
+        }
+      },
+      "contact": {
+        "title": "如何聯繫您？",
+        "hint": "我們將在1個工作日內發送藍圖並跟進",
+        "name": "姓名",
+        "email": "電子郵箱",
+        "phone": "電話（選填）",
+        "company": "公司名稱（選填）",
+        "namePlaceholder": "您的姓名",
+        "emailPlaceholder": "your@email.com",
+        "phonePlaceholder": "+1 (xxx) xxx-xxxx",
+        "companyPlaceholder": "您的公司",
+        "required": "姓名和郵箱為必填項"
+      }
+    },
+    "blueprint": {
+      "title": "您的定制網站藍圖",
+      "subtitle": "根據您的回答，以下是我們的專業建議",
+      "generating": "正在生成您的藍圖…",
+      "sections": {
+        "projectSummary": "項目概述",
+        "pageStructure": "推薦頁面架構",
+        "featureModules": "建議功能模組",
+        "designDirection": "設計方向",
+        "techStack": "技術棧",
+        "seoKeywords": "SEO關鍵詞建議",
+        "timeline": "預估交付週期",
+        "investment": "預估投入範圍"
+      },
+      "cta": {
+        "title": "準備好將藍圖變為現實了嗎？",
+        "subtitle": "我們的團隊將審閱您的藍圖並在1個工作日內聯繫您。",
+        "primary": "預約免費通話",
+        "secondary": "下載PDF藍圖",
+        "restart": "重新開始"
+      }
+    }
+  },
+  "blog": {
+    "label": "行業洞察",
+    "title": "行業洞察與資訊",
+    "subtitle": "實戰行銷策略、設計趨勢和行業見解",
+    "readMore": "閱讀文章",
+    "minRead": "分鐘閱讀",
+    "by": "作者",
+    "published": "發佈於",
+    "categories": {
+      "all": "全部",
+      "webDesign": "網站設計",
+      "seo": "SEO指南",
+      "marketing": "數位行銷",
+      "tech": "技術趨勢",
+      "caseStudy": "案例解析"
+    }
+  },
+  "about": {
+    "label": "關於我們",
+    "title": "您在紐約的數位化增長夥伴",
+    "subtitle": "連接創意設計、前沿技術與商業戰略的橋梁。",
+    "story": "總部位於紐約市中心的 Apex Zone 是一家專注於高性能數位化解決方案的精品代理機構。我們不僅開發網站，更致力於構建品牌生態系統，助力品牌在本地和全球市場中佔據主導地位。",
+    "missionLabel": "我們的使命",
+    "mission": "通過不僅美觀而且可衡量、可擴展的數位化解決方案，為有雄心的企業賦能。",
+    "vision": "成為品牌在全球技術與本地市場文化交匯處航行的領先橋梁。",
+    "values": {
+      "title": "核心價值觀",
+      "quality": {
+        "title": "匠心品質",
+        "desc": "我們尊重每一個像素，致力於打造符合品牌身份的高端質感。"
+      },
+      "results": {
+        "title": "結果導向",
+        "desc": "沒有轉化的設計只是藝術。我們為增長而建。"
+      },
+      "partnership": {
+        "title": "深度夥伴",
+        "desc": "我們不僅是服務商，更是您的長期戰略合作夥伴。"
+      },
+      "innovation": {
+        "title": "技術前瞻",
+        "desc": "從 Next.js 到數位孿生，我們利用未來的技術解決當下的問題。"
+      }
+    },
+    "team": {
+      "title": "專家團隊",
+      "subtitle": "設計師、開發人員和戰略家同步協作，將您的願景變為現實。"
+    },
+    "stats": {
+      "title": "里程碑",
+      "clients": "服務夥伴",
+      "projects": "上線項目",
+      "satisfaction": "客戶留存率",
+      "years": "深耕紐約"
+    },
+    "cta": {
+      "title": "準備好開啟數位化增長了嗎？",
+      "button": "立即諮詢"
+    },
+    "why": {
+      "label": "核心優勢",
+      "title": "為什麼全球品牌選擇 Apex Zone",
+      "visualSubtitle": "紐約 · 雙語 · 結果導向",
+      "items": [
+        "原生雙語團隊 — 中英無縫溝通",
+        "紐約本地 SEO 與 GEO 定向行銷專家",
+        "性能卓越：所有網站均針對速度和可訪問性進行優化",
+        "AI 集成流程：更智能的商業運營支持",
+        "全棧能力：從 UI/UX 到複雜的雲端後端開發",
+        "量身定制的後期支持與維護方案"
+      ]
+    }
+  },
+  "contact": {
+    "label": "聯繫我們",
+    "title": "共建您的數位未來",
+    "subtitle": "預約 30 分鐘免費策略通話，討論您的目標並獲取定制路線圖。",
+    "form": {
+      "name": "您的姓名",
+      "email": "企業信箱",
+      "phone": "聯繫電話",
+      "company": "公司名稱/網址",
+      "service": "意向服務",
+      "message": "項目詳情",
+      "namePlaceholder": "我們該如何稱呼您？",
+      "emailPlaceholder": "hello@company.com",
+      "phonePlaceholder": "+1 (xxx) xxx-xxxx",
+      "companyPlaceholder": "您的公司或網址",
+      "messagePlaceholder": "請描述您的目標、時間表及目前面臨的挑戰…",
+      "serviceOptions": {
+        "webDesign": "網站設計與開發",
+        "appDev": "APP 與小程式開發",
+        "brandDesign": "品牌視覺設計",
+        "seoMarketing": "本地 SEO 與數位行銷",
+        "consultation": "戰略諮詢",
+        "other": "其他"
+      },
+      "required": "此欄位為必填項",
+      "submit": "預約諮詢",
+      "sending": "發送中…",
+      "success": "收到您的消息！我們的團隊將在 24 小時內與您聯繫。",
+      "error": "發送失敗。請重試或直接通過郵件聯繫我們。"
+    },
+    "info": {
+      "address": "紐約辦公室",
+      "addressVal": "New York, NY",
+      "phone": "撥打電話",
+      "email": "發送郵件",
+      "hours": "辦公時間",
+      "hoursVal": "週一至週五  9:00 AM – 6:00 PM EST"
+    },
+    "freeConsult": {
+      "title": "免費策略會議",
+      "desc": "獲取對您當前數位化現狀的專業分析，以及明確的提升計劃。",
+      "button": "預約免費通話"
+    }
+  },
+  "footer": {
+    "tagline": "打造真正驅動業務增長的數位形象。",
+    "quickLinks": "快速連結",
+    "coreServices": "核心服務",
+    "contact": "聯繫方式",
+    "rights": "版權所有。",
+    "privacy": "隱私政策",
+    "terms": "服務條款"
+  },
+  "privacy": {
+    "title": "隱私政策",
+    "lastUpdated": "最後更新：2025年5月",
+    "intro": "在 Apex Zone，我們深知數據隱私的重要性。本政策闡述了我們在您與我們的數位化平台互動時，關於收集、使用和保護您個人信息的透明度承諾。",
+    "sections": [
+      {
+        "title": "1. 信息收集",
+        "content": "我們收集您通過聯繫表單、AI 藍圖向導以及戰略諮詢請求自願提供的信息。這可能包括您的姓名、企業信箱、電話號碼以及具體的項目需求。"
+      },
+      {
+        "title": "2. 處理目的",
+        "content": "您的數據主要用於交付定制化的數位化解決方案、提供項目報價以及發送戰略更新。我們利用分析工具來改善用戶體驗，但我們絕不會向第三方廣告商出售您的數據。"
+      },
+      {
+        "title": "3. 安全與合規",
+        "content": "Apex Zone 實施了穩健的行政和技術保障措施以防止未經授權的訪問。我們遵守行業標準，對傳輸和存儲過程中的數據進行加密。"
+      },
+      {
+        "title": "4. 國際傳輸",
+        "content": "作為一家總部位於紐約的全球性代理機構，您的數據可能會在美國進行處理。通過使用我們的服務，即表示您同意按照本政策進行此類本地化處理。"
+      }
+    ]
+  },
+  "terms": {
+    "title": "服務條款",
+    "lastUpdated": "最後更新：2025年5月",
+    "intro": "通過訪問 Apex Zone 網站或使用我們的服務，即表示您同意遵守並受以下條款和條件的約束。請仔細閱讀這些內容。",
+    "sections": [
+      {
+        "title": "1. 服務範圍",
+        "content": "Apex Zone 提供高端網站設計、全棧開發和 SEO 行銷服務。具體的項目範圍、時間線和交付物受項目開始前簽署的個人客戶協議約束。"
+      },
+      {
+        "title": "2. 知識產權",
+        "content": "由 Apex Zone 製作的所有創意作品、代碼架構和視覺設計在收到全額付款前均為代理機構的知識產權，付款後權利將根據項目合同進行移交。"
+      },
+      {
+        "title": "3. 職業責任",
+        "content": "雖然我們致力於追求數位化完美，但對於超出我們合理控制範圍的間接損失或第三方平台變化（如谷歌算法更新），Apex Zone 不承擔責任。"
+      },
+      {
+        "title": "4. 管轄權",
+        "content": "這些條款受美國紐約州法律管轄。任何爭議均應通過紐約縣管轄範圍內的仲裁方式解決。"
+      }
+    ]
+  }
+}

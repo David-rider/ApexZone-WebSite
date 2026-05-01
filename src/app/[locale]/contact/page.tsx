@@ -87,7 +87,7 @@ export default function ContactPage() {
                   <div className={styles.successIcon}>✅</div>
                   <h3 className="md-headline-small">{t('form.success')}</h3>
                   <p className="md-body-medium text-muted">
-                    {locale === 'zh'
+                    {locale.startsWith('zh')
                       ? '您的邮件客户端已打开，请确认并发送邮件。'
                       : 'Your email client should have opened — please confirm the send.'
                     }
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     style={{ marginTop: 8 }}
                     onClick={() => { setStatus('idle'); setForm({ name:'',email:'',phone:'',company:'',service:'',message:'' }); }}
                   >
-                    {locale === 'zh' ? '重新填写' : 'Send Another'}
+                    {locale.startsWith('zh') ? '重新填写' : 'Send Another'}
                   </button>
                 </div>
               ) : (
@@ -173,7 +173,7 @@ export default function ContactPage() {
 
                   {/* Send tip */}
                   <p className={styles.sendTip}>
-                    {locale === 'zh'
+                    {locale.startsWith('zh')
                       ? '📬 点击发送后，您的邮件客户端将自动打开并预填信息，确认发送即可。'
                       : '📬 Clicking send will open your email client with the message pre-filled — just confirm and send.'}
                   </p>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 <h3 className="md-title-large">{t('freeConsult.title')}</h3>
                 <p className="md-body-medium">{t('freeConsult.desc')}</p>
                 <a
-                  href={`mailto:${RECIPIENT}?subject=${encodeURIComponent(locale === 'zh' ? '预约免费咨询' : 'Free Consultation Request')}`}
+                  href={`mailto:${RECIPIENT}?subject=${encodeURIComponent(locale.startsWith('zh') ? '预约免费咨询' : 'Free Consultation Request')}`}
                   className="btn btn-white"
                   style={{ marginTop: '4px' }}
                 >

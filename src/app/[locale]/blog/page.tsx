@@ -52,9 +52,9 @@ export default function BlogPage() {
               <div className={styles.featuredBody}>
                 <span className="badge badge-sage">{t(`categories.${featured.category}`)}</span>
                 <h2 className="md-headline-medium">
-                  {locale === 'zh' ? featured.titleZh : featured.title}
+                  {locale.startsWith('zh') ? featured.titleZh : featured.title}
                 </h2>
-                <p className="md-body-large">{locale === 'zh' ? featured.excerptZh : featured.excerpt}</p>
+                <p className="md-body-large">{locale.startsWith('zh') ? featured.excerptZh : featured.excerpt}</p>
                 <div className={styles.postMeta}>
                   <span className="md-body-small text-muted">{featured.author}</span>
                   <span className="md-body-small text-muted">·</span>
@@ -108,15 +108,15 @@ export default function BlogPage() {
                     <span className="md-label-small text-muted">{post.readTime} {t('minRead')}</span>
                   </div>
                   <h3 className="md-title-medium" style={{ margin: '12px 0 8px' }}>
-                    {locale === 'zh' ? post.titleZh : post.title}
+                    {locale.startsWith('zh') ? post.titleZh : post.title}
                   </h3>
                   <p className="md-body-small text-muted">
-                    {locale === 'zh' ? post.excerptZh : post.excerpt}
+                    {locale.startsWith('zh') ? post.excerptZh : post.excerpt}
                   </p>
                   <div className={styles.postMeta} style={{ marginTop: '16px' }}>
                     <span className="md-label-small text-muted">{post.author}</span>
                     <span className="md-label-small text-muted">·</span>
-                    <span className="md-label-small text-muted">{new Date(post.date).toLocaleDateString(locale === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                    <span className="md-label-small text-muted">{new Date(post.date).toLocaleDateString(locale === 'zh-TW' ? 'zh-TW' : locale === 'zh-CN' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                   </div>
                 </div>
               </Link>
