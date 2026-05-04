@@ -1,0 +1,157 @@
+// ─── EXAMPLE: New i18n Portfolio Translation Structure for en.json ───────────
+// This shows the new nested translation key structure
+// Copy this section and merge into your messages/en.json
+
+{
+  "portfolio": {
+    "categories": {
+      "brandSite": "Brand Website",
+      "platform": "Platform",
+      "app": "Mobile App",
+      "brandDesign": "Brand Design",
+      "ecommerce": "E-commerce",
+      "miniProgram": "Mini-Program"
+    },
+    "industries": {
+      "tech": "Technology",
+      "finance": "Finance & Legal",
+      "retail": "Retail & Consumer",
+      "healthcare": "Healthcare",
+      "realEstate": "Real Estate",
+      "education": "Education",
+      "other": "Other Industries"
+    },
+    "projects": {
+      "noviant": {
+        "title": "Noviant — ICT & AI Solutions",
+        "client": "Noviant Inc.",
+        "description": "Full bilingual (EN/ZH) corporate website for a New York-based managed service provider and AI consulting firm. Built with Next.js App Router, next-intl internationalization, and GEO-optimized metadata.",
+        "challenge": "The client needed a bilingual site that would rank for both English tech terms and Chinese-speaking enterprise clients in the US market.",
+        "solution": "Implemented Next.js static generation with locale-based routing (/en/ and /zh/), JSON-LD Schema.org structured data, Core Web Vitals optimization, and comprehensive bilingual content strategy.",
+        "results": [
+          "Lighthouse score: 98/100 Performance",
+          "Bilingual SEO coverage",
+          "Mobile-first responsive design",
+          "GEO/AI search optimization"
+        ],
+        "tags": ["Next.js", "TypeScript", "Bilingual", "SEO"],
+        "location": "New York"
+      },
+      "springShore": {
+        "title": "The Spring Shore CIM System",
+        "client": "CCCC Group",
+        "description": "A comprehensive City Information Modeling (CIM) system for the Hainan Riyue Bay project, providing real-time urban management and physical simulation.",
+        "challenge": "Creating a highly realistic 3D model that remains performant across web browsers for large-scale urban planning.",
+        "solution": "Utilized advanced WebGL rendering techniques and data layering to ensure smooth interaction with millions of polygons.",
+        "results": [
+          "Full-scale urban simulation",
+          "Enhanced decision making",
+          "Interactive planning tools"
+        ],
+        "tags": ["CIM", "Digital Twin", "3D Rendering", "Urban Planning"],
+        "location": "Hainan"
+      },
+      "retailMiniProgram": {
+        "title": "Luxury Retail WeChat Mini-Program",
+        "client": "Luxe Boutique",
+        "description": "A seamless shopping experience within WeChat for a luxury boutique, featuring integrated payments, social sharing, and membership points.",
+        "challenge": "High-performance rendering of luxury product images within the WeChat environment while maintaining fast loading.",
+        "solution": "Used WeChat native development with cloud functions for backend, optimized image CDN, and smart caching.",
+        "results": [
+          "200% increase in social traffic",
+          "Average conversion rate >5%",
+          "Smooth 60fps scrolling"
+        ],
+        "tags": ["WeChat", "E-commerce", "Payment", "Social"],
+        "location": "Shanghai"
+      }
+    }
+  },
+  
+  "services": {
+    "webDesign": {
+      "title": "Web Design & Development",
+      "description": "High-performance, bespoke websites that blend stunning aesthetics with conversion-focused strategy.",
+      "features": {
+        "0": {
+          "title": "Bilingual Optimization",
+          "description": "Seamless multi-language architecture for global market reach."
+        },
+        "1": {
+          "title": "SEO & Performance",
+          "description": "90+ Lighthouse scores ensuring top rankings and instant load times."
+        }
+      },
+      "process": {
+        "0": {
+          "step": "01",
+          "title": "Strategy"
+        },
+        "1": {
+          "step": "02",
+          "title": "Design"
+        },
+        "2": {
+          "step": "03",
+          "title": "Development"
+        },
+        "3": {
+          "step": "04",
+          "title": "Launch"
+        }
+      },
+      "faqs": {
+        "0": {
+          "question": "How long does it take?",
+          "answer": "Typical projects take 8-12 weeks, depending on complexity."
+        },
+        "1": {
+          "question": "Do you offer ongoing support?",
+          "answer": "Yes, we offer 3-6 months of free technical support post-launch."
+        }
+      }
+    }
+  },
+  
+  "blog": {
+    "categories": {
+      "webDesign": "Web Design",
+      "seo": "SEO",
+      "marketing": "Marketing",
+      "tech": "Technology",
+      "caseStudy": "Case Study"
+    },
+    "posts": {
+      "whyBilingualWebsite": {
+        "title": "Why a Bilingual Website is a Competitive Advantage for US Businesses",
+        "excerpt": "With 4+ million Chinese-speaking consumers in the US, a bilingual website isn't just thoughtful — it's a strategic growth channel.",
+        "content": "<h2>The Landscape of the US Market</h2><p>The United States is home to one of the largest and most influential Chinese-speaking populations in the world...</p>"
+      },
+      "coreWebVitals": {
+        "title": "Core Web Vitals 2025: The Complete Guide for Small Business Owners",
+        "excerpt": "Google's ranking algorithm now heavily weighs page experience. Here's exactly what you need to score 90+ on Lighthouse.",
+        "content": "<h2>What are Core Web Vitals?</h2><p>Core Web Vitals are a set of specific factors that Google considers important in a webpage's overall user experience...</p>"
+      }
+    }
+  },
+  
+  "wizard": {
+    "industries": {
+      "restaurant": "Restaurant & Food Service",
+      "retail": "Retail & E-commerce",
+      "tech": "Technology & SaaS",
+      "healthcare": "Healthcare & Medical",
+      "realEstate": "Real Estate & Property",
+      "finance": "Finance & Legal",
+      "education": "Education & Training",
+      "other": "Other Industry"
+    },
+    "projectTypes": {
+      "website": "Brand Website",
+      "app": "Mobile/Web App",
+      "miniProgram": "WeChat Mini-Program",
+      "saas": "SaaS Platform",
+      "other": "Other Project Type"
+    }
+  }
+}

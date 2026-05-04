@@ -1,75 +1,30 @@
+/**
+ * Simplified Portfolio Item using i18n translation keys
+ * All text content is now managed through messages JSON files
+ */
 export interface PortfolioItem {
   id: string;
   slug: string;
-  title: string;
-  titleZh: string;
-  titleEs: string;
-  titleKo: string;
-  titleJa: string;
-  titleRu: string;
-  titleIt: string;
-  client: string;
-  clientZh: string;
-  clientEs: string;
-  clientKo: string;
-  clientJa: string;
-  clientRu: string;
-  clientIt: string;
+  // Translation keys (no longer storing multiple language versions)
+  titleKey: string;           // e.g., 'portfolio.projects.noviant.title'
+  clientKey: string;          // e.g., 'portfolio.projects.noviant.client'
+  descriptionKey: string;     // e.g., 'portfolio.projects.noviant.description'
+  challengeKey: string;       // e.g., 'portfolio.projects.noviant.challenge'
+  solutionKey: string;        // e.g., 'portfolio.projects.noviant.solution'
+  resultsKey: string;         // e.g., 'portfolio.projects.noviant.results' (array)
+  tagsKey: string;            // e.g., 'portfolio.projects.noviant.tags' (array)
+  locationKey: string;        // e.g., 'portfolio.projects.noviant.location'
+  
+  // Structured metadata (language-agnostic)
   category: 'brandSite' | 'platform' | 'app' | 'brandDesign' | 'ecommerce' | 'miniProgram';
   industry: 'tech' | 'finance' | 'retail' | 'healthcare' | 'realEstate' | 'education' | 'other';
-  industryZh: string;
-  industryEs: string;
-  industryKo: string;
-  industryJa: string;
-  industryRu: string;
-  industryIt: string;
-  tags: string[];
-  tagsZh: string[];
-  tagsEs: string[];
-  tagsKo: string[];
-  tagsJa: string[];
-  tagsRu: string[];
-  tagsIt: string[];
+  
+  // Media and links
   image: string;
   url?: string;
-  description: string;
-  descriptionZh: string;
-  descriptionEs: string;
-  descriptionKo: string;
-  descriptionJa: string;
-  descriptionRu: string;
-  descriptionIt: string;
-  challenge: string;
-  challengeZh: string;
-  challengeEs: string;
-  challengeKo: string;
-  challengeJa: string;
-  challengeRu: string;
-  challengeIt: string;
-  solution: string;
-  solutionZh: string;
-  solutionEs: string;
-  solutionKo: string;
-  solutionJa: string;
-  solutionRu: string;
-  solutionIt: string;
-  results: string[];
-  resultsZh: string[];
-  resultsEs: string[];
-  resultsKo: string[];
-  resultsJa: string[];
-  resultsRu: string[];
-  resultsIt: string[];
   tech: string[];
   featured: boolean;
   year: number;
-  location: string;
-  locationZh: string;
-  locationEs: string;
-  locationKo: string;
-  locationJa: string;
-  locationRu: string;
-  locationIt: string;
 }
 
 export const portfolioItems: PortfolioItem[] = [
