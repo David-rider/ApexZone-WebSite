@@ -172,6 +172,32 @@
     "title": "精選作品集",
     "subtitle": "我們為雄心勃勃的品牌打造的高影響力數位化解決方案。",
     "viewProject": "查看詳情",
+    "searchPlaceholder": "搜尋案例...",
+    "filterLabels": {
+      "serviceType": "服務類型",
+      "industry": "所屬行業"
+    },
+    "empty": {
+      "noFound": "未找到案例",
+      "noDesc": "請調整篩選條件",
+      "reset": "重置全部"
+    },
+    "pagination": {
+      "prev": "上一頁",
+      "next": "下一頁"
+    },
+    "detail": {
+      "back": "返回作品集",
+      "challenge": "項目挑戰",
+      "solution": "解決方案",
+      "results": "項目成果",
+      "client": "客戶名稱",
+      "year": "項目年份",
+      "industry": "所屬行業",
+      "tech": "技術棧",
+      "visit": "訪問網站",
+      "location": "項目地點"
+    },
     "filters": {
       "all": "全部作品",
       "brandSite": "品牌官網",
@@ -190,6 +216,138 @@
       "realEstate": "地產與CIM",
       "education": "教育科技",
       "other": "其他行業"
+    },
+    "projects": {
+      "noviant": {
+        "title": "Noviant — ICT與AI解決方案",
+        "client": "Noviant 科技",
+        "description": "為紐約託管服務提供商及AI諮詢公司打造的完整中英雙語企業官網。基於Next.js App Router構建，集成next-intl國際化方案和GEO搜尋優化元數據。",
+        "challenge": "客戶需要一個在美國市場同時針對英文科技關鍵詞和華人企業客戶進行SEO優化的雙語網站。",
+        "solution": "實施了基於語言路由的Next.js靜態生成，集成JSON-LD結構化數據、Core Web Vitals優化和系統化雙語內容策略。",
+        "results": ["Lighthouse得分：98/100性能", "雙語SEO覆蓋", "移動優先響應式設計", "GEO/AI搜尋優化"],
+        "tags": ["Next.js", "TypeScript", "中英雙語", "SEO優化"],
+        "location": "紐約"
+      },
+      "springShore": {
+        "title": "悅海長灘 CIM 實景仿真系統",
+        "client": "中國交建",
+        "description": "為海南日月灣項目打造的綜合城市信息模型 (CIM) 系統，支持實時城市管理和物理仿真。",
+        "challenge": "創建一個高度逼真的3D模型，並在大比例城市規劃中保持Web瀏覽器的流暢運行。",
+        "solution": "利用先進的 WebGL 渲染技術和數據分層，確保與數百萬個多邊形的順暢互動。",
+        "results": ["全比例城市仿真", "增強決策支持", "互動式規劃工具"],
+        "tags": ["CIM系統", "數字孿生", "3D渲染", "城市規劃"],
+        "location": "海南"
+      },
+      "retailMiniProgram": {
+        "title": "奢侈品零售微信小程式",
+        "client": "高端零售品牌",
+        "description": "為奢侈品精品店打造的微信小程式無縫購物體驗，集成支付、社交分享和會員積分功能。",
+        "challenge": "在微信環境下實現奢侈品圖片的高性能渲染，同時保持極速載入。",
+        "solution": "使用微信原生開發，後台採用雲函數，優化了圖片CDN並實施智能緩存。",
+        "results": ["社交流量提升200%", "平均轉化率超過5%", "流暢的60fps捲動"],
+        "tags": ["微信小程式", "移動電商", "支付集成", "社交分享"],
+        "location": "上海"
+      },
+      "fintechBrand": {
+        "title": "次世代金融科技視覺體系",
+        "client": "CoinStream 金融",
+        "description": "為現代加密貨幣存儲服務商打造的全面品牌視覺體系，傳遞信任、安全與創新的理念。",
+        "challenge": "設計一個既像傳統銀行一樣穩健，又像科技初創公司一樣創新的品牌。",
+        "solution": "深度的色彩心理分析、定制的高對比度排版以及跨平台的統一VI系統。",
+        "results": ["高擴展性的Logo系統", "94%的正面用戶認知率調查", "交付完整的品牌規範手冊"],
+        "tags": ["Logo設計", "VI系統", "視覺體系", "品牌手冊"],
+        "location": "新加坡"
+      },
+      "healthcareBooking": {
+        "title": "現代診所預約系統",
+        "client": "紐約 BrightHealth 診所",
+        "description": "為金融科技初創公司打造的完整視覺品牌重塑，構建現代、可信且可擴展的設計系統。",
+        "challenge": "通過簡單優雅的視覺語言傳達複雜的金融數據。",
+        "solution": "創建了統一的調色板和模組化圖標庫，重點關注數據可視化的清晰度。",
+        "results": ["提升品牌信任度", "多平台設計統一", "獲獎設計方案"],
+        "tags": ["預約系統", "表單設計", "合規性", "UI設計"],
+        "location": "紐約"
+      },
+      "noviantManaged": {
+        "title": "Noviant 託管服務門戶",
+        "client": "Noviant 科技",
+        "description": "為企業客戶提供雲基礎設施和網絡安全服務的中央管理門戶。",
+        "challenge": "將多樣的安全數據源集成到單一、直觀的管理界面中。",
+        "solution": "採用微前端架構，配合實時 WebSocket 更新進行威脅監控。",
+        "results": ["縮短響應時間", "集中化管理", "高客戶留存率"],
+        "tags": ["SaaS門戶", "雲管理", "實時監控", "安全防護"],
+        "location": "紐約"
+      },
+      "springShoreTourism": {
+        "title": "悅海長灘 CIM 實景仿真系統",
+        "client": "中國交建",
+        "description": "為海南萬寧日月灣旅遊度假區打造的全面可視化系統，通過高保真渲染實現實景仿真。",
+        "challenge": "準確模擬沿海度假區寧靜而複雜的自然環境。",
+        "solution": "採用具有動態天氣和光照系統的獨立場景構建，實現最大程度的真實感。",
+        "results": ["95% 真實感評分", "提升投資者演示效果", "支持多平台展示"],
+        "tags": ["3D實景渲染", "旅遊規劃", "環境仿真"],
+        "location": "海南"
+      },
+      "jinjiangGlory": {
+        "title": "錦江大院 CIM 數字化行銷系統",
+        "client": "中茂地產",
+        "description": "為成都錦江大院項目打造的高端 CIM 數字化行銷系統，專注於沉浸式戶型瀏覽和社區可視化。",
+        "challenge": "為高端購房者在傳統物理展示與現代數字互動之間建立無縫銜接。",
+        "solution": "開發了具有實時光影模擬和互動式戶型瀏覽功能的高保真 CIM 平台。",
+        "results": ["提升客戶參與度", "縮短銷售週期", "定制化品牌體驗"],
+        "tags": ["CIM行銷", "數字化展廳", "數字孿生"],
+        "location": "成都"
+      },
+      "meijiangHeyue": {
+        "title": "梅江和悅高端住宅 CIM 系統",
+        "client": "聯匯地產",
+        "description": "針對高端住宅板塊打造的數字化展示系統，展示豪華住宅與城市環境的深度融合。",
+        "challenge": "通過數字手段傳達住宅的高端價值，同時確保用戶體驗的簡潔性。",
+        "solution": "定制化的高端視覺語言和區域價值數字地圖。",
+        "results": ["確立了豪華品牌形象", "平台用戶留存率高", "無縫城市數據同步"],
+        "tags": ["豪宅展示", "城市融合", "互動體驗"],
+        "location": "天津"
+      },
+      "jinmaoSmartCity": {
+        "title": "金茂智慧科學城 CIM 規劃系統",
+        "client": "中國金茂",
+        "description": "智慧科學城的未來科技感可視化展示，突出區域魅力與長期城市規劃。",
+        "challenge": "將抽象的城市規劃概念轉化為易於理解且具啟發性的 3D 場景。",
+        "solution": "利用高科技可視化技術對展示方案進行創意定制。",
+        "results": ["獲得利益相關者的正面反饋", "清晰的願景傳達", "獲獎級可視化效果"],
+        "tags": ["智慧城市", "城市規劃", "未來科技"],
+        "location": "寧波"
+      },
+      "educationPlaceholder": {
+        "title": "教育科技解決方案 — 即將發布",
+        "client": "Apex Zone 實驗室",
+        "description": "我們正在整理教育平台相關的深度案例研究，敬請期待。",
+        "challenge": "待定",
+        "solution": "待定",
+        "results": ["待添加"],
+        "tags": ["教育科技", "線上學習系統", "數字化教學"],
+        "location": "全球"
+      },
+      "appPlaceholder": {
+        "title": "移動應用開發案例 — 即將發布",
+        "client": "Apex Zone 實驗室",
+        "description": "定制化移動應用案例正在整理中，即將發布。",
+        "challenge": "待定",
+        "solution": "待定",
+        "results": ["待添加"],
+        "tags": ["iOS應用", "安卓開發", "跨平台應用"],
+        "location": "全球"
+      },
+      "ecommercePlaceholder": {
+        "title": "全球電商獨立站案例 — 即將發布",
+        "client": "Apex Zone 實驗室",
+        "description": "我們的高性能電商獨立站解決方案正在準備展示中。",
+        "challenge": "待定",
+        "solution": "待定",
+        "results": ["待添加"],
+        "tags": ["Shopify開發", "高性能電商", "支付集成"],
+        "location": "全球"
+      }
     }
   },
   "aiWizard": {

@@ -200,7 +200,270 @@
     "clientLabel": "Cliente",
     "yearLabel": "Año",
     "industryLabel": "Industria",
-    "location": "Ubicación"
+    "location": "Ubicación",
+    "searchPlaceholder": "Buscar casos...",
+    "filterLabels": {
+      "serviceType": "Tipo de servicio",
+      "industry": "Industria"
+    },
+    "empty": {
+      "noFound": "No se encontraron casos",
+      "noDesc": "Ajuste los filtros",
+      "reset": "Restablecer"
+    },
+    "pagination": {
+      "prev": "Ant.",
+      "next": "Sig."
+    },
+    "detail": {
+      "back": "Volver al portafolio",
+      "challenge": "Desafío",
+      "solution": "Solución",
+      "results": "Resultados",
+      "client": "Cliente",
+      "year": "Año",
+      "industry": "Industria",
+      "tech": "Tecnologías",
+      "visit": "Visitar sitio",
+      "location": "Ubicación"
+    },
+    "projects": {
+      "noviant": {
+        "title": "Noviant — Soluciones TIC e IA",
+        "client": "Noviant Inc.",
+        "description": "Sitio web corporativo bilingüe para un proveedor de servicios gestionados y consultoría de IA en Nueva York. Construido con Next.js, next-intl y metadatos optimizados para SEO geográfico.",
+        "challenge": "El cliente necesitaba un sitio bilingüe que posicionara tanto para términos tecnológicos en inglés como para clientes empresariales de habla china en el mercado estadounidense.",
+        "solution": "Implementación de generación estática con Next.js, enrutamiento por idioma, datos estructurados JSON-LD y una estrategia integral de contenido bilingüe.",
+        "results": [
+          "Puntuación Lighthouse: 98/100",
+          "Cobertura SEO bilingüe",
+          "Diseño responsivo móvil",
+          "Optimización para búsqueda IA"
+        ],
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Bilingüe",
+          "SEO"
+        ],
+        "location": "Nueva York"
+      },
+      "springShore": {
+        "title": "Sistema CIM Spring Shore",
+        "client": "Grupo CCCC",
+        "description": "Un sistema integral de Modelado de Información de la Ciudad (CIM) para el proyecto Hainan Riyue Bay, que proporciona gestión urbana en tiempo real.",
+        "challenge": "Creación de un modelo 3D altamente realista que mantenga el rendimiento en navegadores web para planificación urbana a gran escala.",
+        "solution": "Técnicas avanzadas de renderizado WebGL y capas de datos para asegurar una interacción fluida con millones de polígonos.",
+        "results": [
+          "Simulación urbana a escala completa",
+          "Mejora en la toma de decisiones",
+          "Herramientas de planificación interactivas"
+        ],
+        "tags": [
+          "CIM",
+          "Gemelo Digital",
+          "Renderizado 3D",
+          "Planificación Urbana"
+        ],
+        "location": "Hainan"
+      },
+      "retailMiniProgram": {
+        "title": "Mini-programa de WeChat para Retail de Lujo",
+        "client": "Luxe Boutique",
+        "description": "Una experiencia de compra fluida dentro de WeChat para una boutique de lujo, con pagos integrados y fidelización.",
+        "challenge": "Renderizado de imágenes de alta calidad en el entorno de WeChat manteniendo una carga rápida.",
+        "solution": "Uso de desarrollo nativo de WeChat con funciones en la nube, CDN de imágenes optimizado y caché inteligente.",
+        "results": [
+          "Aumento del 200% en tráfico social",
+          "Tasa de conversión >5%",
+          "Desplazamiento suave a 60fps"
+        ],
+        "tags": [
+          "WeChat",
+          "E-commerce",
+          "Pagos",
+          "Social"
+        ],
+        "location": "Shanghái"
+      },
+      "fintechBrand": {
+        "title": "Sistema Visual Fintech de Nueva Generación",
+        "client": "CoinStream",
+        "description": "Sistema visual de marca integral para un proveedor de criptoactivos, transmitiendo confianza y seguridad.",
+        "challenge": "Diseñar una marca que se sienta segura como un banco tradicional pero innovadora como una startup tecnológica.",
+        "solution": "Análisis profundo de psicología del color, tipografía personalizada y un sistema VI cohesivo.",
+        "results": [
+          "Sistema de logo escalable",
+          "94% de reconocimiento positivo",
+          "Manual de marca completo entregado"
+        ],
+        "tags": [
+          "Logo",
+          "Identidad Visual",
+          "Sistema",
+          "Manual de Marca"
+        ],
+        "location": "Singapur"
+      },
+      "healthcareBooking": {
+        "title": "Sistema Moderno de Reservas Clínicas",
+        "client": "BrightHealth NY",
+        "description": "Rebranding visual completo para una startup fintech, creando un sistema moderno y escalable.",
+        "challenge": "Comunicar datos financieros complejos a través de un lenguaje visual simple y elegante.",
+        "solution": "Creación de una paleta de colores cohesiva y un conjunto de iconos modulares enfocados en la claridad.",
+        "results": [
+          "Mayor confianza en la marca",
+          "Estandarización en apps",
+          "Diseño galardonado"
+        ],
+        "tags": [
+          "Reservas",
+          "Formularios",
+          "HIPAA",
+          "UI"
+        ],
+        "location": "Nueva York"
+      },
+      "noviantManaged": {
+        "title": "Portal de Servicios Gestionados Noviant",
+        "client": "Noviant Inc.",
+        "description": "Un portal centralizado para gestionar la infraestructura en la nube y los servicios de ciberseguridad.",
+        "challenge": "Integrar diversas fuentes de seguridad en un único tablero intuitivo.",
+        "solution": "Arquitectura micro-frontend con actualizaciones en tiempo real mediante WebSockets.",
+        "results": [
+          "Tiempos de respuesta más rápidos",
+          "Gestión centralizada",
+          "Alta retención de clientes"
+        ],
+        "tags": [
+          "SaaS",
+          "Nube",
+          "Monitoreo",
+          "Seguridad"
+        ],
+        "location": "Nueva York"
+      },
+      "springShoreTourism": {
+        "title": "Visualización CIM Spring Shore",
+        "client": "Grupo CCCC",
+        "description": "Un sistema de visualización integral para un complejo turístico en Riyue Bay, Hainan.",
+        "challenge": "Simular con precisión el entorno natural tranquilo y complejo de un resort costero.",
+        "solution": "Construcción de escenas independientes con sistemas dinámicos de clima e iluminación.",
+        "results": [
+          "Puntuación de realismo del 95%",
+          "Presentaciones para inversores mejoradas",
+          "Soporte multi-plataforma"
+        ],
+        "tags": [
+          "Renderizado 3D",
+          "Turismo",
+          "Simulación"
+        ],
+        "location": "Hainan"
+      },
+      "jinjiangGlory": {
+        "title": "Marketing CIM Jinjiang Glory",
+        "client": "Inmobiliaria Zhongmao",
+        "description": "Sistema de marketing digital CIM de alta gama para un proyecto residencial en Chengdu.",
+        "challenge": "Crear un puente sin fisuras entre las pantallas físicas tradicionales y la interacción digital moderna.",
+        "solution": "Plataforma CIM de alta fidelidad con simulación de iluminación en tiempo real y navegación interactiva de unidades.",
+        "results": [
+          "Mayor compromiso del cliente",
+          "Ciclo de ventas más rápido",
+          "Experiencia de marca personalizada"
+        ],
+        "tags": [
+          "CIM",
+          "Marketing",
+          "Gemelo Digital"
+        ],
+        "location": "Chengdú"
+      },
+      "meijiangHeyue": {
+        "title": "Sistema CIM Meijiang Heyue",
+        "client": "Inmobiliaria Lianhui",
+        "description": "Sistema de visualización digital para propiedades residenciales de alta gama.",
+        "challenge": "Comunicar el valor premium de una residencia a través de medios digitales asegurando la simplicidad de la UX.",
+        "solution": "Lenguaje visual de alta gama personalizado y mapeo digital de valor regional.",
+        "results": [
+          "Imagen de marca de lujo establecida",
+          "Alta retención de usuarios",
+          "Sincronización de datos urbanos"
+        ],
+        "tags": [
+          "Lujo",
+          "Integración Urbana",
+          "UI/UX"
+        ],
+        "location": "Tianjin"
+      },
+      "jinmaoSmartCity": {
+        "title": "CIM de Jinmao Smart Science City",
+        "client": "China Jinmao",
+        "description": "Visualización tecnológica del futuro de una ciudad científica inteligente.",
+        "challenge": "Visualizar conceptos abstractos de planificación urbana en escenas 3D comprensibles.",
+        "solution": "Personalización creativa de esquemas de visualización utilizando técnicas de alta tecnología.",
+        "results": [
+          "Comentarios positivos de las partes interesadas",
+          "Comunicación clara de la visión",
+          "Visualización galardonada"
+        ],
+        "tags": [
+          "Smart City",
+          "Planificación",
+          "Tecnología Futura"
+        ],
+        "location": "Ningbo"
+      },
+      "educationPlaceholder": {
+        "title": "Soluciones EdTech — Próximamente",
+        "client": "Apex Zone Labs",
+        "description": "Estamos preparando estudios de caso detallados para nuestras plataformas educativas.",
+        "challenge": "TBD",
+        "solution": "TBD",
+        "results": [
+          "Próximamente"
+        ],
+        "tags": [
+          "Educación",
+          "LMS",
+          "Aprendizaje"
+        ],
+        "location": "Global"
+      },
+      "appPlaceholder": {
+        "title": "Aplicaciones Móviles — Próximamente",
+        "client": "Apex Zone Labs",
+        "description": "Estamos documentando casos de aplicaciones móviles a medida.",
+        "challenge": "TBD",
+        "solution": "TBD",
+        "results": [
+          "Próximamente"
+        ],
+        "tags": [
+          "iOS",
+          "Android",
+          "Flutter"
+        ],
+        "location": "Global"
+      },
+      "ecommercePlaceholder": {
+        "title": "Ecommerce Global — Próximamente",
+        "client": "Apex Zone Labs",
+        "description": "Nuestras soluciones de comercio electrónico de alto rendimiento se están finalizando.",
+        "challenge": "TBD",
+        "solution": "TBD",
+        "results": [
+          "Próximamente"
+        ],
+        "tags": [
+          "Shopify",
+          "Next.js",
+          "Pagos"
+        ],
+        "location": "Global"
+      }
+    }
   },
   "about": {
     "label": "Quiénes somos",

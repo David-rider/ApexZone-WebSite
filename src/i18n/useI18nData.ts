@@ -8,7 +8,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import type { PortfolioItem } from '@/data/portfolio-new';
+import type { PortfolioItem } from '@/data/portfolio';
 
 /**
  * Safely get translation from a key
