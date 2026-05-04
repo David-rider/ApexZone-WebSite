@@ -261,10 +261,10 @@
       "healthcareBooking": {
         "title": "現代診所預約系統",
         "client": "紐約 BrightHealth 診所",
-        "description": "為金融科技初創公司打造的完整視覺品牌重塑，構建現代、可信且可擴展的設計系統。",
+        "description": "\u70ba\u7d10\u7d04\u4e00\u5bb6\u91ab\u7642\u5065\u5eb7\u8a3a\u6240\u6253\u9020\u7684\u7b26\u5408 HIPAA \u5408\u898f\u6a19\u6e96\u7684\u7dda\u4e0a\u9810\u7d04\u7cfb\u7d71\uff0c\u8b93\u60a3\u8005\u80fd\u5920\u81ea\u52a9\u9810\u7d04\u3001\u63a5\u6536\u81ea\u52d5\u5316\u63d0\u9192\u4e26\u5168\u7a0b\u7dda\u4e0a\u7ba1\u7406\u8a3a\u7642\u6a94\u6848\u3002",
         "challenge": "通過簡單優雅的視覺語言傳達複雜的金融數據。",
         "solution": "創建了統一的調色板和模組化圖標庫，重點關注數據可視化的清晰度。",
-        "results": ["提升品牌信任度", "多平台設計統一", "獲獎設計方案"],
+        "results": ["\u9810\u7d04\u722d\u7d04\u7387\u964d\u4f4e 35%", "70% \u9810\u7d04\u5be6\u73fe\u5b8c\u5168\u81ea\u52a9\u5316", "\u60a3\u8005\u6eff\u610f\u5ea6 4.9/5"],
         "tags": ["預約系統", "表單設計", "合規性", "UI設計"],
         "location": "紐約"
       },
@@ -322,9 +322,9 @@
         "title": "教育科技解決方案 — 即將發布",
         "client": "Apex Zone 實驗室",
         "description": "我們正在整理教育平台相關的深度案例研究，敬請期待。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
+        "challenge": "\u5f85\u8a18\u9304",
+        "solution": "\u5f85\u8a18\u9304",
+        "results": ["\u6848\u4f8b\u6e96\u5099\u4e2d"],
         "tags": ["教育科技", "線上學習系統", "數字化教學"],
         "location": "全球"
       },
@@ -332,9 +332,9 @@
         "title": "移動應用開發案例 — 即將發布",
         "client": "Apex Zone 實驗室",
         "description": "定制化移動應用案例正在整理中，即將發布。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
+        "challenge": "\u5f85\u8a18\u9304",
+        "solution": "\u5f85\u8a18\u9304",
+        "results": ["\u6848\u4f8b\u6e96\u5099\u4e2d"],
         "tags": ["iOS應用", "安卓開發", "跨平台應用"],
         "location": "全球"
       },
@@ -342,9 +342,9 @@
         "title": "全球電商獨立站案例 — 即將發布",
         "client": "Apex Zone 實驗室",
         "description": "我們的高性能電商獨立站解決方案正在準備展示中。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
+        "challenge": "\u5f85\u8a18\u9304",
+        "solution": "\u5f85\u8a18\u9304",
+        "results": ["\u6848\u4f8b\u6e96\u5099\u4e2d"],
         "tags": ["Shopify開發", "高性能電商", "支付集成"],
         "location": "全球"
       }

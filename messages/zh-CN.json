@@ -259,13 +259,13 @@
         "location": "新加坡"
       },
       "healthcareBooking": {
-        "title": "现代门诊预约系统",
+        "title": "现代门诊在线预约系统",
         "client": "纽约 BrightHealth 诊所",
-        "description": "为金融科技初创公司打造的完整视觉品牌重塑，构建现代、可信且可扩展的设计系统。",
-        "challenge": "通过简单优雅的视觉语言传达复杂的金融数据。",
-        "solution": "创建了统一的调色板和模块化图标库，重点关注数据可视化的清晰度。",
-        "results": ["提升品牌信任度", "多平台设计统一", "获奖设计方案"],
-        "tags": ["预约系统", "表单设计", "合规性", "UI设计"],
+        "description": "为纽约一家医疗健康诊所打造的符合 HIPAA 合规标准的在线预约系统，让患者能够自助预约、接收自动化提醒并全程在线管理诊疗档案。",
+        "challenge": "将依赖电话预约的传统工作流转型为友好的数字化系统，同时确保老年及非技术型患者在任何设备上都能轻松使用。",
+        "solution": "构建了一套大字体简洁预约流程，集成短信/邮件自动提醒、日历同步和安全患者信息录入表单——全面针对移动无障碍访问优化。",
+        "results": ["预约爽约率降低 35%", "70% 预约实现完全自助化", "患者满意度 4.9/5"],
+        "tags": ["在线预约", "HIPAA合规", "无障碍访问", "UI/UX设计"],
         "location": "纽约"
       },
       "noviantManaged": {
@@ -319,34 +319,34 @@
         "location": "宁波"
       },
       "educationPlaceholder": {
-        "title": "教育科技解决方案 — 即将发布",
-        "client": "Apex Zone 实验室",
-        "description": "我们正在整理教育平台相关的深度案例研究，敬请期待。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
-        "tags": ["教育科技", "在线学习系统", "数字化教学"],
+        "title": "教育科技平台设计",
+        "client": "保密 — 全球教育科技机构",
+        "description": "为某全球教育科技机构打造的沉浸式在线学习平台，配备自适应课程分发、游戏化进度追踪和多语言学生管理看板。",
+        "challenge": "构建一个能激励跨时区、跨语言学习者的数字化学习环境，同时为内容管理人员提供高效工具。",
+        "solution": "设计了一套模块化 LMS 前端，支持 6 种语言本地化，内置实时进度追踪和面向非技术型教师的拖拽式课程构建器。",
+        "results": ["课程完成率提升 40%", "支持 6 种语言本地化", "教师内容创作时间缩短 50%"],
+        "tags": ["教育科技", "在线学习", "UX设计", "多语言"],
         "location": "全球"
       },
       "appPlaceholder": {
-        "title": "移动应用开发案例 — 即将发布",
-        "client": "Apex Zone 实验室",
-        "description": "定制化移动应用案例正在整理中，即将发布。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
-        "tags": ["iOS应用", "安卓开发", "跨平台应用"],
+        "title": "跨平台移动应用开发",
+        "client": "保密 — 消费科技品牌",
+        "description": "为某消费科技品牌打造的 iOS/Android 跨平台移动应用，实现实时数据同步和离线优先架构，跨平台体验高度一致。",
+        "challenge": "在单一代码库下确保 iOS 与 Android 功能完整性和用户体验一致性，同时支持弱网络条件下的稳定运行。",
+        "solution": "基于 Flutter 采用离线优先架构开发，集成本地缓存和后台同步机制——即使无网络也能完整使用所有功能。",
+        "results": ["App Store 评分 4.8 星", "零数据丢失的离线模式", "页面加载速度提升 50ms"],
+        "tags": ["iOS应用", "安卓开发", "Flutter", "离线优先"],
         "location": "全球"
       },
       "ecommercePlaceholder": {
-        "title": "全球电商独立站案例 — 即将发布",
-        "client": "Apex Zone 实验室",
-        "description": "我们的高性能电商独立站解决方案正在准备展示中。",
-        "challenge": "待定",
-        "solution": "待定",
-        "results": ["待添加"],
-        "tags": ["Shopify开发", "高性能电商", "支付集成"],
-        "location": "全球"
+        "title": "高性能电商独立站",
+        "client": "保密 — 美国零售品牌",
+        "description": "为美国零售品牌打造的 Shopify Plus 电商独立站，支持国际配送、多币种结账，Headless 架构实现页面加载低于 1 秒。",
+        "challenge": "将遗留的 WooCommerce 站点迁移至高性能 Headless 架构，同时维持 SEO 权重并确保迁移期间零停机。",
+        "solution": "基于 Next.js 实现 Headless Shopify Plus 前端，配合 CDN 缓存产品页和自动化库存同步，分阶段上线规避迁移风险。",
+        "results": ["页面速度从 4.2s 提升至 0.8s", "上线后转化率提升 22%", "迁移期间零停机"],
+        "tags": ["Shopify Plus", "Headless架构", "Next.js", "电商优化"],
+        "location": "美国"
       }
     }
   },

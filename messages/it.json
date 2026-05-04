@@ -308,9 +308,9 @@
       "healthcareBooking": {
         "title": "Modern Clinic Booking System",
         "client": "BrightHealth NY",
-        "description": "Complete visual rebranding for a fintech startup.",
-        "challenge": "Communicating complex financial data through simple visual language.",
-        "solution": "Cohesive color palette and modular icon set focused on data clarity.",
+        "description": "A HIPAA-compliant online appointment booking system for a New York wellness clinic, enabling patients to self-schedule, receive automated reminders, and manage appointments entirely online.",
+        "challenge": "Replacing a phone-based scheduling workflow with a user-friendly digital system accessible to all patients across all devices.",
+        "solution": "Built a simplified booking flow with SMS/email reminder automation, calendar sync, and secure patient intake forms optimized for mobile accessibility.",
         "results": [
           "Enhanced brand trust",
           "Standardized across apps",
@@ -419,8 +419,8 @@
         "title": "EdTech Solutions — Coming Soon",
         "client": "Apex Zone Labs",
         "description": "Deep case studies for educational platforms in preparation.",
-        "challenge": "TBD",
-        "solution": "TBD",
+        "challenge": "To be documented",
+        "solution": "To be documented",
         "results": [
           "Coming Soon"
         ],
@@ -435,8 +435,8 @@
         "title": "Mobile Application — Coming Soon",
         "client": "Apex Zone Labs",
         "description": "Mobile application cases being documented.",
-        "challenge": "TBD",
-        "solution": "TBD",
+        "challenge": "To be documented",
+        "solution": "To be documented",
         "results": [
           "Coming Soon"
         ],
@@ -451,8 +451,8 @@
         "title": "Global Ecommerce — Coming Soon",
         "client": "Apex Zone Labs",
         "description": "High-performance ecommerce solutions being finalized.",
-        "challenge": "TBD",
-        "solution": "TBD",
+        "challenge": "To be documented",
+        "solution": "To be documented",
         "results": [
           "Coming Soon"
         ],
