@@ -18,13 +18,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) return {};
   
-  const isZh = locale.startsWith('zh');
-  const title = isZh ? post.titleZh : post.title;
-  const desc = isZh ? post.excerptZh : post.excerpt;
-  
+  const t = await getTranslations({ locale, namespace: 'blog.posts' });
+  // Map slug to camelCase key used in JSON
+  const keyMap: Record<string, string> = {
+    'why-bilingual-website-matters-us-business': 'whyBilingualWebsite',
+    'core-web-vitals-2025-complete-guide': 'coreWebVitals',
+    'noviant-case-study-bilingual-seo': 'noviantCaseStudy'
+  };
+  const key = keyMap[slug] || slug;
+
   return {
-    title: `${title} | Blog`,
-    description: desc,
+    title: `${t(`${key}.title`)} | Blog`,
+    description: t(`${key}.excerpt`),
   };
 }
 
@@ -33,12 +38,20 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) notFound();
 
-  const t      = await getTranslations('blog');
-  const isZh   = locale.startsWith('zh');
+  const t = await getTranslations('blog');
+  const tp = await getTranslations('blog.posts');
+  
+  // Map slug to camelCase key used in JSON
+  const keyMap: Record<string, string> = {
+    'why-bilingual-website-matters-us-business': 'whyBilingualWebsite',
+    'core-web-vitals-2025-complete-guide': 'coreWebVitals',
+    'noviant-case-study-bilingual-seo': 'noviantCaseStudy'
+  };
+  const key = keyMap[slug] || slug;
 
-  const title   = isZh ? post.titleZh   : post.title;
-  const excerpt = isZh ? post.excerptZh : post.excerpt;
-  const content = isZh ? post.contentZh : post.content;
+  const title   = tp(`${key}.title`);
+  const excerpt = tp(`${key}.excerpt`);
+  const content = tp(`${key}.content`);
   const currentUrl = `https://apexzone.us/${locale}/blog/${post.slug}`;
 
   // Related posts
@@ -50,7 +63,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
       <div className="container" style={{ paddingTop: '32px' }}>
         <Link href={`/${locale}/blog`} className={`btn btn-elevated btn-sm ${styles.backBtn}`}>
           <ArrowLeft size={16} />
-          {locale === 'zh-TW' ? '返回博客' : locale === 'zh-CN' ? '返回博客' : 'Back to Blog'}
+          {t('back')}
         </Link>
       </div>
 
@@ -108,14 +121,14 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
                 <div>
                   <div className="md-title-small">{post.author}</div>
                   <div className="md-body-small text-muted">
-                    {locale === 'zh-TW' ? 'Apex Zone 編輯團隊' : locale === 'zh-CN' ? 'Apex Zone 编辑团队' : 'Apex Zone Editorial'}
+                    {t('authorTeam')}
                   </div>
                 </div>
               </div>
 
               {/* Share */}
               <div className={styles.shareCard}>
-                <div className="md-label-medium">{locale === 'zh-TW' ? '分享文章' : locale === 'zh-CN' ? '分享文章' : 'Share This'}</div>
+                <div className="md-label-medium">{t('share')}</div>
                 <ShareButtons title={title} url={currentUrl} locale={locale} />
               </div>
 
@@ -123,10 +136,10 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <div className={styles.ctaCard}>
                 <div className={styles.ctaCardIcon}>🚀</div>
                 <h4 className="md-title-medium">
-                  {locale === 'zh-TW' ? '準備好開始您的項目了嗎？' : locale === 'zh-CN' ? '准备好开始您的项目了吗？' : 'Ready to Start Your Project?'}
+                  {t('ctaReady')}
                 </h4>
                 <Link href={`/${locale}/ai-wizard`} className="btn btn-primary btn-sm" style={{ marginTop: '12px' }}>
-                  {locale === 'zh-TW' ? 'AI規劃精靈' : locale === 'zh-CN' ? 'AI规划向导' : 'Try AI Planner'}
+                  {t('ctaPlanner')}
                 </Link>
               </div>
             </aside>
@@ -139,23 +152,26 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
         <section className="section" style={{ paddingTop: 0 }}>
           <div className="container">
             <h2 className="md-headline-small" style={{ marginBottom: '24px' }}>
-              {locale === 'zh-TW' ? '相關文章' : locale === 'zh-CN' ? '相关文章' : 'Related Articles'}
+              {t('related')}
             </h2>
             <div className={styles.relatedGrid}>
-              {related.map(rp => (
-                <Link key={rp.slug} href={`/${locale}/blog/${rp.slug}`} className="blog-card">
-                  <div className="blog-card__image">
-                    <div style={{ width: '100%', height: '100%', background: rp.coverColor }} />
-                  </div>
-                  <div className="blog-card__body">
-                    <span className="badge badge-sage">{t(`categories.${rp.category}`)}</span>
-                    <h3 className="md-title-medium" style={{ margin: '10px 0 6px' }}>
-                      {isZh ? rp.titleZh : rp.title}
-                    </h3>
-                    <p className="md-body-small text-muted">{rp.readTime} {t('minRead')}</p>
-                  </div>
-                </Link>
-              ))}
+              {related.map(rp => {
+                const rKey = keyMap[rp.slug] || rp.slug;
+                return (
+                  <Link key={rp.slug} href={`/${locale}/blog/${rp.slug}`} className="blog-card">
+                    <div className="blog-card__image">
+                      <div style={{ width: '100%', height: '100%', background: rp.coverColor }} />
+                    </div>
+                    <div className="blog-card__body">
+                      <span className="badge badge-sage">{t(`categories.${rp.category}`)}</span>
+                      <h3 className="md-title-medium" style={{ margin: '10px 0 6px' }}>
+                        {tp(`${rKey}.title`)}
+                      </h3>
+                      <p className="md-body-small text-muted">{rp.readTime} {t('minRead')}</p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -163,3 +179,4 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     </div>
   );
 }
+

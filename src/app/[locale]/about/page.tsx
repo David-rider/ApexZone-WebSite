@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import styles from './page.module.css';
@@ -13,9 +13,20 @@ const STATS = [
   { value: '5+',   key: 'years'        },
 ];
 
-export default function AboutPage() {
-  const t      = useTranslations('about');
-  const locale = useLocale();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'metadata.about' });
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords').split(',').map(k => k.trim()),
+  };
+}
+
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t      = await getTranslations({ locale, namespace: 'about' });
 
   return (
     <div className={styles.page}>

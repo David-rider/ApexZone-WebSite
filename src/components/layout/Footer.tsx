@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
@@ -5,25 +8,31 @@ import { MapPin, Mail, Clock } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-  const t      = useTranslations();
-  const locale  = useLocale();
-  const year    = new Date().getFullYear();
+  const t        = useTranslations('footer');
+  const tNav     = useTranslations('nav');
+  const tContact = useTranslations('contact.info');
+  const locale   = useLocale();
+  const [year, setYear] = useState(2026);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   const quickLinks = [
-    { href: `/${locale}`,           label: t('nav.home') },
-    { href: `/${locale}/services`,  label: t('nav.services') },
-    { href: `/${locale}/portfolio`, label: t('nav.portfolio') },
-    { href: `/${locale}/blog`,      label: t('nav.blog') },
-    { href: `/${locale}/about`,     label: t('nav.about') },
-    { href: `/${locale}/contact`,   label: t('nav.contact') },
+    { href: `/${locale}`,           label: tNav('home') },
+    { href: `/${locale}/services`,  label: tNav('services') },
+    { href: `/${locale}/portfolio`, label: tNav('portfolio') },
+    { href: `/${locale}/blog`,      label: tNav('blog') },
+    { href: `/${locale}/about`,     label: tNav('about') },
+    { href: `/${locale}/contact`,   label: tNav('contact') },
   ];
 
   const serviceLinks = [
-    { href: `/${locale}/services/web-design`,    label: t('nav.servicesDropdown.webDesign') },
-    { href: `/${locale}/services/app-dev`,       label: t('nav.servicesDropdown.appDev') },
-    { href: `/${locale}/services/brand-design`,  label: t('nav.servicesDropdown.brandDesign') },
-    { href: `/${locale}/services/seo-marketing`, label: t('nav.servicesDropdown.seoMarketing') },
-    { href: `/${locale}/ai-wizard`,              label: t('nav.aiWizard') },
+    { href: `/${locale}/services/web-design`,    label: tNav('servicesDropdown.webDesign') },
+    { href: `/${locale}/services/app-dev`,       label: tNav('servicesDropdown.appDev') },
+    { href: `/${locale}/services/brand-design`,  label: tNav('servicesDropdown.brandDesign') },
+    { href: `/${locale}/services/seo-marketing`, label: tNav('servicesDropdown.seoMarketing') },
+    { href: `/${locale}/ai-wizard`,              label: tNav('aiWizard') },
   ];
 
   return (
@@ -40,7 +49,7 @@ export default function Footer() {
               style={{ height: '52px', width: 'auto', objectFit: 'contain' }}
             />
           </Link>
-          <p className={styles.tagline}>{t('footer.tagline')}</p>
+          <p className={styles.tagline}>{t('tagline')}</p>
           <div className={styles.socials}>
             <a href="https://www.linkedin.com/company/apex-zone" target="_blank" rel="noopener noreferrer"
                aria-label="LinkedIn" className={styles.social}>in</a>
@@ -52,7 +61,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>{t('footer.quickLinks')}</h4>
+          <h4 className={styles.colTitle}>{t('quickLinks')}</h4>
           <ul className={styles.linkList}>
             {quickLinks.map(l => (
               <li key={l.href}><Link href={l.href} className={styles.link}>{l.label}</Link></li>
@@ -62,7 +71,7 @@ export default function Footer() {
 
         {/* Services */}
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>{t('footer.coreServices')}</h4>
+          <h4 className={styles.colTitle}>{t('coreServices')}</h4>
           <ul className={styles.linkList}>
             {serviceLinks.map(l => (
               <li key={l.href}><Link href={l.href} className={styles.link}>{l.label}</Link></li>
@@ -72,11 +81,11 @@ export default function Footer() {
 
         {/* Contact info */}
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>{t('footer.contact')}</h4>
+          <h4 className={styles.colTitle}>{t('contact')}</h4>
           <ul className={styles.contactList}>
             <li className={styles.contactItem}>
               <MapPin size={14} className={styles.contactIcon} />
-              <span>{t('contact.info.addressVal')}</span>
+              <span>{tContact('addressVal')}</span>
             </li>
             <li className={styles.contactItem}>
               <Mail size={14} className={styles.contactIcon} />
@@ -84,7 +93,7 @@ export default function Footer() {
             </li>
             <li className={styles.contactItem}>
               <Clock size={14} className={styles.contactIcon} />
-              <span>{t('contact.info.hoursVal')}</span>
+              <span>{tContact('hoursVal')}</span>
             </li>
           </ul>
         </div>
@@ -94,10 +103,10 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className="container">
           <div className={styles.bottomInner}>
-            <span>© {year} Apex Zone. {t('footer.rights')}</span>
+            <span>© {year} Apex Zone. {t('rights')}</span>
             <div className={styles.bottomLinks}>
-              <Link href={`/${locale}/privacy`} className={styles.bottomLink}>{t('footer.privacy')}</Link>
-              <Link href={`/${locale}/terms`}   className={styles.bottomLink}>{t('footer.terms')}</Link>
+              <Link href={`/${locale}/privacy`} className={styles.bottomLink}>{t('privacy')}</Link>
+              <Link href={`/${locale}/terms`}   className={styles.bottomLink}>{t('terms')}</Link>
             </div>
           </div>
         </div>

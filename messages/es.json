@@ -1,4 +1,36 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Inicio | Apex Zone Diseño Web Profesional y Marketing Digital en NYC",
+      "description": "Apex Zone crea sitios web, aplicaciones e identidades de marca de alta conversión para empresas en la ciudad de Nueva York (NYC). Diseño web bilingüe, SEO local y marketing digital.",
+      "keywords": "Diseño Web Nueva York, Desarrollo Web NYC, SEO Local NYC, Marketing Digital NYC, Diseño de Marca NYC"
+    },
+    "services": {
+      "title": "Servicios | Diseño Web Profesional y Desarrollo de Apps en NYC",
+      "description": "Explore nuestros servicios principales: diseño web, desarrollo de aplicaciones, identidad de marca y SEO. Soluciones digitales de alto rendimiento.",
+      "keywords": "Servicios de Diseño Web, Desarrollo de Apps NYC, Diseño Visual de Marca, Marketing SEO Nueva York"
+    },
+    "portfolio": {
+      "title": "Portafolio | Estudios de Caso y Trabajos Seleccionados | Apex Zone",
+      "description": "Vea nuestros proyectos recientes en diseño web, plataformas CIM y aplicaciones móviles. Resultados reales para marcas ambiciosas.",
+      "keywords": "Portafolio de Diseño Web, Estudios de Caso, Proyectos Next.js, Showcase Digital Twin"
+    },
+    "blog": {
+      "title": "Ideas y Recursos | Blog de Diseño Web y Marketing | Apex Zone",
+      "description": "Estrategias de marketing prácticas, tendencias de diseño e ideas del sector del equipo editorial de Apex Zone.",
+      "keywords": "Blog de Diseño Web, Estrategia SEO, Ideas de Marketing, Tendencias Tech 2025"
+    },
+    "about": {
+      "title": "Sobre Nosotros | Su Socio para el Crecimiento Digital en NYC | Apex Zone",
+      "description": "Apex Zone es una agencia digital premium en NYC que une el diseño creativo, la tecnología de vanguardia y la estrategia empresarial.",
+      "keywords": "Agencia Digital NYC, Equipo de Diseño Web, Sobre Apex Zone, Socio de Estrategia Digital"
+    },
+    "contact": {
+      "title": "Contáctenos | Obtenga una Consulta Gratuita | Apex Zone",
+      "description": "¿Listo para construir algo grande? Contacte con Apex Zone hoy para una llamada de estrategia gratuita de 30 minutos.",
+      "keywords": "Contactar Diseñador Web, Consulta Gratuita NYC, Llamada de Estrategia Digital"
+    }
+  },
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
@@ -118,53 +150,102 @@
     "subtitle": "Seis pilares de excelencia digital — elija lo que su negocio necesita",
     "webDesign": {
       "title": "Diseño y Desarrollo Web",
-      "desc": "Desde sitios corporativos hasta e-commerce, creamos sitios web profesionales de alta conversión.",
-      "items": [
-        "Diseño de sitios web de marca corporativa",
-        "E-commerce y tiendas independientes",
-        "Sitios web bilingües (Inglés/Chino)",
-        "Diseño responsivo y primero el móvil",
-        "Sitios web de pedidos para restaurantes",
-        "Sistemas de reserva en línea",
-        "WordPress y desarrollo a medida",
-        "Rediseño de sitios y mejora de rendimiento"
-      ]
+      "description": "Sitios web a medida de alto rendimiento que combinan una estética impresionante con una estrategia centrada en la conversión.",
+      "features": {
+        "0": {
+          "title": "Optimización Bilingüe",
+          "description": "Arquitectura multi-idioma fluida para un alcance de mercado global."
+        },
+        "1": {
+          "title": "SEO y Rendimiento",
+          "description": "Puntuaciones Lighthouse de 90+ que aseguran los primeros puestos y tiempos de carga instantáneos."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Estrategia" },
+        "1": { "step": "02", "title": "Diseño" },
+        "2": { "step": "03", "title": "Desarrollo" },
+        "3": { "step": "04", "title": "Lanzamiento" }
+      },
+      "faqs": {
+        "0": {
+          "question": "¿Cuánto tiempo toma?",
+          "answer": "Usualmente de 4 a 8 semanas dependiendo de la complejidad."
+        }
+      }
     },
     "appDev": {
       "title": "Apps y Mini-Programas",
-      "desc": "Experiencias digitales móviles para usuarios modernos.",
-      "items": [
-        "Desarrollo de mini-programas de WeChat",
-        "Páginas web móviles H5",
-        "Apps nativas iOS y Android",
-        "Desarrollo de plataformas e-commerce",
-        "Sitios web de portales industriales",
-        "Desarrollo de cuentas oficiales de WeChat"
-      ]
+      "description": "Soluciones móviles personalizadas que van desde aplicaciones nativas iOS/Android hasta mini-programas ligeros de WeChat.",
+      "features": {
+        "0": {
+          "title": "ROI Multiplataforma",
+          "description": "Construya una vez, despliegue en todas partes con Flutter o React Native."
+        },
+        "1": {
+          "title": "Ecosistema de Mini-Programas",
+          "description": "Especializados en la integración del ecosistema de WeChat para el mercado asiático."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Prototipo" },
+        "1": { "step": "02", "title": "Desarrollo" },
+        "2": { "step": "03", "title": "Pruebas" },
+        "3": { "step": "04", "title": "Despliegue" }
+      },
+      "faqs": {
+        "0": {
+          "question": "¿Pueden ayudar con el envío a la App Store de Apple?",
+          "answer": "Absolutamente, manejamos todo el proceso desde el binario hasta la aprobación."
+        }
+      }
     },
     "brandDesign": {
-      "title": "Diseño Visual de Marca",
-      "desc": "Identidad de marca cohesiva desde el concepto hasta la entrega.",
-      "items": [
-        "Diseño de logo y marca",
-        "Sistema VI (Identidad Visual)",
-        "Diseño de folletos y catálogos",
-        "Diseño de empaques",
-        "Diseño creativo publicitario",
-        "Manual de identidad de marca"
-      ]
+      "title": "Identidad Visual de Marca",
+      "description": "Creando voces de marca únicas a través del lenguaje visual. Desde logotipos hasta sistemas VI completos.",
+      "features": {
+        "0": {
+          "title": "Sistemas VI",
+          "description": "Pautas cohesivas para una presencia de marca consistente."
+        },
+        "1": {
+          "title": "UI con Storytelling",
+          "description": "Diseño que habla emocionalmente a su público objetivo."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Concepto" },
+        "1": { "step": "02", "title": "Bocetos" },
+        "2": { "step": "03", "title": "Refinamiento" },
+        "3": { "step": "04", "title": "Entrega" }
+      },
+      "faqs": []
     },
     "seoMarketing": {
-      "title": "SEO y Marketing Digital",
-      "desc": "Posicione mejor, llegue más lejos — crezca orgánicamente.",
-      "items": [
-        "SEO en buscadores de Google",
-        "SEO local y ranking en Google Maps",
-        "Optimización de búsqueda GEO / IA",
-        "Gestión de Google Ads",
-        "Marketing en redes sociales",
-        "Estrategia de marketing de contenidos"
-      ]
+      "title": "SEO y Marketing GEO Local",
+      "description": "Optimización de búsqueda dirigida a Nueva York para poner su negocio frente a los clientes locales adecuados.",
+      "features": {
+        "0": {
+          "title": "Maestría en SEO Local",
+          "description": "Posiciónese en la cima de los mapas locales de NYC y resultados orgánicos."
+        },
+        "1": {
+          "title": "Optimización para Búsqueda IA",
+          "description": "Optimizado para motores de búsqueda de IA como Perplexity y ChatGPT Search."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Auditoría" },
+        "1": { "step": "02", "title": "Keywords" },
+        "2": { "step": "03", "title": "On-Page" },
+        "3": { "step": "04", "title": "Contenido" }
+      },
+      "faqs": {
+        "0": {
+          "question": "¿Cuándo veré resultados de SEO?",
+          "answer": "El SEO local suele mostrar movimiento en 1-3 meses, resultados orgánicos mayores en 3-6 meses."
+        }
+      }
     }
   },
   "portfolio": {
@@ -745,6 +826,18 @@
       "marketing": "Marketing",
       "tech": "Tendencias Tech",
       "caseStudy": "Caso de Éxito"
+    },
+    "posts": {
+      "whyBilingualWebsite": {
+        "title": "Por qué un sitio web bilingüe es una ventaja competitiva para las empresas en EE. UU.",
+        "excerpt": "Con más de 4 millones de consumidores de habla china en EE. UU., un sitio web bilingüe no es solo una cortesía, es un canal estratégico de crecimiento.",
+        "content": "<h2>El panorama del mercado estadounidense</h2><p>Estados Unidos alberga una de las poblaciones de habla china más grandes e influyentes del mundo...</p>"
+      },
+      "coreWebVitals": {
+        "title": "Core Web Vitals 2025: La guía completa para dueños de pequeñas empresas",
+        "excerpt": "El algoritmo de ranking de Google ahora pesa mucho la experiencia de página. Aquí está exactamente lo que necesita para obtener 90+ en Lighthouse.",
+        "content": "<h2>¿Qué son los Core Web Vitals?</h2><p>Los Core Web Vitals son un conjunto de factores específicos que Google considera importantes en la experiencia de usuario general de una página web...</p>"
+      }
     }
   },
   "privacy": {

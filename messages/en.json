@@ -1,4 +1,36 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Home | Apex Zone Professional Web Design & Digital Marketing in NYC",
+      "description": "Apex Zone builds high-converting websites, apps, and brand identities for businesses in New York City (NYC). Bilingual (EN/ZH) web design, Local SEO, and digital marketing services.",
+      "keywords": "Web Design New York, NYC Website Development, Local SEO NYC, Bilingual Web Design NYC, Real Estate Digital Marketing, Digital Twin Solutions, SEO/GEO Promotion, Media Digital Operations, Premium Web Design New York, AI-Powered Web Design"
+    },
+    "services": {
+      "title": "Services | Professional Web Design & App Development in NYC",
+      "description": "Explore our core services: Web Design, App Development, Brand Identity, and SEO. High-performance digital solutions tailored for your business growth.",
+      "keywords": "Web Design Services, App Development NYC, Brand Visual Design, SEO Marketing New York, Digital Solutions"
+    },
+    "portfolio": {
+      "title": "Portfolio | Case Studies & Selected Works | Apex Zone",
+      "description": "Browse our recent work in web design, CIM platforms, and mobile apps. Real projects, real results for ambitious brands.",
+      "keywords": "Web Design Portfolio, Case Studies, Next.js Projects, Digital Twin Showcase, Mobile App Portfolio"
+    },
+    "blog": {
+      "title": "Insights & Resources | Web Design & Marketing Blog | Apex Zone",
+      "description": "Practical marketing strategies, design trends, and industry insights from the Apex Zone editorial team.",
+      "keywords": "Web Design Blog, SEO Strategy, Marketing Insights, Tech Trends 2025, Business Growth Tips"
+    },
+    "about": {
+      "title": "About Us | Your Partner for Digital Growth in NYC | Apex Zone",
+      "description": "Apex Zone is a premium digital agency in NYC bridging the gap between creative design, cutting-edge tech, and business strategy.",
+      "keywords": "Digital Agency NYC, Web Design Team, About Apex Zone, Digital Strategy Partner"
+    },
+    "contact": {
+      "title": "Contact Us | Get a Free Consultation | Apex Zone",
+      "description": "Ready to build something great? Contact Apex Zone today for a free 30-minute strategy call and custom digital roadmap.",
+      "keywords": "Contact Web Designer, Free Consultation NYC, Digital Strategy Call, Hire Web Agency"
+    }
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
@@ -118,53 +150,102 @@
     "subtitle": "Six pillars of digital excellence — choose what your business needs",
     "webDesign": {
       "title": "Web Design & Development",
-      "desc": "From corporate sites to e-commerce, we create high-converting professional websites.",
-      "items": [
-        "Corporate brand website design",
-        "E-commerce & independent store",
-        "Bilingual (English/Chinese) websites",
-        "Responsive & mobile-first design",
-        "Restaurant ordering websites",
-        "Online booking systems",
-        "WordPress & custom development",
-        "Site redesign & performance upgrade"
-      ]
+      "description": "High-performance, bespoke websites that blend stunning aesthetics with conversion-focused strategy.",
+      "features": {
+        "0": {
+          "title": "Bilingual Optimization",
+          "description": "Seamless multi-language architecture for global market reach."
+        },
+        "1": {
+          "title": "SEO & Performance",
+          "description": "90+ Lighthouse scores ensuring top rankings and instant load times."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Strategy" },
+        "1": { "step": "02", "title": "Design" },
+        "2": { "step": "03", "title": "Development" },
+        "3": { "step": "04", "title": "Launch" }
+      },
+      "faqs": {
+        "0": {
+          "question": "How long does it take?",
+          "answer": "Usually 4-8 weeks depending on complexity."
+        }
+      }
     },
     "appDev": {
       "title": "App & Mini-Program Development",
-      "desc": "Mobile-first digital experiences for modern users.",
-      "items": [
-        "WeChat Mini-Program development",
-        "H5 mobile web pages",
-        "Native iOS & Android apps",
-        "E-commerce platform development",
-        "Industry portal websites",
-        "WeChat Official Account dev"
-      ]
+      "description": "Custom mobile solutions ranging from native iOS/Android apps to lightweight WeChat Mini-Programs.",
+      "features": {
+        "0": {
+          "title": "Cross-Platform ROI",
+          "description": "Build once, deploy everywhere with Flutter or React Native."
+        },
+        "1": {
+          "title": "Mini-Program Ecosystem",
+          "description": "Specialized in WeChat ecosystem integration for the Asian market."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Prototype" },
+        "1": { "step": "02", "title": "Development" },
+        "2": { "step": "03", "title": "Testing" },
+        "3": { "step": "04", "title": "Deployment" }
+      },
+      "faqs": {
+        "0": {
+          "question": "Can you help with Apple App Store submission?",
+          "answer": "Absolutely, we handle the entire process from binary to approval."
+        }
+      }
     },
     "brandDesign": {
-      "title": "Brand Visual Design",
-      "desc": "Cohesive brand identity from concept to delivery.",
-      "items": [
-        "Logo & brand mark design",
-        "VI system (Visual Identity)",
-        "Brochure & catalogue design",
-        "Packaging design",
-        "Advertising creative design",
-        "Brand guideline booklet"
-      ]
+      "title": "Brand Visual Identity",
+      "description": "Crafting unique brand voices through visual language. From logos to complete VI systems.",
+      "features": {
+        "0": {
+          "title": "VI Systems",
+          "description": "Cohesive guidelines for consistent brand presence."
+        },
+        "1": {
+          "title": "Storytelling UI",
+          "description": "Design that speaks to your target audience emotionally."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Concept" },
+        "1": { "step": "02", "title": "Drafting" },
+        "2": { "step": "03", "title": "Refinement" },
+        "3": { "step": "04", "title": "Delivery" }
+      },
+      "faqs": []
     },
     "seoMarketing": {
-      "title": "SEO & Digital Marketing",
-      "desc": "Rank higher, reach more — grow organically.",
-      "items": [
-        "Google Search SEO",
-        "Local SEO & Google Maps ranking",
-        "GEO / AI Search Optimization",
-        "Google Ads management",
-        "Social media marketing",
-        "Content marketing strategy"
-      ]
+      "title": "SEO & Local GEO Marketing",
+      "description": "New York targeted search optimization to put your business in front of the right local customers.",
+      "features": {
+        "0": {
+          "title": "Local SEO Mastery",
+          "description": "Rank on top of NYC local maps and organic results."
+        },
+        "1": {
+          "title": "AI Search Optimization",
+          "description": "Optimized for AI search engines like Perplexity and ChatGPT Search."
+        }
+      },
+      "process": {
+        "0": { "step": "01", "title": "Audit" },
+        "1": { "step": "02", "title": "Keywords" },
+        "2": { "step": "03", "title": "On-Page" },
+        "3": { "step": "04", "title": "Content" }
+      },
+      "faqs": {
+        "0": {
+          "question": "When will I see SEO results?",
+          "answer": "Local SEO usually shows movement in 1-3 months, major organic results in 3-6 months."
+        }
+      }
     }
   },
   "portfolio": {
@@ -521,6 +602,23 @@
       "marketing": "Marketing",
       "tech": "Tech Trends",
       "caseStudy": "Case Study"
+    },
+    "posts": {
+      "whyBilingualWebsite": {
+        "title": "Why a Bilingual Website is a Competitive Advantage for US Businesses",
+        "excerpt": "With 4+ million Chinese-speaking consumers in the US, a bilingual website isn't just thoughtful — it's a strategic growth channel.",
+        "content": "<h2>The Landscape of the US Market</h2><p>The United States is home to one of the largest and most influential Chinese-speaking populations in the world...</p>"
+      },
+      "coreWebVitals": {
+        "title": "Core Web Vitals 2025: The Complete Guide for Small Business Owners",
+        "excerpt": "Google's ranking algorithm now heavily weighs page experience. Here's exactly what you need to score 90+ on Lighthouse.",
+        "content": "<h2>What are Core Web Vitals?</h2><p>Core Web Vitals are a set of specific factors that Google considers important in a webpage's overall user experience...</p>"
+      },
+      "noviantCaseStudy": {
+        "title": "Case Study: How We Built a 98-Score Bilingual Site for a NY Tech Firm",
+        "excerpt": "A behind-the-scenes look at the technical decisions that drove exceptional performance and bilingual SEO for Noviant.",
+        "content": "<h2>Project Overview</h2><p>Noviant Inc. is a leading ICT and AI consulting firm in New York...</p>"
+      }
     }
   },
   "about": {

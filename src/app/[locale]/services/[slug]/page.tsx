@@ -26,6 +26,13 @@ const ICONS: Record<string, any> = {
   TrendingUp
 };
 
+const SLUG_TO_KEY: Record<string, string> = {
+  'web-design-development': 'webDesign',
+  'mobile-app-development': 'appDev',
+  'brand-identity-design': 'brandDesign',
+  'seo-digital-marketing': 'seoMarketing'
+};
+
 export async function generateStaticParams() {
   const locales = ['en', 'zh-CN', 'zh-TW', 'es', 'ko', 'ja', 'ru', 'it'];
   const params: { locale: string; slug: string }[] = [];
@@ -41,12 +48,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  const service = servicesData.find(s => s.slug === slug);
-  if (!service) return {};
+  const serviceKey = SLUG_TO_KEY[slug];
+  if (!serviceKey) return {};
 
-  const isZh = locale.startsWith('zh');
-  const title = isZh ? service.titleZh : service.title;
-  const desc = isZh ? service.descZh : service.desc;
+  const t = await getTranslations({ locale, namespace: 'services' });
+  const title = t(`${serviceKey}.title`);
+  const desc = t(`${serviceKey}.desc`);
 
   return {
     title: `${title} | Apex Zone NYC Agency`,
@@ -58,33 +65,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ServiceDetailPage({ params }: Props) {
   const { locale, slug } = await params;
   const service = servicesData.find(s => s.slug === slug);
+  const serviceKey = SLUG_TO_KEY[slug];
   
-  if (!service) {
+  if (!service || !serviceKey) {
     notFound();
   }
 
-  const t = await getTranslations('common');
+  const t = await getTranslations({ locale, namespace: 'services' });
+  const tc = await getTranslations({ locale, namespace: 'common' });
+  const td = await getTranslations({ locale, namespace: 'services.detail' }); // I'll make sure this exists or use fallback
+  
   const IconComp = ICONS[service.icon] || Layout;
 
-  const getField = (obj: any, base: string) => {
-    if (locale === 'en') return obj[base];
-    const langSuffix = locale.startsWith('zh') ? 'Zh' : locale.charAt(0).toUpperCase() + locale.slice(1);
-    const key = `${base}${langSuffix}`;
-    return obj[key] || obj[base];
-  };
+  // Resolve strings from JSON
+  const title = t(`${serviceKey}.title`);
+  const desc  = t(`${serviceKey}.desc`);
 
-  const labels: Record<string, any> = {
-    en: { back: 'Back to Services', getStarted: 'Get Started', capabilities: 'Core Capabilities', process: 'Our Process', processDesc: 'From strategy to delivery, we ensure excellence.', faqs: 'FAQs', ready: 'Ready to start your project?', contact: 'Book a free strategy session', contactBtn: 'Contact Us Today' },
-    'zh-CN': { back: '返回服务列表', getStarted: '立即咨询', capabilities: '核心优势', process: '服务流程', processDesc: '从策略到交付，我们确保每一步都追求卓越。', faqs: '常见问题', ready: '准备好开启您的项目了吗？', contact: '预约免费策略会议，获取定制化方案建议。', contactBtn: '预约咨询' },
-    'zh-TW': { back: '返回服務列表', getStarted: '立即諮詢', capabilities: '核心優勢', process: '服務流程', processDesc: '從策略到交付，我們確保每一步都追求卓越。', faqs: '常見問題', ready: '準備好開啟您的項目了嗎？', contact: '預約免費策略會議，獲取定制化方案建議。', contactBtn: '預約諮詢' },
-    es: { back: 'Volver a Servicios', getStarted: 'Empezar', capabilities: 'Capacidades Principales', process: 'Nuestro Proceso', processDesc: 'Desde la estrategia hasta la entrega, aseguramos la excelencia.', faqs: 'Preguntas Frecuentes', ready: '¿Listo para empezar?', contact: 'Reserva una sesión estratégica gratuita', contactBtn: 'Contáctanos Hoy' },
-    ko: { back: '서비스로 돌아가기', getStarted: '시작하기', capabilities: '핵심 역량', process: '진행 프로세스', processDesc: '전략부터 납품까지 탁월함을 보장합니다.', faqs: '자주 묻는 질문', ready: '프로젝트를 시작할 준비가 되셨나요?', contact: '무료 전략 세션을 예약하세요', contactBtn: '지금 문의하기' },
-    ja: { back: 'サービス一覧へ', getStarted: '開始する', capabilities: '主な機能', process: '制作プロセス', processDesc: '戦略から納品まで、卓越性を追求します。', faqs: 'よくある質問', ready: 'プロジェクトを開始する準備はできましたか？', contact: '無料の戦略セッションを予約する', contactBtn: '今すぐお問い合わせ' },
-    ru: { back: 'Назад к услугам', getStarted: 'Начать', capabilities: 'Ключевые возможности', process: 'Наш процесс', processDesc: 'От стратегии до реализации мы гарантируем качество.', faqs: 'Вопросы и ответы', ready: 'Готовы начать проект?', contact: 'Запишитесь на бесплатную консультацию', contactBtn: 'Связаться с нами' },
-    it: { back: 'Torna ai Servizi', getStarted: 'Inizia', capabilities: 'Capacità Core', process: 'Il Nostro Processo', processDesc: 'Dalla strategia alla consegna, garantiamo l\'eccellenza.', faqs: 'Domande Frequenti', ready: 'Pronto per iniziare?', contact: 'Prenota una sessione strategica gratuita', contactBtn: 'Contattaci Oggi' }
-  };
-
-  const l = labels[locale] || labels.en;
+  // Try to get shared detail labels, fallback to English if namespace missing
+  const backBtn    = td('back');
+  const getStarted = td('getStarted');
+  const capabilities = td('capabilities');
+  const processLabel = td('process');
+  const processDesc  = td('processDesc');
+  const faqsLabel    = td('faqs');
+  const readyLabel   = td('ready');
+  const contactLabel = td('contact');
+  const contactBtn   = td('contactBtn');
 
   return (
     <div className={styles.page}>
@@ -93,7 +99,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="container">
           <Link href={`/${locale}/services`} className={styles.backLink}>
             <ArrowLeft size={16} />
-            <span>{l.back}</span>
+            <span>{backBtn}</span>
           </Link>
           
           <div className={styles.heroGrid}>
@@ -101,11 +107,11 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div className={styles.iconBox}>
                 <IconComp size={32} />
               </div>
-              <h1 className="md-display-small">{getField(service, 'title')}</h1>
-              <p className="md-body-large">{getField(service, 'desc')}</p>
+              <h1 className="md-display-small">{title}</h1>
+              <p className="md-body-large">{desc}</p>
               <div className={styles.heroActions}>
                 <Link href={`/${locale}/contact`} className="btn btn-primary btn-lg">
-                  {l.getStarted} <ArrowRight size={18} />
+                  {getStarted} <ArrowRight size={18} />
                 </Link>
               </div>
             </div>
@@ -121,17 +127,17 @@ export default async function ServiceDetailPage({ params }: Props) {
       <section className="section">
         <div className="container">
           <div className="section-title">
-            <h2 className="md-headline-medium">{l.capabilities}</h2>
+            <h2 className="md-headline-medium">{capabilities}</h2>
           </div>
           <div className={styles.featureGrid}>
-            {service.features.map((f, i) => (
+            {(t.raw(`${serviceKey}.features`) as any[]).map((f, i) => (
               <div key={i} className={styles.featureCard}>
                 <div className={styles.featureIcon}>
                   <CheckCircle2 size={24} color="var(--md-sys-color-primary)" />
                 </div>
                 <div>
-                  <h3 className="md-title-large">{getField(f, 'title')}</h3>
-                  <p className="md-body-medium text-muted">{getField(f, 'desc')}</p>
+                  <h3 className="md-title-large">{f.title}</h3>
+                  <p className="md-body-medium text-muted">{f.desc}</p>
                 </div>
               </div>
             ))}
@@ -143,14 +149,14 @@ export default async function ServiceDetailPage({ params }: Props) {
       <section className={`section ${styles.processSection}`}>
         <div className="container">
           <div className="section-title">
-            <h2 className="md-headline-medium">{l.process}</h2>
-            <p className="md-body-large">{l.processDesc}</p>
+            <h2 className="md-headline-medium">{processLabel}</h2>
+            <p className="md-body-large">{processDesc}</p>
           </div>
           <div className={styles.processGrid}>
-            {service.process.map((p, i) => (
+            {(t.raw(`${serviceKey}.process`) as any[]).map((p, i) => (
               <div key={i} className={styles.processItem}>
-                <div className={styles.processStep}>{getField(p, 'step')}</div>
-                <h3 className="md-title-medium">{getField(p, 'title')}</h3>
+                <div className={styles.processStep}>{p.step}</div>
+                <h3 className="md-title-medium">{p.title}</h3>
               </div>
             ))}
           </div>
@@ -158,37 +164,35 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       {/* FAQ */}
-      {service.faqs.length > 0 && (
-        <section className="section">
-          <div className="container">
-            <div className={styles.faqHeader}>
-              <MessageCircleQuestion size={32} />
-              <h2 className="md-headline-medium">{l.faqs}</h2>
-            </div>
-            <div className={styles.faqList}>
-              {service.faqs.map((f, i) => (
-                <div key={i} className={styles.faqItem}>
-                  <h3 className="md-title-medium">{getField(f, 'q')}</h3>
-                  <p className="md-body-medium text-muted">{getField(f, 'a')}</p>
-                </div>
-              ))}
-            </div>
+      <section className="section">
+        <div className="container">
+          <div className={styles.faqHeader}>
+            <MessageCircleQuestion size={32} />
+            <h2 className="md-headline-medium">{faqsLabel}</h2>
           </div>
-        </section>
-      )}
+          <div className={styles.faqList}>
+            {(t.raw(`${serviceKey}.faqs`) as any[]).map((f, i) => (
+              <div key={i} className={styles.faqItem}>
+                <h3 className="md-title-medium">{f.q}</h3>
+                <p className="md-body-medium text-muted">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className={styles.cta}>
         <div className="container">
           <div className={styles.ctaCard}>
             <h2 className="md-headline-medium">
-              {l.ready}
+              {readyLabel}
             </h2>
             <p className="md-body-large">
-              {l.contact}
+              {contactLabel}
             </p>
             <Link href={`/${locale}/contact`} className="btn btn-white btn-lg" style={{ marginTop: '24px' }}>
-              {l.contactBtn}
+              {contactBtn}
             </Link>
           </div>
         </div>

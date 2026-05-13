@@ -1,56 +1,29 @@
-import { useTranslations, useLocale } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CheckCircle2, Globe, Smartphone, Palette, TrendingUp } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { servicesData } from '@/data/services';
+import { getServiceServerTranslations } from '@/i18n/getI18nData';
 import styles from './page.module.css';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const isZh = locale.startsWith('zh');
+  const t = await getTranslations({ locale, namespace: 'metadata.services' });
   
   return {
-    title: isZh ? '我们的服务 | 纽约网站设计与全案开发 (NYC)' : 'Our Services | Web Design & Development in New York (NYC)',
-    description: isZh 
-      ? '提供纽约最专业的网站建设、APP开发、品牌设计及本地 SEO 营销服务，助力您的业务在全美增长。' 
-      : 'Professional web design, app development, brand identity, and Local SEO services in NYC to grow your business across the US.',
-    keywords: isZh
-      ? ['纽约APP开发', '美国软件外包', '纽约SEO服务', '中英双语UI设计', '纽约数字营销代理']
-      : ['App Development NYC', 'Software Outsourcing New York', 'SEO Services NYC', 'Bilingual UI Design', 'Digital Marketing Agency NYC'],
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords').split(',').map(k => k.trim()),
   };
 }
 
-const SERVICES = [
-  {
-    key:   'webDesign',
-    icon:  Globe,
-    image: '/images/services/web.png',
-    slug:  'web-design',
-  },
-  {
-    key:   'appDev',
-    icon:  Smartphone,
-    image: '/images/services/app.png',
-    slug:  'app-dev',
-  },
-  {
-    key:   'brandDesign',
-    icon:  Palette,
-    image: '/images/services/brand.png',
-    slug:  'brand-design',
-  },
-  {
-    key:   'seoMarketing',
-    icon:  TrendingUp,
-    image: '/images/services/seo.png',
-    slug:  'seo-marketing',
-  },
-] as const;
-
-export default function ServicesPage() {
-  const t      = useTranslations();
-  const locale = useLocale();
-  const s      = useTranslations('services');
-  const h      = useTranslations('home.cta');
+export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const s = await getTranslations({ locale, namespace: 'services' });
+  const h = await getTranslations({ locale, namespace: 'home.cta' });
+  
+  const { getServiceTitle, getServiceDescription, getFeatureTitle, getFeatureDescription } = await getServiceServerTranslations(locale);
 
   return (
     <div className={styles.page}>
@@ -65,24 +38,27 @@ export default function ServicesPage() {
 
       {/* Services Sections */}
       <div className={styles.servicesGrid}>
-        {SERVICES.map(({ key, image, slug }) => {
-          const items: string[] = s.raw(`${key}.items`) as string[];
+        {servicesData.map((service) => {
+          const { category, slug, image, featureCount } = service;
           return (
-            <section key={key} id={slug} className={styles.serviceSection}>
+            <section key={slug} id={slug} className={styles.serviceSection}>
               <div className="container">
                 <div className={`${styles.serviceBlock} reveal`}>
                   <div className={styles.content}>
-                    <div className={styles.label}>{s(`${key}.title`)}</div>
+                    <div className={styles.label}>{getServiceTitle(category)}</div>
                     <h2 className="md-display-small">
-                      {locale.startsWith('zh') ? '开启数字化' : 'Empowering Your'} {s(`${key}.title`)}
+                      {locale.startsWith('zh') ? '开启数字化' : 'Empowering Your'} {getServiceTitle(category)}
                     </h2>
-                    <p className={styles.desc}>{s(`${key}.desc`)}</p>
+                    <p className={styles.desc}>{getServiceDescription(category)}</p>
                     
                     <ul className={styles.serviceList}>
-                      {items.map((item, i) => (
+                      {Array.from({ length: featureCount }).map((_, i) => (
                         <li key={i} className={styles.serviceListItem}>
                           <CheckCircle2 size={18} className="text-primary" />
-                          <span>{item}</span>
+                          <div>
+                            <strong>{getFeatureTitle(category, i)}</strong>
+                            <p className="md-body-small opacity-80">{getFeatureDescription(category, i)}</p>
+                          </div>
                         </li>
                       ))}
                     </ul>
@@ -100,10 +76,10 @@ export default function ServicesPage() {
                   <div className={styles.visual}>
                     <Image
                       src={image}
-                      alt={s(`${key}.title`)}
+                      alt={getServiceTitle(category)}
                       width={800}
                       height={500}
-                      priority={key === 'webDesign'}
+                      priority={slug === 'web-design'}
                     />
                   </div>
                 </div>
@@ -131,3 +107,4 @@ export default function ServicesPage() {
     </div>
   );
 }
+
