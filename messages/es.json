@@ -837,6 +837,11 @@
         "title": "Core Web Vitals 2025: La guía completa para dueños de pequeñas empresas",
         "excerpt": "El algoritmo de ranking de Google ahora pesa mucho la experiencia de página. Aquí está exactamente lo que necesita para obtener 90+ en Lighthouse.",
         "content": "<h2>¿Qué son los Core Web Vitals?</h2><p>Los Core Web Vitals son un conjunto de factores específicos que Google considera importantes en la experiencia de usuario general de una página web...</p>"
+      },
+      "noviantCaseStudy": {
+        "title": "Caso de Éxito: Cómo construimos un sitio bilingüe con puntuación 98 para una empresa tecnológica de NY",
+        "excerpt": "Un vistazo al interior de las decisiones técnicas que impulsaron un rendimiento excepcional y SEO bilingüe para Noviant.",
+        "content": "<h2>Descripción del proyecto</h2><p>Noviant Inc. es una empresa líder de consultoría en TIC e IA en Nueva York...</p>"
       }
     }
   },
