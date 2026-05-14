@@ -132,7 +132,7 @@ export default function HomeContent({
                       <span style={{ background: 'var(--warning)' }} />
                       <span style={{ background: 'var(--success)' }} />
                     </div>
-                    <div className={styles.mockUrl}>apexzone.us</div>
+                    <div className={styles.mockUrl}>apexzone.xyz</div>
                   </div>
                   <div className={styles.mockContent}>
                     <div className={styles.mockHero} />
@@ -389,9 +389,9 @@ export default function HomeContent({
                 {t('cta.button')}
                 <ArrowRight size={18} />
               </Link>
-              <a href="mailto:hello@apexzone.us" className={styles.ctaPhone}>
+              <a href="mailto:hello@apexzone.xyz" className={styles.ctaPhone}>
                 <Mail size={16} />
-                hello@apexzone.us
+                hello@apexzone.xyz
               </a>
             </div>
           </div>

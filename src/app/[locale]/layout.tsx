@@ -26,17 +26,17 @@ export default async function LocaleLayout({
   }
 
   const messages = await getMessages();
-  const baseUrl = 'https://apexzone.us';
+  const baseUrl = 'https://apexzone.xyz';
   const currentPath = ''; // In a real app, you'd get the pathname here if needed for deeper pages
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     'name': 'Apex Zone',
-    'image': 'https://apexzone.us/images/logo/ApexZone_LOG_002.png',
-    '@id': 'https://apexzone.us',
-    'url': 'https://apexzone.us',
-    'email': 'hello@apexzone.us',
+    'image': 'https://apexzone.xyz/images/logo/ApexZone_LOG_002.png',
+    '@id': 'https://apexzone.xyz',
+    'url': 'https://apexzone.xyz',
+    'email': 'hello@apexzone.xyz',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'New York City',

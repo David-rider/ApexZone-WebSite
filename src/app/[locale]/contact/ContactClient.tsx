@@ -6,7 +6,7 @@ import { MapPin, Mail, Clock, SendHorizonal } from 'lucide-react';
 import styles from './page.module.css';
 
 const SERVICE_KEYS = ['webDesign', 'appDev', 'brandDesign', 'seoMarketing', 'consultation', 'other'] as const;
-const RECIPIENT = 'hello@apexzone.us';
+const RECIPIENT = 'hello@apexzone.xyz';
 
 function sendEmail(data: {
   name: string; email: string; phone: string;
@@ -56,7 +56,7 @@ export default function ContactClient() {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, locale }),
+        body: JSON.stringify({ ...form, locale, source: 'contact' }),
       });
 
       if (response.ok) {
@@ -162,13 +162,6 @@ export default function ContactClient() {
                 required
               />
             </div>
-
-            {/* Send tip */}
-            <p className={styles.sendTip}>
-              {locale.startsWith('zh')
-                ? '📬 点击发送后，您的邮件客户端将自动打开并预填信息，确认发送即可。'
-                : '📬 Clicking send will open your email client with the message pre-filled — just confirm and send.'}
-            </p>
 
             <button
               type="submit"

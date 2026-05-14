@@ -4,7 +4,7 @@ import { blogPosts } from '@/data/blog';
 import { servicesData } from '@/data/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://apexzone.us';
+  const baseUrl = 'https://apexzone.xyz';
   const locales = ['en', 'zh-CN', 'zh-TW', 'es', 'ko', 'ja', 'ru', 'it'];
   
   const staticPages = ['', '/services', '/portfolio', '/blog', '/about', '/contact', '/ai-wizard'];

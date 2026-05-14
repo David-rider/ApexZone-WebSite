@@ -52,7 +52,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
   const title   = tp(`${key}.title`);
   const excerpt = tp(`${key}.excerpt`);
   const content = tp(`${key}.content`);
-  const currentUrl = `https://apexzone.us/${locale}/blog/${post.slug}`;
+  const currentUrl = `https://apexzone.xyz/${locale}/blog/${post.slug}`;
 
   // Related posts
   const related = blogPosts.filter(p => p.slug !== post.slug).slice(0, 2);
