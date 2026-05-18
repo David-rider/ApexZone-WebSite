@@ -36,7 +36,7 @@ export default async function LocaleLayout({
     'image': 'https://apexzone.xyz/images/logo/ApexZone_LOG_002.png',
     '@id': 'https://apexzone.xyz',
     'url': 'https://apexzone.xyz',
-    'email': 'hello@apexzone.xyz',
+    'email': 'support@apexzone.xyz',
     'address': {
       '@type': 'PostalAddress',
       'streetAddress': 'New York City',

@@ -111,22 +111,6 @@ export default function BlueprintResult() {
           </div>
         </motion.div>
 
-        {/* ── 🌟 Website Preview Trigger ── */}
-        <motion.div variants={itemVariants}>
-          <button
-            className={styles.previewTrigger}
-            onClick={() => setPreviewOpen(true)}
-            aria-label={previewLabel}
-          >
-            <span className={styles.previewTriggerPulse} />
-            <Eye size={20} />
-            <span>{previewLabel}</span>
-            <span style={{ fontSize: '0.8em', opacity: 0.75, fontWeight: 400 }}>
-              — {previewSub}
-            </span>
-          </button>
-        </motion.div>
-
         {/* ── Detail cards ── */}
         <div className={styles.blueprintGrid}>
           {sections.map(s => (
@@ -150,6 +134,20 @@ export default function BlueprintResult() {
 
         {/* ── CTA ── */}
         <motion.div className={styles.blueprintCta} variants={itemVariants}>
+          {/* 🌟 Preview trigger — top of CTA box */}
+          <button
+            className={styles.previewTrigger}
+            onClick={() => setPreviewOpen(true)}
+            aria-label={previewLabel}
+          >
+            <span className={styles.previewTriggerPulse} />
+            <Eye size={20} />
+            <span>{previewLabel}</span>
+            <span style={{ fontSize: '0.8em', opacity: 0.7, fontWeight: 400 }}>
+              — {previewSub}
+            </span>
+          </button>
+
           <h3 className="md-headline-small">{t('cta.title')}</h3>
           <p className="md-body-medium text-muted">{t('cta.subtitle')}</p>
           <div className={styles.blueprintCtaActions}>

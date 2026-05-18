@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const RECIPIENT = 'hello@apexzone.xyz';
+const RECIPIENT = 'support@apexzone.xyz';
 const SENDER    = process.env.RESEND_FROM ?? 'Apex Zone <onboarding@resend.dev>';
 
 // ─── Label maps (keep server-side, no i18n needed) ────────────────────────────

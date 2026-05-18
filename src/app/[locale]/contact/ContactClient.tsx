@@ -6,7 +6,7 @@ import { MapPin, Mail, Clock, SendHorizonal } from 'lucide-react';
 import styles from './page.module.css';
 
 const SERVICE_KEYS = ['webDesign', 'appDev', 'brandDesign', 'seoMarketing', 'consultation', 'other'] as const;
-const RECIPIENT = 'hello@apexzone.xyz';
+const RECIPIENT = 'support@apexzone.xyz';
 
 function sendEmail(data: {
   name: string; email: string; phone: string;

@@ -389,9 +389,9 @@ export default function HomeContent({
                 {t('cta.button')}
                 <ArrowRight size={18} />
               </Link>
-              <a href="mailto:hello@apexzone.xyz" className={styles.ctaPhone}>
+              <a href="mailto:support@apexzone.xyz" className={styles.ctaPhone}>
                 <Mail size={16} />
-                hello@apexzone.xyz
+                support@apexzone.xyz
               </a>
             </div>
           </div>

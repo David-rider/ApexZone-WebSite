@@ -89,7 +89,7 @@ export default function Footer() {
             </li>
             <li className={styles.contactItem}>
               <Mail size={14} className={styles.contactIcon} />
-              <a href="mailto:hello@apexzone.xyz" className={styles.link}>hello@apexzone.xyz</a>
+              <a href="mailto:support@apexzone.xyz" className={styles.link}>support@apexzone.xyz</a>
             </li>
             <li className={styles.contactItem}>
               <Clock size={14} className={styles.contactIcon} />

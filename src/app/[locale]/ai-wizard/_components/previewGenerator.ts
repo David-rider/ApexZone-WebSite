@@ -339,12 +339,49 @@ function getContent(industry: string, locale: string): IndustryContent {
   return CONTENT_EN[industry] ?? CONTENT_EN['other']!;
 }
 
+// ─── Industry Hero Images (Unsplash — free commercial license) ────────────────
+// Each photo ID is fixed so the same industry always renders the same image.
+// Attribution: photos from unsplash.com (Unsplash License allows free commercial use).
+
+const HERO_IMAGES: Record<string, string> = {
+  restaurant:    'photo-1414235077428-338989a2e8c0', // warm restaurant interior
+  retail:        'photo-1441986300917-64674bd600d8', // clean modern boutique
+  tech:          'photo-1518770660439-4636190af475', // circuit board macro
+  healthcare:    'photo-1576091160399-112ba8d25d1d', // doctor / medical
+  finance:       'photo-1611974789855-9c2a0a7236a3', // trading / finance charts
+  education:     'photo-1523050854058-8df90110c9f1', // campus / students
+  realEstate:    'photo-1560448204-e02f11c3d0e2',    // modern house exterior
+  manufacturing: 'photo-1581091226825-a6a2a5aee158', // factory / industrial
+  beauty:        'photo-1560472354-b33ff0c44a43',    // beauty salon interior
+  other:         'photo-1497366216548-37526070297c',  // modern bright office
+};
+
+function getHeroImageUrl(industry: string, designStyle: string): string {
+  const photoId = HERO_IMAGES[industry] ?? HERO_IMAGES['other'];
+  // Use larger crop for a cinematic feel; portrait crops for mobile-frame
+  return `https://images.unsplash.com/${photoId}?w=1400&h=700&fit=crop&crop=center&q=80&auto=format`;
+}
+
+// Overlay opacity per theme — dark themes need lighter overlay, light themes darker
+function getHeroOverlay(designStyle: string, primaryRgb: string): string {
+  switch (designStyle) {
+    case 'bold':    return `rgba(15,23,42,0.78)`;
+    case 'tech':    return `rgba(8,13,26,0.82)`;
+    case 'luxe':    return `rgba(9,9,10,0.80)`;
+    case 'minimal': return `rgba(250,250,250,0.72)`;
+    case 'warm':    return `rgba(255,251,245,0.70)`;
+    default:        return `rgba(255,255,255,0.68)`;   // clean
+  }
+}
+
 // ─── Main Generator ───────────────────────────────────────────────────────────
 
 export function generatePreviewHTML(answers: WizardAnswers, locale: string): string {
-  const theme   = THEMES[answers.designStyle] ?? THEMES['clean'];
-  const content = getContent(answers.industry, locale);
-  const isZh    = locale.startsWith('zh');
+  const theme      = THEMES[answers.designStyle] ?? THEMES['clean'];
+  const content    = getContent(answers.industry, locale);
+  const isZh       = locale.startsWith('zh');
+  const heroImgUrl = getHeroImageUrl(answers.industry, answers.designStyle);
+  const heroOverlay= getHeroOverlay(answers.designStyle, theme.primaryRgb);
 
   const company = answers.contact.company || answers.contact.name || (isZh ? '您的公司' : 'Your Company');
   const email   = answers.contact.email || (isZh ? 'hello@yourcompany.com' : 'hello@yourcompany.com');
@@ -398,8 +435,8 @@ nav{position:sticky;top:0;z-index:100;background:${theme.navBg};backdrop-filter:
 .nav-btn:hover{opacity:.85;transform:translateY(-1px)}
 
 /* HERO */
-.hero{background:${theme.heroGradient};padding:96px 40px 80px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(${theme.primaryRgb},.08) 0%,transparent 70%)}
+.hero{background:${theme.heroGradient};padding:96px 40px 80px;text-align:center;position:relative;overflow:hidden;background-image:url('${heroImgUrl}');background-size:cover;background-position:center}
+.hero::before{content:'';position:absolute;inset:0;background:${heroOverlay};backdrop-filter:blur(1px)}
 .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(${theme.primaryRgb},.1);color:${theme.primary};border:1px solid rgba(${theme.primaryRgb},.2);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:600;margin-bottom:24px;letter-spacing:.5px;position:relative}
 h1{font-family:${theme.headingFont};font-size:clamp(30px,5vw,54px);font-weight:800;line-height:1.15;letter-spacing:-1px;margin-bottom:20px;max-width:780px;margin-left:auto;margin-right:auto;position:relative;${theme.headingGradient}}
 .hero-sub{font-size:18px;color:${theme.textMuted};max-width:540px;margin:0 auto 36px;line-height:1.7;position:relative}
@@ -552,6 +589,9 @@ ${luxeAccent}
     ${content.navLinks.map(l => `<li><a href="#">${l}</a></li>`).join('')}
   </ul>
 </footer>
+<div style="text-align:center;padding:8px;font-size:11px;color:${theme.textMuted};background:${theme.bgAlt};border-top:1px solid ${theme.border};">
+  ${isZh ? '演示预览 · 图片来源' : 'Preview mockup · Photos by'} <a href="https://unsplash.com" target="_blank" style="color:${theme.primary};text-decoration:none;">Unsplash</a>
+</div>
 
 </body>
 </html>`;
