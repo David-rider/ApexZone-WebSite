@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function ErrorPage({
   error,
@@ -11,6 +11,7 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   const locale = useLocale();
+  const tc = useTranslations('common');
 
   return (
     <div style={{
@@ -29,21 +30,17 @@ export default function ErrorPage({
         ⚠️
       </div>
       <h1 className="md-headline-medium" style={{ marginBottom: '0.5rem' }}>
-        {locale.startsWith('zh') ? '出了点问题' : 'Something Went Wrong'}
+        {tc('errorTitle')}
       </h1>
       <p className="md-body-large text-muted" style={{ marginBottom: '2rem', maxWidth: '480px' }}>
-        {locale === 'zh-TW'
-          ? '我們遇到了一個意外錯誤，請稍後重試。'
-          : locale === 'zh-CN'
-          ? '我们遇到了一个意外错误，请稍后重试。'
-          : 'We encountered an unexpected error. Please try again.'}
+        {tc('error')}
       </p>
       <div style={{ display: 'flex', gap: '1rem' }}>
         <button onClick={reset} className="btn btn-primary">
-          {locale.startsWith('zh') ? '重试' : 'Try Again'}
+          {tc('tryAgain')}
         </button>
         <Link href={`/${locale}`} className="btn btn-elevated">
-          {locale === 'zh-TW' ? '返回首頁' : locale === 'zh-CN' ? '返回首页' : 'Go Home'}
+          {tc('goHome')}
         </Link>
       </div>
     </div>

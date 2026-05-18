@@ -17,7 +17,8 @@ const OPTIONS = [
 ];
 
 export default function StepFeatures() {
-  const t = useTranslations('aiWizard.steps.features');
+  const t  = useTranslations('aiWizard.steps.features');
+  const tw = useTranslations('aiWizard');
   const locale = useLocale();
   const { answers, setAnswer } = useWizard();
   const selected = answers.features;
@@ -58,7 +59,7 @@ export default function StepFeatures() {
             >
               {isRec && (
                 <div className={styles.recBadge}>
-                  {locale.startsWith('zh') ? '专家推荐' : 'Recommended'}
+                  {tw('recommended')}
                 </div>
               )}
               {on && (

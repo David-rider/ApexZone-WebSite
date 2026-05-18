@@ -66,7 +66,10 @@
     "visitSite": "Visita il sito",
     "viewProject": "Vedi progetto",
     "ourProcess": "Il nostro processo",
-    "trustLabel": "Scelto da oltre 50 aziende"
+    "trustLabel": "Scelto da oltre 50 aziende",
+    "errorTitle": "Qualcosa è Andato Storto",
+    "tryAgain": "Riprova",
+    "goHome": "Vai alla Home"
   },
   "home": {
     "hero": {
@@ -148,6 +151,11 @@
     "label": "Cosa facciamo",
     "title": "I nostri servizi",
     "subtitle": "Sei pilastri di eccellenza digitale — scegli ciò di cui il tuo business ha bisogno",
+    "capabilities": "Le Nostre Capacità",
+    "processDesc": "Come otteniamo risultati eccezionali",
+    "faq": "Domande Frequenti",
+    "ready": "Pronto per Iniziare?",
+    "empowering": "Potenziando il Tuo",
     "webDesign": {
       "title": "Design e Sviluppo Web",
       "description": "Siti web bespoke ad alte prestazioni che fondono un'estetica sbalorditiva con una strategia focalizzata sulla conversione.",
@@ -162,10 +170,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Strategia" },
-        "1": { "step": "02", "title": "Design" },
-        "2": { "step": "03", "title": "Sviluppo" },
-        "3": { "step": "04", "title": "Lancio" }
+        "0": {
+          "step": "01",
+          "title": "Strategia"
+        },
+        "1": {
+          "step": "02",
+          "title": "Design"
+        },
+        "2": {
+          "step": "03",
+          "title": "Sviluppo"
+        },
+        "3": {
+          "step": "04",
+          "title": "Lancio"
+        }
       },
       "faqs": {
         "0": {
@@ -188,10 +208,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Prototipo" },
-        "1": { "step": "02", "title": "Sviluppo" },
-        "2": { "step": "03", "title": "Test" },
-        "3": { "step": "04", "title": "Distribuzione" }
+        "0": {
+          "step": "01",
+          "title": "Prototipo"
+        },
+        "1": {
+          "step": "02",
+          "title": "Sviluppo"
+        },
+        "2": {
+          "step": "03",
+          "title": "Test"
+        },
+        "3": {
+          "step": "04",
+          "title": "Distribuzione"
+        }
       },
       "faqs": {
         "0": {
@@ -214,10 +246,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Concetto" },
-        "1": { "step": "02", "title": "Bozza" },
-        "2": { "step": "03", "title": "Raffinatezza" },
-        "3": { "step": "04", "title": "Consegna" }
+        "0": {
+          "step": "01",
+          "title": "Concetto"
+        },
+        "1": {
+          "step": "02",
+          "title": "Bozza"
+        },
+        "2": {
+          "step": "03",
+          "title": "Raffinatezza"
+        },
+        "3": {
+          "step": "04",
+          "title": "Consegna"
+        }
       },
       "faqs": []
     },
@@ -235,10 +279,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Audit" },
-        "1": { "step": "02", "title": "Keywords" },
-        "2": { "step": "03", "title": "On-Page" },
-        "3": { "step": "04", "title": "Contenuto" }
+        "0": {
+          "step": "01",
+          "title": "Audit"
+        },
+        "1": {
+          "step": "02",
+          "title": "Keywords"
+        },
+        "2": {
+          "step": "03",
+          "title": "On-Page"
+        },
+        "3": {
+          "step": "04",
+          "title": "Contenuto"
+        }
       },
       "faqs": {
         "0": {
@@ -630,7 +686,9 @@
         "consultation": "Consulenza Strategica",
         "other": "Altro"
       },
-      "required": "Questo campo è obbligatorio"
+      "required": "Questo campo è obbligatorio",
+      "successDesc": "Grazie per la vostra richiesta! Vi risponderemo a breve.",
+      "sendAnother": "Invia un Altro"
     },
     "info": {
       "address": "Ufficio NYC",
@@ -643,7 +701,8 @@
     "freeConsult": {
       "title": "Sessione Strategica Gratuita",
       "desc": "Ottieni un'analisi professionale della tua presenza digitale attuale.",
-      "button": "Prenota la mia chiamata gratuita"
+      "button": "Prenota la mia chiamata gratuita",
+      "subject": "Richiesta di Consulenza Gratuita"
     }
   },
   "footer": {
@@ -809,7 +868,8 @@
         "secondary": "Scarica Piano in PDF",
         "restart": "Ricomincia"
       }
-    }
+    },
+    "recommended": "Consigliato"
   },
   "blog": {
     "label": "Approfondimenti",

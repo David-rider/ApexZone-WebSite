@@ -181,30 +181,37 @@ export function useServiceTranslations() {
 
 /**
  * Blog translation helper
+ *
+ * IMPORTANT: Pass the full translation key stored on the BlogPost object
+ * (e.g. post.titleKey = "blog.posts.whyBilingualWebsite.title"),
+ * NOT the URL slug ("why-bilingual-website-matters-us-business").
  */
 export function useBlogTranslations() {
   const t = useTranslations();
 
   return {
-    getBlogTitle: (slug: string): string => {
+    /** @param titleKey  e.g. post.titleKey → "blog.posts.whyBilingualWebsite.title" */
+    getBlogTitle: (titleKey: string): string => {
       try {
-        return t(`blog.posts.${slug}.title`);
+        return t(titleKey as any);
       } catch {
-        return slug;
+        return titleKey;
       }
     },
 
-    getBlogExcerpt: (slug: string): string => {
+    /** @param excerptKey  e.g. post.excerptKey → "blog.posts.whyBilingualWebsite.excerpt" */
+    getBlogExcerpt: (excerptKey: string): string => {
       try {
-        return t(`blog.posts.${slug}.excerpt`);
+        return t(excerptKey as any);
       } catch {
         return '';
       }
     },
 
-    getBlogContent: (slug: string): string => {
+    /** @param contentKey  e.g. post.contentKey → "blog.posts.whyBilingualWebsite.content" */
+    getBlogContent: (contentKey: string): string => {
       try {
-        return t(`blog.posts.${slug}.content`);
+        return t(contentKey as any);
       } catch {
         return '';
       }
@@ -212,7 +219,7 @@ export function useBlogTranslations() {
 
     getCategoryLabel: (category: string): string => {
       try {
-        return t(`blog.categories.${category}`);
+        return t(`blog.categories.${category}` as any);
       } catch {
         return category;
       }

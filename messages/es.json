@@ -66,7 +66,10 @@
     "visitSite": "Visitar sitio",
     "viewProject": "Ver proyecto",
     "ourProcess": "Nuestro proceso",
-    "trustLabel": "Con la confianza de más de 50 empresas"
+    "trustLabel": "Con la confianza de más de 50 empresas",
+    "errorTitle": "Algo Salió Mal",
+    "tryAgain": "Intentar de Nuevo",
+    "goHome": "Ir al Inicio"
   },
   "home": {
     "hero": {
@@ -148,6 +151,11 @@
     "label": "Lo que hacemos",
     "title": "Nuestros servicios",
     "subtitle": "Seis pilares de excelencia digital — elija lo que su negocio necesita",
+    "capabilities": "Nuestras Capacidades",
+    "processDesc": "Cómo entregamos resultados excepcionales",
+    "faq": "Preguntas Frecuentes",
+    "ready": "¿Listo para Comenzar?",
+    "empowering": "Potenciando Tu",
     "webDesign": {
       "title": "Diseño y Desarrollo Web",
       "description": "Sitios web a medida de alto rendimiento que combinan una estética impresionante con una estrategia centrada en la conversión.",
@@ -162,10 +170,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Estrategia" },
-        "1": { "step": "02", "title": "Diseño" },
-        "2": { "step": "03", "title": "Desarrollo" },
-        "3": { "step": "04", "title": "Lanzamiento" }
+        "0": {
+          "step": "01",
+          "title": "Estrategia"
+        },
+        "1": {
+          "step": "02",
+          "title": "Diseño"
+        },
+        "2": {
+          "step": "03",
+          "title": "Desarrollo"
+        },
+        "3": {
+          "step": "04",
+          "title": "Lanzamiento"
+        }
       },
       "faqs": {
         "0": {
@@ -188,10 +208,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Prototipo" },
-        "1": { "step": "02", "title": "Desarrollo" },
-        "2": { "step": "03", "title": "Pruebas" },
-        "3": { "step": "04", "title": "Despliegue" }
+        "0": {
+          "step": "01",
+          "title": "Prototipo"
+        },
+        "1": {
+          "step": "02",
+          "title": "Desarrollo"
+        },
+        "2": {
+          "step": "03",
+          "title": "Pruebas"
+        },
+        "3": {
+          "step": "04",
+          "title": "Despliegue"
+        }
       },
       "faqs": {
         "0": {
@@ -214,10 +246,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Concepto" },
-        "1": { "step": "02", "title": "Bocetos" },
-        "2": { "step": "03", "title": "Refinamiento" },
-        "3": { "step": "04", "title": "Entrega" }
+        "0": {
+          "step": "01",
+          "title": "Concepto"
+        },
+        "1": {
+          "step": "02",
+          "title": "Bocetos"
+        },
+        "2": {
+          "step": "03",
+          "title": "Refinamiento"
+        },
+        "3": {
+          "step": "04",
+          "title": "Entrega"
+        }
       },
       "faqs": []
     },
@@ -235,10 +279,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Auditoría" },
-        "1": { "step": "02", "title": "Keywords" },
-        "2": { "step": "03", "title": "On-Page" },
-        "3": { "step": "04", "title": "Contenido" }
+        "0": {
+          "step": "01",
+          "title": "Auditoría"
+        },
+        "1": {
+          "step": "02",
+          "title": "Keywords"
+        },
+        "2": {
+          "step": "03",
+          "title": "On-Page"
+        },
+        "3": {
+          "step": "04",
+          "title": "Contenido"
+        }
       },
       "faqs": {
         "0": {
@@ -630,7 +686,9 @@
         "consultation": "Consultoría Estratégica",
         "other": "Otro"
       },
-      "required": "Este campo es obligatorio"
+      "required": "Este campo es obligatorio",
+      "successDesc": "¡Gracias por su consulta! Nos pondremos en contacto pronto.",
+      "sendAnother": "Enviar Otro"
     },
     "info": {
       "address": "Oficina en NYC",
@@ -643,7 +701,8 @@
     "freeConsult": {
       "title": "Sesión de Estrategia Gratuita",
       "desc": "Obtenga un análisis profesional de su presencia digital actual.",
-      "button": "Reservar mi llamada gratuita"
+      "button": "Reservar mi llamada gratuita",
+      "subject": "Solicitud de Consulta Gratuita"
     }
   },
   "footer": {
@@ -809,7 +868,8 @@
         "secondary": "Descargar Plan en PDF",
         "restart": "Empezar de Nuevo"
       }
-    }
+    },
+    "recommended": "Recomendado"
   },
   "blog": {
     "label": "Perspectivas",

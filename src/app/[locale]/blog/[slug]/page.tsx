@@ -38,8 +38,8 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) notFound();
 
-  const t = await getTranslations('blog');
-  const tp = await getTranslations('blog.posts');
+  const t = await getTranslations({ locale, namespace: 'blog' });
+  const tp = await getTranslations({ locale, namespace: 'blog.posts' });
   
   // Map slug to camelCase key used in JSON
   const keyMap: Record<string, string> = {
@@ -92,7 +92,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <span className={styles.metaItem}><Clock size={14} /> {post.readTime} {t('minRead')}</span>
               <span className={styles.metaItem}>
                 <Tag size={14} />
-                {new Date(post.date).toLocaleDateString(locale === 'zh-TW' ? 'zh-TW' : locale === 'zh-CN' ? 'zh-CN' : 'en-US', {
+                {new Date(post.date).toLocaleDateString(locale, {
                   year: 'numeric', month: 'long', day: 'numeric',
                 })}
               </span>

@@ -37,7 +37,7 @@ export default function BlogClient({ featured }: BlogClientProps) {
                 {featured.cover ? (
                   <Image
                     src={featured.cover}
-                    alt={getBlogTitle(featured.slug)}
+                    alt={getBlogTitle(featured.titleKey)}
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -50,9 +50,9 @@ export default function BlogClient({ featured }: BlogClientProps) {
               <div className={styles.featuredBody}>
                 <span className="badge badge-sage">{t(`categories.${featured.category}`)}</span>
                 <h2 className="md-headline-medium">
-                  {getBlogTitle(featured.slug)}
+                  {getBlogTitle(featured.titleKey)}
                 </h2>
-                <p className="md-body-large">{getBlogExcerpt(featured.slug)}</p>
+                <p className="md-body-large">{getBlogExcerpt(featured.excerptKey)}</p>
                 <div className={styles.postMeta}>
                   <span className="md-body-small text-muted">{featured.author}</span>
                   <span className="md-body-small text-muted">·</span>
@@ -90,7 +90,7 @@ export default function BlogClient({ featured }: BlogClientProps) {
                     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                       <Image
                         src={post.cover}
-                        alt={getBlogTitle(post.slug)}
+                        alt={getBlogTitle(post.titleKey)}
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
                         style={{ objectFit: 'cover' }}
@@ -106,16 +106,16 @@ export default function BlogClient({ featured }: BlogClientProps) {
                     <span className="md-label-small text-muted">{post.readTime} {t('minRead')}</span>
                   </div>
                   <h3 className="md-title-medium" style={{ margin: '12px 0 8px' }}>
-                    {getBlogTitle(post.slug)}
+                    {getBlogTitle(post.titleKey)}
                   </h3>
                   <p className="md-body-small text-muted">
-                    {getBlogExcerpt(post.slug)}
+                    {getBlogExcerpt(post.excerptKey)}
                   </p>
                   <div className={styles.postMeta} style={{ marginTop: '16px' }}>
                     <span className="md-label-small text-muted">{post.author}</span>
                     <span className="md-label-small text-muted">·</span>
                     <span className="md-label-small text-muted">
-                      {new Date(post.date).toLocaleDateString(locale === 'zh-TW' ? 'zh-TW' : locale === 'zh-CN' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                      {new Date(post.date).toLocaleDateString(locale, { month: 'short', day: 'numeric', year: 'numeric' })}
                     </span>
                   </div>
                 </div>

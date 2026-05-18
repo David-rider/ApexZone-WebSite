@@ -66,7 +66,10 @@
     "visitSite": "Visit Site",
     "viewProject": "View Project",
     "ourProcess": "Our Process",
-    "trustLabel": "Trusted by 50+ businesses"
+    "trustLabel": "Trusted by 50+ businesses",
+    "errorTitle": "Something Went Wrong",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home"
   },
   "home": {
     "hero": {
@@ -148,6 +151,11 @@
     "label": "What We Do",
     "title": "Our Services",
     "subtitle": "Six pillars of digital excellence — choose what your business needs",
+    "capabilities": "Our Capabilities",
+    "processDesc": "How we deliver exceptional results",
+    "faq": "Frequently Asked Questions",
+    "ready": "Ready to Get Started?",
+    "empowering": "Empowering Your",
     "webDesign": {
       "title": "Web Design & Development",
       "description": "High-performance, bespoke websites that blend stunning aesthetics with conversion-focused strategy.",
@@ -162,10 +170,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Strategy" },
-        "1": { "step": "02", "title": "Design" },
-        "2": { "step": "03", "title": "Development" },
-        "3": { "step": "04", "title": "Launch" }
+        "0": {
+          "step": "01",
+          "title": "Strategy"
+        },
+        "1": {
+          "step": "02",
+          "title": "Design"
+        },
+        "2": {
+          "step": "03",
+          "title": "Development"
+        },
+        "3": {
+          "step": "04",
+          "title": "Launch"
+        }
       },
       "faqs": {
         "0": {
@@ -188,10 +208,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Prototype" },
-        "1": { "step": "02", "title": "Development" },
-        "2": { "step": "03", "title": "Testing" },
-        "3": { "step": "04", "title": "Deployment" }
+        "0": {
+          "step": "01",
+          "title": "Prototype"
+        },
+        "1": {
+          "step": "02",
+          "title": "Development"
+        },
+        "2": {
+          "step": "03",
+          "title": "Testing"
+        },
+        "3": {
+          "step": "04",
+          "title": "Deployment"
+        }
       },
       "faqs": {
         "0": {
@@ -214,10 +246,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Concept" },
-        "1": { "step": "02", "title": "Drafting" },
-        "2": { "step": "03", "title": "Refinement" },
-        "3": { "step": "04", "title": "Delivery" }
+        "0": {
+          "step": "01",
+          "title": "Concept"
+        },
+        "1": {
+          "step": "02",
+          "title": "Drafting"
+        },
+        "2": {
+          "step": "03",
+          "title": "Refinement"
+        },
+        "3": {
+          "step": "04",
+          "title": "Delivery"
+        }
       },
       "faqs": []
     },
@@ -235,10 +279,22 @@
         }
       },
       "process": {
-        "0": { "step": "01", "title": "Audit" },
-        "1": { "step": "02", "title": "Keywords" },
-        "2": { "step": "03", "title": "On-Page" },
-        "3": { "step": "04", "title": "Content" }
+        "0": {
+          "step": "01",
+          "title": "Audit"
+        },
+        "1": {
+          "step": "02",
+          "title": "Keywords"
+        },
+        "2": {
+          "step": "03",
+          "title": "On-Page"
+        },
+        "3": {
+          "step": "04",
+          "title": "Content"
+        }
       },
       "faqs": {
         "0": {
@@ -305,8 +361,18 @@
         "description": "Full bilingual (EN/ZH) corporate website for a New York-based managed service provider and AI consulting firm. Built with Next.js App Router, next-intl internationalization, and GEO-optimized metadata.",
         "challenge": "The client needed a bilingual site that would rank for both English tech terms and Chinese-speaking enterprise clients in the US market.",
         "solution": "Implemented Next.js static generation with locale-based routing (/en/ and /zh/), JSON-LD Schema.org structured data, Core Web Vitals optimization, and comprehensive bilingual content strategy.",
-        "results": ["Lighthouse score: 98/100 Performance", "Bilingual SEO coverage", "Mobile-first responsive design", "GEO/AI search optimization"],
-        "tags": ["Next.js", "TypeScript", "Bilingual", "SEO"],
+        "results": [
+          "Lighthouse score: 98/100 Performance",
+          "Bilingual SEO coverage",
+          "Mobile-first responsive design",
+          "GEO/AI search optimization"
+        ],
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Bilingual",
+          "SEO"
+        ],
         "location": "New York"
       },
       "springShore": {
@@ -315,8 +381,17 @@
         "description": "A comprehensive City Information Modeling (CIM) system for the Hainan Riyue Bay project, providing real-time urban management and physical simulation.",
         "challenge": "Creating a highly realistic 3D model that remains performant across web browsers for large-scale urban planning.",
         "solution": "Utilized advanced WebGL rendering techniques and data layering to ensure smooth interaction with millions of polygons.",
-        "results": ["Full-scale urban simulation", "Enhanced decision making", "Interactive planning tools"],
-        "tags": ["CIM", "Digital Twin", "3D Rendering", "Urban Planning"],
+        "results": [
+          "Full-scale urban simulation",
+          "Enhanced decision making",
+          "Interactive planning tools"
+        ],
+        "tags": [
+          "CIM",
+          "Digital Twin",
+          "3D Rendering",
+          "Urban Planning"
+        ],
         "location": "Hainan"
       },
       "retailMiniProgram": {
@@ -325,8 +400,17 @@
         "description": "A seamless shopping experience within WeChat for a luxury boutique, featuring integrated payments, social sharing, and membership points.",
         "challenge": "High-performance rendering of luxury product images within the WeChat environment while maintaining fast loading.",
         "solution": "Used WeChat native development with cloud functions for backend, optimized image CDN, and smart caching.",
-        "results": ["200% increase in social traffic", "Average conversion rate >5%", "Smooth 60fps scrolling"],
-        "tags": ["WeChat", "E-commerce", "Payment", "Social"],
+        "results": [
+          "200% increase in social traffic",
+          "Average conversion rate >5%",
+          "Smooth 60fps scrolling"
+        ],
+        "tags": [
+          "WeChat",
+          "E-commerce",
+          "Payment",
+          "Social"
+        ],
         "location": "Shanghai"
       },
       "fintechBrand": {
@@ -335,8 +419,17 @@
         "description": "Comprehensive brand visual system for a modern crypto storage provider, conveying trust, security, and innovation.",
         "challenge": "Designing a brand that feels secure like a traditional bank but innovative like a tech startup.",
         "solution": "Deep color psychology analysis, custom high-contrast typography, and a cohesive VI system across all platforms.",
-        "results": ["Highly scalable logo system", "Positive user recognition survey (94%)", "Complete brand book delivered"],
-        "tags": ["Logo", "VI", "System", "Brand Book"],
+        "results": [
+          "Highly scalable logo system",
+          "Positive user recognition survey (94%)",
+          "Complete brand book delivered"
+        ],
+        "tags": [
+          "Logo",
+          "VI",
+          "System",
+          "Brand Book"
+        ],
         "location": "Singapore"
       },
       "healthcareBooking": {
@@ -345,8 +438,17 @@
         "description": "A HIPAA-compliant online appointment booking system for a New York wellness clinic, enabling patients to self-schedule, receive automated reminders, and manage their appointments entirely online.",
         "challenge": "Replacing a phone-based scheduling workflow with a user-friendly digital system that elderly and non-tech-savvy patients could use confidently across all devices.",
         "solution": "Built a simplified, large-typography booking flow with SMS/email reminder automation, calendar sync integration, and a secure patient intake form — all optimized for mobile accessibility.",
-        "results": ["Appointment no-show rate reduced by 35%", "70% of bookings now fully self-service", "4.9/5 patient satisfaction score"],
-        "tags": ["Booking", "HIPAA", "Accessibility", "UI/UX"],
+        "results": [
+          "Appointment no-show rate reduced by 35%",
+          "70% of bookings now fully self-service",
+          "4.9/5 patient satisfaction score"
+        ],
+        "tags": [
+          "Booking",
+          "HIPAA",
+          "Accessibility",
+          "UI/UX"
+        ],
         "location": "New York"
       },
       "noviantManaged": {
@@ -355,8 +457,17 @@
         "description": "A centralized portal for managing cloud infrastructure and cybersecurity services for enterprise clients.",
         "challenge": "Integrating diverse security feeds into a single, intuitive dashboard.",
         "solution": "Micro-frontend architecture with real-time WebSocket updates for threat monitoring.",
-        "results": ["Faster response times", "Centralized management", "High client retention"],
-        "tags": ["SaaS", "Cloud", "Monitoring", "Security"],
+        "results": [
+          "Faster response times",
+          "Centralized management",
+          "High client retention"
+        ],
+        "tags": [
+          "SaaS",
+          "Cloud",
+          "Monitoring",
+          "Security"
+        ],
         "location": "New York"
       },
       "springShoreTourism": {
@@ -365,8 +476,16 @@
         "description": "A comprehensive visualization system for a tourism resort in Riyue Bay, Hainan, achieving real-world simulation through high-fidelity rendering.",
         "challenge": "Simulating the tranquil and complex natural environment of a coastal resort accurately.",
         "solution": "Independent scene construction with dynamic weather and lighting systems for maximum realism.",
-        "results": ["95% realism score", "Improved investor presentation", "Multi-platform support"],
-        "tags": ["3D Rendering", "Tourism", "Simulation"],
+        "results": [
+          "95% realism score",
+          "Improved investor presentation",
+          "Multi-platform support"
+        ],
+        "tags": [
+          "3D Rendering",
+          "Tourism",
+          "Simulation"
+        ],
         "location": "Hainan"
       },
       "jinjiangGlory": {
@@ -375,8 +494,16 @@
         "description": "A high-end CIM digital marketing system for a residential project in Chengdu, focused on immersive unit browsing and community visualization.",
         "challenge": "Creating a seamless bridge between traditional physical displays and modern digital interaction for premium homebuyers.",
         "solution": "Developed a high-fidelity CIM platform with real-time lighting simulation and interactive unit browsing.",
-        "results": ["Enhanced customer engagement", "Faster sales cycle", "Bespoke brand experience"],
-        "tags": ["CIM", "Marketing", "Digital Twin"],
+        "results": [
+          "Enhanced customer engagement",
+          "Faster sales cycle",
+          "Bespoke brand experience"
+        ],
+        "tags": [
+          "CIM",
+          "Marketing",
+          "Digital Twin"
+        ],
         "location": "Chengdu"
       },
       "meijiangHeyue": {
@@ -385,8 +512,16 @@
         "description": "Digital display system for high-end residential properties, showcasing the integration of luxury housing with the urban environment.",
         "challenge": "Communicating the premium value of a residence through digital means while ensuring UX simplicity.",
         "solution": "Custom high-end visual language and regional value digital mapping.",
-        "results": ["Established luxury brand image", "High user retention on platform", "Seamless urban data sync"],
-        "tags": ["Luxury", "Urban Integration", "UI/UX"],
+        "results": [
+          "Established luxury brand image",
+          "High user retention on platform",
+          "Seamless urban data sync"
+        ],
+        "tags": [
+          "Luxury",
+          "Urban Integration",
+          "UI/UX"
+        ],
         "location": "Tianjin"
       },
       "jinmaoSmartCity": {
@@ -395,8 +530,16 @@
         "description": "Future-tech visualization of a smart science city, highlighting regional charm and long-term urban planning.",
         "challenge": "Visualizing abstract urban planning concepts into understandable and inspiring 3D scenes.",
         "solution": "Creative customization of display schemes using high-tech visualization techniques.",
-        "results": ["Positive stakeholder feedback", "Clear vision communication", "Award-winning visualization"],
-        "tags": ["Smart City", "Planning", "Future Tech"],
+        "results": [
+          "Positive stakeholder feedback",
+          "Clear vision communication",
+          "Award-winning visualization"
+        ],
+        "tags": [
+          "Smart City",
+          "Planning",
+          "Future Tech"
+        ],
         "location": "Ningbo"
       },
       "educationPlaceholder": {
@@ -405,8 +548,17 @@
         "description": "An immersive online learning platform built for a global EdTech organization, featuring adaptive course delivery, gamified progress tracking, and multilingual student dashboards.",
         "challenge": "Creating an engaging digital learning environment that motivates learners across multiple time zones and native languages while keeping content administrators productive.",
         "solution": "Designed a modular LMS frontend with localization support for 6 languages, real-time progress tracking, and a drag-and-drop course builder for non-technical instructors.",
-        "results": ["40% increase in course completion rate", "Multilingual support for 6 languages", "Reduced instructor content creation time by 50%"],
-        "tags": ["Education", "LMS", "UX Design", "Multilingual"],
+        "results": [
+          "40% increase in course completion rate",
+          "Multilingual support for 6 languages",
+          "Reduced instructor content creation time by 50%"
+        ],
+        "tags": [
+          "Education",
+          "LMS",
+          "UX Design",
+          "Multilingual"
+        ],
         "location": "Global"
       },
       "appPlaceholder": {
@@ -415,8 +567,17 @@
         "description": "A cross-platform mobile application for a consumer tech brand, delivering a seamless experience across iOS and Android with real-time data synchronization and offline-first capability.",
         "challenge": "Ensuring feature parity and consistent user experience across iOS and Android while maintaining a single codebase and supporting unreliable network conditions.",
         "solution": "Developed with Flutter using an offline-first architecture, local caching, and background sync — enabling full functionality even without internet connectivity.",
-        "results": ["4.8-star App Store rating", "Offline mode with zero data loss", "50ms faster load vs. previous native app"],
-        "tags": ["iOS", "Android", "Flutter", "Offline-First"],
+        "results": [
+          "4.8-star App Store rating",
+          "Offline mode with zero data loss",
+          "50ms faster load vs. previous native app"
+        ],
+        "tags": [
+          "iOS",
+          "Android",
+          "Flutter",
+          "Offline-First"
+        ],
         "location": "Global"
       },
       "ecommercePlaceholder": {
@@ -425,8 +586,17 @@
         "description": "A Shopify Plus e-commerce store for a US-based retail brand with international shipping, multi-currency checkout, and a headless storefront achieving sub-1-second page loads.",
         "challenge": "Migrating a legacy WooCommerce store to a high-performance headless architecture while maintaining SEO equity and ensuring zero downtime during the transition.",
         "solution": "Implemented a headless Shopify Plus storefront with Next.js, CDN-cached product pages, and automated inventory sync — with a staged rollout to eliminate migration risk.",
-        "results": ["Page speed improved from 4.2s to 0.8s", "22% increase in conversion rate post-launch", "Zero downtime during migration"],
-        "tags": ["Shopify Plus", "Headless", "Next.js", "E-Commerce"],
+        "results": [
+          "Page speed improved from 4.2s to 0.8s",
+          "22% increase in conversion rate post-launch",
+          "Zero downtime during migration"
+        ],
+        "tags": [
+          "Shopify Plus",
+          "Headless",
+          "Next.js",
+          "E-Commerce"
+        ],
         "location": "United States"
       }
     }
@@ -585,7 +755,8 @@
         "secondary": "Download PDF Blueprint",
         "restart": "Start Over"
       }
-    }
+    },
+    "recommended": "Recommended"
   },
   "blog": {
     "label": "Insights",
@@ -705,7 +876,9 @@
       "submit": "Request Consultation",
       "sending": "Sending…",
       "success": "Message received! Our team will reach out within 24 hours.",
-      "error": "Message failed. Please try again or email us directly."
+      "error": "Message failed. Please try again or email us directly.",
+      "successDesc": "Thank you for your inquiry! We will get back to you shortly.",
+      "sendAnother": "Send Another"
     },
     "info": {
       "address": "NYC Office",
@@ -718,7 +891,8 @@
     "freeConsult": {
       "title": "Free Strategy Session",
       "desc": "Get a professional analysis of your current digital presence and a clear plan to improve it.",
-      "button": "Book My Free Call"
+      "button": "Book My Free Call",
+      "subject": "Free Consultation Request"
     }
   },
   "footer": {

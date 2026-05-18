@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = await getTranslations({ locale, namespace: 'services' });
   const title = t(`${serviceKey}.title`);
-  const desc = t(`${serviceKey}.desc`);
+  const desc = t(`${serviceKey}.description`);
 
   return {
     title: `${title} | Apex Zone NYC Agency`,
@@ -73,24 +73,23 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const t = await getTranslations({ locale, namespace: 'services' });
   const tc = await getTranslations({ locale, namespace: 'common' });
-  const td = await getTranslations({ locale, namespace: 'services.detail' }); // I'll make sure this exists or use fallback
-  
+
   const IconComp = ICONS[service.icon] || Layout;
 
   // Resolve strings from JSON
   const title = t(`${serviceKey}.title`);
-  const desc  = t(`${serviceKey}.desc`);
+  const desc  = t(`${serviceKey}.description`);
 
-  // Try to get shared detail labels, fallback to English if namespace missing
-  const backBtn    = td('back');
-  const getStarted = td('getStarted');
-  const capabilities = td('capabilities');
-  const processLabel = td('process');
-  const processDesc  = td('processDesc');
-  const faqsLabel    = td('faqs');
-  const readyLabel   = td('ready');
-  const contactLabel = td('contact');
-  const contactBtn   = td('contactBtn');
+  // UI labels from common + services namespaces
+  const backBtn      = tc('back');
+  const getStarted   = tc('startProject');
+  const capabilities = t('capabilities');
+  const processLabel = tc('ourProcess');
+  const processDesc  = t('processDesc');
+  const faqsLabel    = t('faq');
+  const readyLabel   = t('ready');
+  const contactLabel = tc('contactUs');
+  const contactBtn   = tc('startProject');
 
   return (
     <div className={styles.page}>

@@ -79,17 +79,14 @@ export default function ContactClient() {
             <div className={styles.successIcon}>✅</div>
             <h3 className="md-headline-small">{t('form.success')}</h3>
             <p className="md-body-medium text-muted">
-              {locale.startsWith('zh')
-                ? '感谢您的咨询！我们会尽快与您联系。'
-                : 'Thank you for your inquiry! We will get back to you shortly.'
-              }
+              {t('form.successDesc')}
             </p>
             <button
               className="btn btn-secondary btn-sm"
               style={{ marginTop: 8 }}
               onClick={() => { setStatus('idle'); setForm({ name:'',email:'',phone:'',company:'',service:'',message:'' }); }}
             >
-              {locale.startsWith('zh') ? '重新填写' : 'Send Another'}
+              {t('form.sendAnother')}
             </button>
           </div>
         ) : (
@@ -189,7 +186,7 @@ export default function ContactClient() {
           <h3 className="md-title-large">{t('freeConsult.title')}</h3>
           <p className="md-body-medium">{t('freeConsult.desc')}</p>
           <a
-            href={`mailto:${RECIPIENT}?subject=${encodeURIComponent(locale.startsWith('zh') ? '预约免费咨询' : 'Free Consultation Request')}`}
+            href={`mailto:${RECIPIENT}?subject=${encodeURIComponent(t('freeConsult.subject'))}`}
             className="btn btn-white"
             style={{ marginTop: '4px' }}
           >

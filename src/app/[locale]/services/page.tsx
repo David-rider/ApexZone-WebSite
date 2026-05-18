@@ -47,7 +47,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                   <div className={styles.content}>
                     <div className={styles.label}>{getServiceTitle(category)}</div>
                     <h2 className="md-display-small">
-                      {locale.startsWith('zh') ? '开启数字化' : 'Empowering Your'} {getServiceTitle(category)}
+                      {s('empowering')} {getServiceTitle(category)}
                     </h2>
                     <p className={styles.desc}>{getServiceDescription(category)}</p>
                     
