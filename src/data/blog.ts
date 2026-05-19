@@ -66,6 +66,18 @@ export const blogPosts: BlogPost[] = [
     featured: false,
     coverColor: 'linear-gradient(135deg, #1A2A3A 0%, #2C4A6E 100%)',
     cover: '/images/mock/fintech.png',
-  }
+  },
+  {
+    id: '4',
+    slug: 'musk-openai-verdict-ai-enterprise-impact',
+    category: 'tech',
+    ...keys('openAiMuskVerdict'),
+    author: 'Apex Zone Team',
+    date: '2026-05-18',
+    readTime: 10,
+    featured: true,
+    coverColor: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)',
+    cover: '/images/mock/blog_tech.png',
+  },
 ];
 
